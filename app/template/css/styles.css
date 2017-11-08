@@ -83,11 +83,13 @@ body {
   display: -moz-flex;
   display: -ms-flexbox;
   display: flex;
+  font-size: 14px;
+  font-size: 1.4rem;
+  font-family: "SegoeUIRegular", Arial;
+  color: #333;
   flex-flow: column;
   font-display: swap;
-  height: 100vh;
-  font-size: 14px;
-  font-size: 1.4rem; }
+  height: 100vh; }
 
 html, body {
   height: 100%; }
@@ -98,6 +100,51 @@ html, body {
 input::-moz-focus-inner {
   border: 0;
   padding: 0; }
+
+@font-face {
+  font-family: 'CenturyGothic';
+  src: url("../fonts/CenturyGothic.eot");
+  src: url("../fonts/CenturyGothic.eot") format("embedded-opentype"), url("../fonts/CenturyGothic.woff2") format("woff2"), url("../fonts/CenturyGothic.woff") format("woff"), url("../fonts/CenturyGothic.ttf") format("truetype"); }
+
+@font-face {
+  font-family: 'CenturyGothicBold';
+  src: url("../fonts/CenturyGothicBold.eot");
+  src: url("../fonts/CenturyGothicBold.eot") format("embedded-opentype"), url("../fonts/CenturyGothicBold.woff2") format("woff2"), url("../fonts/CenturyGothicBold.woff") format("woff"), url("../fonts/CenturyGothicBold.ttf") format("truetype"); }
+
+/* font-family: "SegoeUIRegular"; */
+@font-face {
+  font-family: "SegoeUIRegular";
+  src: url("../fonts/SegoeUIRegular/SegoeUIRegular.eot");
+  src: url("../fonts/SegoeUIRegular/SegoeUIRegular.eot?#iefix") format("embedded-opentype"), url("../fonts/SegoeUIRegular/SegoeUIRegular.woff") format("woff"), url("../fonts/SegoeUIRegular/SegoeUIRegular.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal; }
+
+/* font-family: "SegoeUIBold"; */
+@font-face {
+  font-family: "SegoeUIBold";
+  src: url("../fonts/SegoeUIBold/SegoeUIBold.eot");
+  src: url("../fonts/SegoeUIBold/SegoeUIBold.eot?#iefix") format("embedded-opentype"), url("../fonts/SegoeUIBold/SegoeUIBold.woff") format("woff"), url("../fonts/SegoeUIBold/SegoeUIBold.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal; }
+
+@font-face {
+  font-family: "SegoeUIItalic";
+  src: url("../fonts/SegoeUIItalic/SegoeUIItalic.eot");
+  src: url("../fonts/SegoeUIItalic/SegoeUIItalic.eot?#iefix") format("embedded-opentype"), url("../fonts/SegoeUIItalic/SegoeUIItalic.woff") format("woff"), url("../fonts/SegoeUIItalic/SegoeUIItalic.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal; }
+
+.cg {
+  font-family: 'CenturyGothic'; }
+
+.cgb {
+  font-family: 'CenturyGothicBold'; }
+
+.bold {
+  font-family: "SegoeUIBold"; }
+
+.italic {
+  font-family: "SegoeUIItalic"; }
 
 .outerwrapper {
   -webkit-flex: 1;
@@ -139,7 +186,7 @@ input::-moz-focus-inner {
   position: absolute; }
 
 .form-control {
-  border: 1px solid #f4f4f4;
+  border: 1px solid #307a56;
   border-radius: 0;
   margin-top: 0.6rem;
   font-size: 16px; }
@@ -168,9 +215,6 @@ input::-moz-focus-inner {
   .owl-carousel .owl-controls .owl-buttons .owl-prev {
     left: -110px; }
   .owl-carousel .owl-controls .owl-buttons .owl-next {
-    background-image: url(../images/sprite.png);
-    background-repeat: no-repeat;
-    background-position: 0 0;
     right: -110px; }
 
 /* =main
