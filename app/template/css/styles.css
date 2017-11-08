@@ -156,7 +156,7 @@ input::-moz-focus-inner {
 .cgi, .contacts__ring, .footer__navcopyright .copyright__right, .kreotif {
   font-family: 'CenturyGothicItalic'; }
 
-.bold, .title, .contacts__tel, .slider__text, .sqicons__item-title, .feedback__form .submit {
+.bold, .title, .contacts__tel, .slider__text, .services__title, .sqicons__item-title, .feedback__form .submit {
   font-family: "SegoeUIBold"; }
 
 .italic, .neck .writeus-link, .more, .policy, .footer__cities, .rubrics__news, .feedback__form .row .form-control, .feedback__form .row textarea, .feedback__form .submit {
@@ -199,7 +199,7 @@ input::-moz-focus-inner {
   .tdu:hover {
     text-decoration: none; }
 
-.before {
+.before, .services__item a:after {
   content: "";
   display: block;
   position: absolute; }
@@ -304,24 +304,24 @@ input::-moz-focus-inner {
 
 /* =/header
 ---------------------------*/
-/* =navigation
----------------------------*/
-/* =/navigation
----------------------------*/
-.owl-carousel .owl-controls {
+.owl-nav {
+  left: 50%;
+  margin-left: -50%;
   position: absolute;
-  width: 100%;
-  top: 115px; }
-  .owl-carousel .owl-controls .owl-buttons .owl-prev,
-  .owl-carousel .owl-controls .owl-buttons .owl-next {
+  top: 110px;
+  width: 100%; }
+  .owl-nav .owl-prev, .owl-nav .owl-next {
     background: url(../images/prevnext.png) no-repeat left top;
-    width: 65px;
-    height: 65px;
-    position: absolute; }
-  .owl-carousel .owl-controls .owl-buttons .owl-prev {
-    left: -110px; }
-  .owl-carousel .owl-controls .owl-buttons .owl-next {
-    right: -110px; }
+    height: 43px;
+    position: absolute;
+    width: 28px; }
+    .owl-nav .owl-prev.disabled, .owl-nav .owl-next.disabled {
+      opacity: .6; }
+  .owl-nav .owl-next {
+    right: 0;
+    -webkit-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    transform: rotate(180deg); }
 
 /* =main
 ---------------------------*/
@@ -344,7 +344,7 @@ input::-moz-focus-inner {
   .more a {
     color: #307a56; }
 
-.block-center, .feedback__form .submit {
+.block-center, .services__item, .feedback__form .submit {
   display: block;
   margin-left: auto;
   margin-right: auto; }
@@ -481,6 +481,10 @@ textarea {
   .kreotif a {
     color: #307a56; }
 
+.flexcenter, .footer__logo, .footer__social, .sqicons__pic {
+  justify-content: center;
+  align-items: center; }
+
 .slider {
   height: 600px;
   position: relative;
@@ -534,10 +538,68 @@ textarea {
 
 /* =/about
 ---------------------------*/
-.flexcenter, .footer__logo, .footer__social, .sqicons__pic {
-  justify-content: center;
-  align-items: center; }
+/* =services
+---------------------------*/
+.services__carousel {
+  margin-top: 3rem; }
 
+.services__item {
+  color: #fff;
+  text-align: center;
+  width: 300px; }
+  .services__item a {
+    color: #fff;
+    display: block;
+    position: relative; }
+    .services__item a:after {
+      -webkit-transition: opacity 0.2s ease-out;
+      transition: opacity 0.2s ease-out;
+      background-image: -webkit-linear-gradient(top, #8bbaa3 0%, #317b57 100%);
+      background-image: -o-linear-gradient(top, #8bbaa3 0%, #317b57 100%);
+      background-image: linear-gradient(to bottom, #8bbaa3 0%, #317b57 100%);
+      background-repeat: repeat-x;
+      filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FF8BBAA3', endColorstr='#FF317B57', GradientType=0);
+      height: 100%;
+      left: 0;
+      opacity: 0;
+      top: 0;
+      width: 100%;
+      z-index: 1; }
+    .services__item a:hover:after {
+      opacity: 1; }
+  .services__item hr {
+    background: #fff;
+    border: none;
+    display: block;
+    height: 3px;
+    margin: 2rem auto;
+    width: 85px; }
+
+.services__pic img {
+  max-width: 100%;
+  height: auto;
+  display: block; }
+
+.services__textbox {
+  position: absolute;
+  top: 0;
+  z-index: 2;
+  height: 100%; }
+  .services__textbox .flexbox {
+    height: 100%;
+    flex-flow: column;
+    justify-content: center; }
+
+.services__title {
+  font-size: 20px;
+  font-size: 2rem;
+  text-transform: uppercase; }
+
+.services__title, .services__shorttext {
+  padding: 0 20px; }
+
+/* =/services
+---------------------------*/
 /* =approach
 ---------------------------*/
 .approach .flexbox {

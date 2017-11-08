@@ -320,35 +320,40 @@ input::-moz-focus-inner{
 
 
 
-/* =navigation
----------------------------*/
-/* =/navigation
----------------------------*/
 
-
-.owl-carousel{
-	.owl-controls{
+.owl{
+	&-nav{
+		left: 50%;
+		margin-left: -50%;
 		position: absolute;
+		top: 110px;
 		width: 100%;
-		top: 115px;
-		.owl-buttons{
-			.owl-prev,
-			.owl-next{
+		.owl-{
+			&prev,
+			&next{
 				background: url(../images/prevnext.png) no-repeat left top;
-				width: 65px;
-				height: 65px;
+				height: 43px;
 				position: absolute;
+				width: 28px;
+				&.disabled{
+					opacity: .6;
+				}
 			}
-			.owl-prev{
-				left: -110px;
-			}
-			.owl-next{
-				// .rotation(180deg);
-				right: -110px;
+
+			&next{
+				right: 0;
+				@include rotation(180deg);
 			}
 		}
 	}
+
+	&-item:not(.big){
+		// transform: scale(.8)
+	}
 }
+
+
+
 
 /* =main
 ---------------------------*/

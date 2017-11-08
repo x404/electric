@@ -1,5 +1,10 @@
 $h1 : 360px;
 
+.flexcenter{
+	justify-content: center;
+	align-items: center;
+}
+
 .slider{
 	height: 600px;
 	position: relative;
@@ -50,6 +55,8 @@ $h1 : 360px;
 		}
 	}
 }
+
+
 /* =about
 ---------------------------*/
 .about{
@@ -65,10 +72,88 @@ $h1 : 360px;
 /* =/about
 ---------------------------*/
 
-.flexcenter{
-	justify-content: center;
-	align-items: center;
+
+/* =services
+---------------------------*/
+.services{
+	&__carousel{
+		margin-top: 3rem;
+	}
+	&__item{
+		@extend .block-center;
+		color: $color2;
+		text-align: center;
+		width: 300px;
+
+		a{
+			color: $color2;
+			display: block;
+			position: relative;
+
+			&:after{
+				@extend .before;
+				@include transition-param;
+				@include gradient-vertical(#8bbaa3, #317b57);
+				height: 100%;
+				left: 0;
+				opacity: 0;
+				top: 0;
+				width: 100%;
+				z-index: 1;
+			}
+			&:hover{
+				&:after{
+					opacity: 1;
+				}
+			}
+		}
+
+		hr{
+			background: $color2;
+			border:none;
+			display: block;
+			height: 3px;
+			margin: 2rem auto;
+			width: 85px;
+		}
+
+	}
+
+	&__pic{
+		img{
+			max-width: 100%;
+			height: auto;
+			display: block;
+		}
+	}
+
+	&__textbox{
+		position: absolute;
+		top: 0;
+		z-index: 2;
+		height: 100%;
+		.flexbox{
+			height: 100%;			
+			flex-flow: column;
+			justify-content: center;
+		}
+	}
+
+	&__title{
+		@include font-size(2);
+		@extend .bold;
+		text-transform: uppercase;
+	}
+
+
+	&__title,
+	&__shorttext{
+		padding: 0 20px;
+	}
+
 }
+/* =/services
+---------------------------*/
 
 
 /* =approach

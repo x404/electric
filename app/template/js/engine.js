@@ -5,32 +5,45 @@ $(document).ready(function(){
 		controls: false
 	});
 
+	// $('#foo2').bxSlider({
+	// });
 
 	// карусель
-	$('#foo11111').owlCarousel({
+	$('#foo2').owlCarousel({
 		loop:false,
 		nav:true,
 		dots: false,
 		items:3,
-		startPosition : 2,
-		stagePadding : 250,
 		navText: ["", ""],
 		responsive:{
 			0:{
 				items:1,
-				stagePadding: 20
+				stagePadding: 15
 			},
-			900:{
-				items:2,
+			335:{
+				items:1,
+				stagePadding: 30
+			},
+			380:{
+				items:1,
+				stagePadding: 30
+			},			
+			415:{
+				items:1,
+				stagePadding: 40
+			},
+			525:{
+				items:1,
+				stagePadding: 80
+			},
+			767:{
+				items:1,
 				stagePadding: 0
 			},
-			992:{
-				items:1
-			},
-			1250:{
+			991:{
 				items:2
 			},
-			1550:{
+			1450:{
 				items:3
 			}
 		}
