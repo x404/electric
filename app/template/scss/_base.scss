@@ -17,14 +17,14 @@ $color8:#292929;
 	-webkit-box-sizing: border-box;
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
+	&:after,
+	&:before{
+		-webkit-box-sizing: border-box;
+		-moz-box-sizing: border-box;
+		box-sizing: border-box;		
+	}
 }
 
-*:before,
-*:after {
-	-webkit-box-sizing: border-box;
-	-moz-box-sizing: border-box;
-	box-sizing: border-box;
-}
 
 html {
   -ms-text-size-adjust: 100%;
@@ -38,11 +38,7 @@ body{
 	flex-flow: column;
 	font-display: swap;
 	height: 100vh;
-	// font-size:10px;
-	// font-size: 1.4rem;
-
 	@include font-size(1.4);
-	@include rounded;
 }
 
 html, body{
@@ -70,7 +66,7 @@ input::-moz-focus-inner{
 }
 
 /*** standart classes *****/
-p{line-height:16px}
+p{}
 a{color:#020000}
 h1{font-size:2.5rem}
 h2{font-size:2.4rem}
@@ -112,12 +108,6 @@ input::-moz-focus-inner{
 	}
 }
 
-
-@mixin sprite($x:0, $y:0){
-	background-image: url(../images/sprite.png);
-	background-repeat: no-repeat;
-	background-position: $x $y;
-}
 
 .before{
 	content: "";

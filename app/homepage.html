@@ -31,36 +31,424 @@
 <body>
 
 <div class="outerwrapper">
-    <header>А я тут вместо головы.</header>
+	<!-- =header -->
+    <header class="header header-homepage">
+    	<div class="container">
+			<!-- =navbar -->
+			<nav id="navbar" class="header__nav">
+				<ul class="nav nav-tabs" role="tablist">
+					<li><a class="nav-link" href="#" title="">Главная</a></li>
+					<li><a class="nav-link" href="#" title="">О нас</a></li>
+					<li><a class="nav-link" href="#" title="">Услуги</a></li>
+					<li><a class="nav-link" href="#" title="">Цены</a></li>
+					<li><a class="nav-link" href="#" title="">Наши работы</a></li>
+					<li><a class="nav-link" href="#" title="">Интересное</a></li>
+					<li><a class="nav-link" href="#" title="">Контакты</a></li>
+				</ul>
+				<div class="show-sm">
+					<a class="hover-a" href="tel:74957840948">+7 (495) 784 0948</a>
+					<a class="hover-a" href="mailto:sales@shop-recovery.ru">sales@shop-recovery.ru</a>
+				</div>
+			</nav>
+			<button type="button" class="navbar-toggle">
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+			<button type="button" class="close-menu"><img src="/template/images/close-modal.png" alt=""></button>
+			<!-- =/navbar -->
+    		
+    		<!-- =contacts -->
+			<div class="contacts">
+				<a href="tel:+74951471711" class="contacts__tel">+7 (495) 147-1711</a>
+				<a href="#" title="" class="contacts__ring">Заказать звонок</a>
+			</div>
+    		<!-- =/contacts -->
+    	</div>
+    </header>
+	<!-- =/header -->
 
-	<nav id="navbar">
-		<ul>
-			<li><a href="#">меню1</a></li>
-			<li><a href="#">меню2</a></li>
-			<li><a href="#">меню3</a></li>
-			<li><a href="#">меню4</a></li>
-			<li><a href="#">меню5</a></li>
-		</ul>
-	</nav>
 
-	<button type="button" class="navbar-toggle">
-		<span class="icon-bar"></span>
-		<span class="icon-bar"></span>
-		<span class="icon-bar"></span>
-	</button>
-	<button type="button" class="close-menu"><img src="template/images/close.png" alt=""></button>
+	<!-- =neck -->
+	<div class="neck">
+		<div class="container">
+			<div class="logo">
+				<img src="/template/images/logo-home.png" alt="ShelkovoElectric" />
+				<a href="#" title="">НАПИСАТЬ НАМ</a>
+			</div>
+		</div>
+	</div>
+	<!-- =/neck -->
 
 
-    <div class="main">
-		Пароль отправляется серверу в «открытом» виде — он шифруется известным алгоритмом на известном ключе. При использовании простого логина, пароль пользователя может быть перехвачен и дешифрирован.
-    </div>
+	<!-- =slider -->
+	<div class="slider owl-carousel" id="foo1">
+
+	</div>
+	<!-- =/slider -->
+
+	
+	<div class="container">
+		<!-- =about -->
+		<section class="about">
+			<header>
+				<p class="title">О НАШЕЙ КОМПАНИИ</p>
+			</header>
+			<p>Электромонтажные работы в небольшой современном гараже частного дома, с кухней, комнатой отдыха и сан.узлом. Черновой монтаж производился не мной, мне лишь досталось "счастье" доделывать чистовой монтаж. Подрозетники яйцом или не в один уровень, провода коротыши торчащие из стен, потолка и подрозетников, облицовка в виде керамогранита, которая местами мешала нормальной установке розеток и выключателей.</p>
+			<p>Но победить удалось главное это любить свою работу. Розетки и выключатели АВВ Basic 55 (Германия) с декоративными вставками под цвет отделки стен (подбираются отдельно и индивидуально), в гараже использованы механизмы розеток со шторками и уплотнительные силиконовые кольца Merten для защиты от брызг и влаги. На мой взгляд удобней и практичней чем розетки с крышкой, которые все лепят куда нужно и нет Накладные розетки Eslo (Германия).</p>
+			<p>Щиток АВВ UK548, автоматы АВВ серии S и УЗО серии F, противопожарное 3-х фазное на вводе 100мА, и на каждую из трех фаз отдельное узо 30 мА для защиты человека от поражения током.</p>
+			
+			<p class="more"><a href="#" title="">подробнее</a></p>
+		</section>
+		<!-- =/about -->
+
+
+		<!-- =approach -->
+		<section class="approach">
+			<header>
+				<p class="title">Индивидуальный подход к каждому клиенту</p>
+			</header>
+
+			<div class="text">
+				Электромонтажные работы в небольшой современном гараже частного дома, с кухней, комнатой отдыха и сан.узлом. Черновой монтаж производился не мной, мне лишь досталось "счастье" доделывать чистовой монтаж. Подрозетники яйцом или не в один уровень, провода коротыши торчащие из стен, потолка и подрозетников, облицовка в виде керамогранита, которая местами мешала нормальной установке розеток и выключателей.
+			</div>
+
+			<div class="flexbox">
+				<!-- .approach__item>.approach__pic>img[src="/template/images/icons/.png"]+^.approach__text>h3.approach__item-title+p -->
+				<div class="approach__item">
+					<div class="approach__pic"><img src="/template/images/icons/clock.png" alt="" /></div>
+					<div class="approach__text">
+						<h3 class="approach__item-title">Работаем 24/7</h3>
+						<p>Мы работаем всегда! Случилась поломка? Смело звоните нам в любое время суток!</p>
+					</div>
+				</div>
+				<div class="approach__item">
+					<div class="approach__pic"><img src="/template/images/icons/map.png" alt=""></div>
+					<div class="approach__text">
+						<h3 class="approach__item-title">Город и район</h3>
+						<p>Наши специалисты работают не только в городе но и по району!</p>
+					</div>
+				</div>
+				<div class="approach__item">
+					<div class="approach__pic"><img src="/template/images/icons/car.png" alt=""></div>
+					<div class="approach__text">
+						<h3 class="approach__item-title">Доставка материалов</h3>
+						<p>Мы сможем самостоятельно приобрести все необходимые материалы и привезти клиенту!</p>
+					</div>
+				</div>
+				<div class="approach__item">
+					<div class="approach__pic"><img src="/template/images/icons/chat.png" alt=""></div>
+					<div class="approach__text">
+						<h3 class="approach__item-title">Постоянно на связи</h3>
+						<p>Возникли вопросы или пожелания по нашей работе - мы готовы выслушать вас - всегда!</p>
+					</div>
+				</div>
+				<div class="approach__item">
+					<div class="approach__pic"><img src="/template/images/icons/master.png" alt=""></div>
+					<div class="approach__text">
+						<h3 class="approach__item-title">Мастера высокого уровня</h3>
+						<p>Наши мастера компетентны и профессионалы своего дела! Вы можете доверять им!</p>
+					</div>
+				</div>
+				<div class="approach__item">
+					<div class="approach__pic"><img src="/template/images/icons/speed.png" alt=""></div>
+					<div class="approach__text">
+						<h3 class="approach__item-title">Скорость работ</h3>
+						<p>Мы работаем максимально быстро! Без потери качества и низкой стоимости работ!</p>
+					</div>
+				</div>
+			</div>
+
+			<div class="text">
+				<p>Электромонтажные работы в небольшой современном гараже частного дома, с кухней, комнатой отдыха и сан.узлом. Черновой монтаж производился не мной, мне лишь досталось "счастье" доделывать чистовой монтаж. Подрозетники яйцом или не в один уровень, провода коротыши торчащие из стен, потолка и подрозетников, облицовка в виде керамогранита, которая местами мешала нормальной установке розеток и выключателей.</p>
+				<p>Но победить удалось главное это любить свою работу. Розетки и выключатели АВВ Basic 55 (Германия) с декоративными вставками под цвет отделки стен (подбираются отдельно и индивидуально), в гараже использованы механизмы розеток со шторками и уплотнительные силиконовые кольца Merten для защиты от брызг и влаги. На мой взгляд удобней и практичней чем розетки с крышкой, которые все лепят куда нужно и нет Накладные розетки Eslo (Германия).</p>
+				<p>Щиток АВВ UK548, автоматы АВВ серии S и УЗО серии F, противопожарное 3-х фазное на вводе 100мА, и на каждую из трех фаз отдельное узо 30 мА для защиты человека от поражения током.</p>
+			</div>
+		</section>
+		<!-- =/approach -->
+
+
+		<!-- =services -->
+		<section class="services">
+			<header>
+				<p class="title">Услуги которые мы предлагаем</p>
+			</header>
+
+			<!-- =carousel -->
+			<div class="services__carousel">
+				<div id="foo2" class="owl-carousel">
+					<div class="services__item">
+						<a href="#" title="">
+							<div class="services__pic">
+								<img src="images/services/service-1.jpg" alt="" />
+							</div>
+							<div class="services__textbox">
+								<div class="flexbox">
+									<h3 class="services__title">Электромонтажные работы</h3>
+									<hr/>
+									<p class="services__shorttext">Осущетвляем электромонтажные работы любой сложности для физических и юридических лиц.</p>
+								</div>
+							</div>
+						</a>
+					</div>
+					<div class="services__item">
+						<a href="#" title="">
+							<div class="services__pic">
+								<img src="images/services/service-2.jpg" alt="" />
+							</div>
+							<div class="services__textbox">
+								<div class="flexbox">
+									<h3 class="services__title">Монтаж электропроводки</h3>
+									<hr/>
+									<p class="services__shorttext">Предлагаем свои услуги по монтажу электропроводки «под ключ» для квартир и частных домов, коттеджей, офисов.</p>
+								</div>
+							</div>
+						</a>
+					</div>
+					<div class="services__item">
+						<a href="#" title="">
+							<div class="services__pic">
+								<img src="images/services/service-3.jpg" alt="" />
+							</div>
+							<div class="services__textbox">
+								<div class="flexbox">
+									<h3 class="services__title">Разводка электрики</h3>
+									<hr/>
+									<p class="services__shorttext">Электромонтаж в многоквартирных и частных домах, коттеджах имеет некоторые существенные различия, которые</p>
+								</div>
+							</div>
+						</a>
+					</div>
+
+				</div>
+			</div>
+			<!-- =/carousel -->
+
+			<div class="text">
+				<p>Электромонтажные работы в небольшой современном гараже частного дома, с кухней, комнатой отдыха и сан.узлом. Черновой монтаж производился не мной, мне лишь досталось "счастье" доделывать чистовой монтаж. Подрозетники яйцом или не в один уровень, провода коротыши торчащие из стен, потолка и подрозетников, облицовка в виде керамогранита, которая местами мешала нормальной установке розеток и выключателей.</p>
+			</div>
+
+			<!-- .approach__item>.approach__pic>img[src="/template/images/icons/.png"]+^.approach__text>h3.approach__item-title+p -->
+			<div class="approach__item">
+				<div class="approach__pic"><img src="/template/images/icons/.png" alt=""></div>
+				<div class="approach__text">
+					<h3 class="approach__item-title">Сборка электрощитов</h3>
+					<p>Сборка электрощитов производится с целью контроля расхода электроэнергии, управления потребителями.</p>
+				</div>
+			</div>
+			<div class="approach__item">
+				<div class="approach__pic"><img src="/template/images/icons/attemption.png" alt=""></div>
+				<div class="approach__text">
+					<h3 class="approach__item-title">Установка розеток и выключателей</h3>
+					<p>Установка розеток и выключателей в скрытой проводке. Стены из бетонных плит, кирпича или газобетона.</p>
+				</div>
+			</div>
+			<div class="approach__item">
+				<div class="approach__pic"><img src="/template/images/icons/socket.png" alt=""></div>
+				<div class="approach__text">
+					<h3 class="approach__item-title">Установка электросчётчика</h3>
+					<p>Многолетняя практика доказывает, что установка требует от исполнителей определенной подготовки и знаний.</p>
+				</div>
+			</div>
+			<div class="approach__item">
+				<div class="approach__pic"><img src="/template/images/icons/lamp.png" alt=""></div>
+				<div class="approach__text">
+					<h3 class="approach__item-title">Подключение люстр и светильников</h3>
+					<p>Люстра представляет собой потолочный светильник, который должен обеспечивать бестеневое освещение в помещении.</p>
+				</div>
+			</div>
+			<div class="approach__item">
+				<div class="approach__pic"><img src="/template/images/icons/chandelier.png" alt=""></div>
+				<div class="approach__text">
+					<h3 class="approach__item-title">Монтаж электропроводки</h3>
+					<p>Монтаж электропроводки в квартире и частном доме подразумевает следование определённым правилам.</p>
+				</div>
+			</div>
+			<div class="approach__item">
+				<div class="approach__pic"><img src="/template/images/icons/wire.png" alt=""></div>
+				<div class="approach__text">
+					<h3 class="approach__item-title">Подключение бытовой техники</h3>
+					<p>Нашеа фирма ответственно и надежно осуществляет подключение подключение бытовой техники.</p>
+				</div>
+			</div>
+			<div class="approach__item">
+				<div class="approach__pic"><img src="/template/images/icons/ground.png" alt=""></div>
+				<div class="approach__text">
+					<h3 class="approach__item-title">Устройство заземления</h3>
+					<p>Цель заземления заключается в отводе электротока, нашедшего в изоляции лазейку для выхода на поверхность.</p>
+				</div>
+			</div>
+			<div class="approach__item">
+				<div class="approach__pic"><img src="/template/images/icons/floor.png" alt=""></div>
+				<div class="approach__text">
+					<h3 class="approach__item-title">Укладка тёплого пола</h3>
+					<p>Для укладки электрического теплого пола в доме достаточно грамотно произвести монтаж нагревательного кабеля.</p>
+				</div>
+			</div>
+
+
+			<div class="text">
+				<p>Электромонтажные работы в небольшой современном гараже частного дома, с кухней, комнатой отдыха и сан.узлом. Черновой монтаж производился не мной, мне лишь досталось "счастье" доделывать чистовой монтаж. Подрозетники яйцом или не в один уровень, провода коротыши торчащие из стен, потолка и подрозетников, облицовка в виде керамогранита, которая местами мешала нормальной установке розеток и выключателей.</p>
+			</div>
+		</section>
+		<!-- =/services -->
+
+
+		<!-- =rubrics -->
+		<section class="rubrics">
+			<ul class="rubrics__tab">
+				<li><a href="#" title="" class="current" data-target="#tab-news">Новости</a></li>
+				<li><a href="#" title="" data-target="#tab-articles">Статьи</a></li>
+				<li><a href="#" title="" data-target="#tab-faq">Вопрос? Ответ!</a></li>
+				<li><a href="#" title="" data-target="#tab-reviews">Отзывы</a></li>
+			</ul>
+			<div class="rubrics__body">
+				<div class="tab-current" id="tab-news">
+					<div class="flexbox">
+						<div class="rubrics__news">
+							<div class="rubrics__news-item">
+								<time>2017-09-15</time>
+								<h3>Новые контроллеры WAGO с поддержкой Profibus DP Master</h3>
+								<p><a href="#" title="">Серия PFC200 характеризуется компактным корпусом с широким набором сетевых ...</a></p>
+							</div>
+						</div>
+						<div class="rubrics__news">
+							<div class="rubrics__news-item">
+								<time>2017-09-15</time>
+								<h3>Новые контроллеры WAGO с поддержкой Profibus DP Master</h3>
+								<p><a href="#" title="">Серия PFC200 характеризуется компактным корпусом с широким набором сетевых ...</a></p>
+							</div>
+						</div>
+						<div class="rubrics__news">
+							<div class="rubrics__news-item">
+								<time>2017-09-15</time>
+								<h3>Новые контроллеры WAGO с поддержкой Profibus DP Master</h3>
+								<p><a href="#" title="">Серия PFC200 характеризуется компактным корпусом с широким набором сетевых ...</a></p>
+							</div>
+						</div>
+						<div class="rubrics__news">
+							<div class="rubrics__news-item">
+								<time>2017-09-15</time>
+								<h3>Новые контроллеры WAGO с поддержкой Profibus DP Master</h3>
+								<p><a href="#" title="">Серия PFC200 характеризуется компактным корпусом с широким набором сетевых ...</a></p>
+							</div>
+						</div>
+					</div>
+					<div class="text-center rubrics__bottom">< <a href="#" title="" class="rubrics__link">перейти в раздел</a> ></div>
+				</div>
+				<div class="tab" id="tab-articles"></div>
+				<div class="tab" id="tab-faq"></div>
+				<div class="tab" id="tab-reviews"></div>
+			</div>
+		</section>
+		<!-- =/rubrics -->
+
+
+		<!-- =partners -->
+		<section class="partners">
+			<header>
+				<p class="title">НАШ ВЫБОР</p>
+			</header>
+			<p>Электромонтажные работы в небольшой современном гараже частного дома, с кухней, комнатой отдыха и сан.узлом. Черновой монтаж производился не мной, мне лишь досталось "счастье" доделывать чистовой монтаж. Подрозетники яйцом или не в один уровень, провода коротыши торчащие из стен, потолка и подрозетников, облицовка в виде керамогранита, которая местами мешала нормальной установке розеток и выключателей.</p>
+
+			<div class="partners__items">
+				<div class="partners__item"><a href="#"><img src="images/partners/schneider.jpg" alt="schneider electric"></a></div>
+				<div class="partners__item"><a href="#"><img src="images/partners/abb.jpg" alt="abb"></a></div>
+				<div class="partners__item"><a href="#"><img src="images/partners/wago.jpg" alt="wago"></a></div>
+				<div class="partners__item"><a href="#"><img src="images/partners/legrand.jpg" alt="legrand"></a></div>
+				<div class="partners__item"><a href="#"><img src="images/partners/lezard.jpg" alt="lezard"></a></div>
+			</div>
+
+			<p>Электромонтажные работы в небольшой современном гараже частного дома, с кухней, комнатой отдыха и сан.узлом. Черновой монтаж производился не мной, мне лишь досталось "счастье" доделывать чистовой монтаж. Подрозетники яйцом или не в один уровень, провода коротыши торчащие из стен, потолка и подрозетников, облицовка в виде керамогранита, которая местами мешала нормальной установке розеток и выключателей.</p>
+		</section>
+		<!-- =/partners -->
+		
+	</div>
+
+	<!-- =map -->
+	<section class="map">
+		<header class="container">
+			<p class="title">Где нас можно найти</p>
+		</header>
+		<div id="map"></div>
+	</section>
+	<!-- =/map -->
+
+	<!-- =feedback -->
+	<div class="feedback">
+		<div class="feedback__content text-center">
+			<p class="title">МЫ ВСЕГДА НА СВЯЗИ</p>
+			<div class="vcard">
+				<div class="name"><span class="category">Магазин</span> <span class="fn org">Cryocream</span></div>
+				<div class="adr">
+					 <span class="postal-code">191002</span>, <span class="country">Россия</span><span class="locality">Санкт-Петербург</span>, <span class="street-address">ул.Ломоносова, д.9</span>
+				</div>
+				<div><a href="tel:+74957840948" class="tel">+7 (495) 837-11-67</a> | <a href="mailto:info@cryocream.ru" class="email" title="">info@cryocream.ru</a></div>
+			</div>
+			<p>Напишите Ваше сообщение, пожелание или что-нибудь доброе с нашей компании ))) Мы обязательно ответим как можно скорее</p>
+		</div>
+		<form action="#" method="post" id="feedback-form" class="feedback__form form-policy">
+			<fieldset>
+				<div class="row">
+					<input name="name" type="text" value="" class="form-control required" placeholder="как вас зовут" />
+					<input name="tel" type="tel" value="" class="form-control required" placeholder="ваш номер телефона *" />
+					<input name="email" type="email" value="" class="form-control required email" placeholder="ваш e-mail *" />
+				</div>
+				<div class="row">
+					<textarea name="msg" id="msg" cols="30" rows="10" placeholder="Текст вашего сообщения *" class="form-control required"></textarea>
+				</div>
+				<div class="qorder__form-row policy">
+					<input type="checkbox" id="checkbox2" value="" name="checkbox" checked="checked" class="user-access">
+					<label for="checkbox2">Я Согласен на обработку персональных данных и принимаю условия <a href="#.pdf" title="" target="_blank">Пользовательского соглашения</a></label>
+				</div>
+				<input type="submit" name="feedback_submit" class="submit" value="Отправить" />
+			</fieldset>
+		</form>
+	</div>
+	<!-- =/feedback -->	
 </div>
 
+
+<!-- =footer -->
 <footer>
-	<div class="wrapper">
-		А тут у меня — ноги приделаны.
+	<div class="footer__top">
+		<div class="footer__cities"></div>
+		<div class="footer__logo"></div>
+		<div class="footer__social"></div>
+	</div>
+	<div class="footer__bottom">
+		<div class="footer__navcopyright">
+			<ul class="nav" role="tablist">
+				<li><a href="#" title="">Главная</a></li>
+				<li><a href="#" title="">О нас</a></li>
+				<li><a href="#" title="">Услуги</a></li>
+				<li><a href="#" title="">Цены</a></li>
+				<li><a href="#" title="">Наши работы</a></li>
+				<li><a href="#" title="">Интересное</a></li>
+				<li><a href="#" title="">Контакты</a></li>
+			</ul>
+			<div class="copyright">
+				<div class="copyright__left">Copyright  © 2017</div>
+				<div class="copyright__right">
+					<a href="/" title="">Электромонтажные работы.</a>
+					Современно. Качественно. Надежно.
+				</div>
+			</div>
+		</div>
+
+		<div class="contacts">
+			<a href="tel:+74951471711" class="contacts__tel">+7 (495) 147-1711</a>
+			<a href="#" title="" class="contacts__ring">Заказать звонок</a>
+		</div>
+
+		<div class="kreotif">
+			Digital Agency Kreotif <br>
+			<a href="https://kreotif.com">создание сайтов</a> <br>
+			информация о сайте
+		</div>
 	</div>
 </footer>
+<!-- =/footer -->
 
 
 <div id="outdated"></div>

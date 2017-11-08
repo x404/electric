@@ -67,12 +67,10 @@ ul {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box; }
-
-*:before,
-*:after {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box; }
+  *:after, *:before {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box; }
 
 html {
   -ms-text-size-adjust: 100%;
@@ -89,9 +87,7 @@ body {
   font-display: swap;
   height: 100vh;
   font-size: 14px;
-  font-size: 1.4rem;
-  -webkit-border-radius: 2px;
-  border-radius: 2px; }
+  font-size: 1.4rem; }
 
 html, body {
   height: 100%; }
@@ -108,9 +104,6 @@ input::-moz-focus-inner {
   flex: 1; }
 
 /*** standart classes *****/
-p {
-  line-height: 16px; }
-
 a {
   color: #020000; }
 
