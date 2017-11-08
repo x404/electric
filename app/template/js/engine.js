@@ -9,12 +9,6 @@ $(document).ready(function(){
 		startPosition : 2,
 		stagePadding : 250,
 		navText: ["", ""],
-		onInitialized: function (event) {
-			refreshFirstLastVisible(event);
-		},
-		onChanged: function (event) {
-			refreshFirstLastVisible(event);
-		},
 		responsive:{
 			0:{
 				items:1,
@@ -35,6 +29,20 @@ $(document).ready(function(){
 			}
 		}
 	});
+
+
+	// policy
+	$('.policy input').click(function(){
+		var $this = $(this),
+			$submit = $this.closest('.form-policy');
+
+		if ($this.is(':checked')){
+			$submit.find('.input, .form-control, .submit, textarea, input[type=radio]').removeAttr('disabled');
+		} else {
+			$submit.addClass('disabled');
+			$submit.find('.input, .form-control, .submit, textarea, input[type=radio]').attr('disabled', true);
+		}
+	});	
 
 
 	// mobile-menu

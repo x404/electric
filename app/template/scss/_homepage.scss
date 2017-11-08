@@ -77,7 +77,7 @@
 /* =rubrics
 ---------------------------*/
 .rubrics{
-	&__tab{
+	&__nav{
 		@include font-size(2.4);
 		font-family: "SegoeUIBoldItalic";
 		font-style: italic;
@@ -91,12 +91,190 @@
 			color: $color5;
 			text-decoration: none;
 			border-bottom: 1px dashed rgba($color3, 0);
-			&.current{
+			&.current,
+			&:hover{
 				color: $color3;
 				border-bottom-color: rgba($color3, 1);
 			}
 		}
 	}
+	
+	.tab{
+		display: none;
+		&-current{
+			display: block !important;
+		}
+	}
+
+	&__body{
+		margin-top: 2rem;
+	}
+	
+	#tab-news{
+		.flexbox{
+			justify-content: space-around;
+			margin-left: auto;
+			margin-right: auto;
+			width: 85%;
+		}
+
+	}
+
+	&__news{
+		@extend .italic;
+		&-item{
+			padding: 1rem 1rem 2rem;
+			box-shadow: 0 0 5px #ccc;
+			width: 22rem;
+		}
+		.date{
+
+		}
+
+		h3{
+			@include font-size(1.4);
+			font-family: "SegoeUIBoldItalic";
+			height: 9.5rem;
+			padding-top: .8rem;
+		}
+
+		a{
+			@extend .tdn;
+		}
+	}
 }
 /* =/rubrics
+---------------------------*/
+
+
+/* =partners
+---------------------------*/
+.partners{
+	margin-bottom: 3rem;
+	&__items{
+		margin: 2rem 0;	
+		justify-content: space-around;
+		a{
+			display: block;
+			border: 1px solid rgba($color3, 0);
+			padding: 1rem;
+			&:hover{
+				border-color: rgba($color3, 1);
+			}
+		}
+	}
+}
+/* =/partners
+---------------------------*/
+
+#map{
+	height: 400px;
+}
+
+
+
+/* =feedback
+---------------------------*/
+.feedback{
+	// background-color: rgba(255, 255, 255, .8);
+	margin-left: auto;
+	margin-right: auto;
+	width: 900px;
+	z-index: 999;
+	.title{
+		color: $color3;
+	}
+	.vcard{
+		@include font-size(1.5);
+		margin-bottom: 1.4rem;
+		.name{
+			display: none;
+		}
+		.adr{
+			margin-bottom: 1.2rem;
+		}
+		.tel{
+			text-decoration: none;
+			margin-right: .5rem;
+		}
+		.email{
+			margin-left: .5rem;
+			@extend .tdn;
+			color: $color3;
+		}
+	}
+
+	&__content{
+		padding: .8rem 0 1rem;
+	}
+	&__form{
+		border: 1px solid #e9e9e9;
+		box-shadow: 0 0 3px #e9e9e9;
+		margin-left: auto;
+		margin-right: auto;
+		padding: .8rem .8rem 1.8rem;
+		position: relative;
+		width: 765px;
+		.row{
+			@include flexbox;
+			@include justify-content(space-between);
+			margin-bottom: 1rem;
+			input.form-control,
+			textarea{
+				border: 1px solid $color6;
+				padding-left: 1.5rem;
+				padding-right: 1.5rem;
+			}
+
+
+			input.form-control{
+				height: 3rem;
+				width: 245px;
+				@include placeholder($color1);
+			}
+
+			.form-control{
+				@extend .italic;				
+				@include font-size(1.4);
+			}
+	
+			textarea{
+				@extend .italic;
+				flex: 1;
+				overflow: hidden;
+				height: 6.2rem;
+				@include placeholder($color1);
+			}
+
+			.error{
+				border: 1px solid red !important
+			}
+		}
+
+		.policy{
+			margin-top: 1.9rem;
+		}
+
+		.submit{
+			@extend .block-center;
+			@extend .bold;
+			@extend .italic;
+			@include gradient-vertical(#8bbaa3, #317b57);
+			background-color: $color7;
+			border: none;
+			color: $color2;
+			cursor: pointer;
+			height: 6.2rem;
+			margin-left: 1rem;
+			margin-top: .6rem;
+			padding: 0.8rem 2rem;
+			text-decoration: none;
+			&:hover{
+				opacity: .9;
+				@include gradient-vertical(#317b57, #8bbaa3);
+			}
+		}
+	}
+}
+/* =/feedback
 ---------------------------*/

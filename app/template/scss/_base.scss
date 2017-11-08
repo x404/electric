@@ -7,9 +7,9 @@ $color2:#fff;
 $color3:#307a56;
 $color4:#333;
 $color5:#8c8c8c;
+$color6:#ccc;
+$color7:#e6e6e6;
 
-$color6:#ff5722;
-$color7:#80bbde;
 $color8:#292929;
 
 
@@ -64,9 +64,7 @@ input::-moz-focus-inner{
 
 @font-face {
     font-family: 'CenturyGothic';
-    src: url('../fonts/CenturyGothic.eot');
-    src: url('../fonts/CenturyGothic.eot') format('embedded-opentype'),
-         url('../fonts/CenturyGothic.woff2') format('woff2'),
+    src: url('../fonts/CenturyGothic.woff2') format('woff2'),
          url('../fonts/CenturyGothic.woff') format('woff'),
          url('../fonts/CenturyGothic.ttf') format('truetype')
 }
@@ -74,12 +72,20 @@ input::-moz-focus-inner{
 
 @font-face {
     font-family: 'CenturyGothicBold';
-    src: url('../fonts/CenturyGothicBold.eot');
-    src: url('../fonts/CenturyGothicBold.eot') format('embedded-opentype'),
-         url('../fonts/CenturyGothicBold.woff2') format('woff2'),
+    src: url('../fonts/CenturyGothicBold.woff2') format('woff2'),
          url('../fonts/CenturyGothicBold.woff') format('woff'),
          url('../fonts/CenturyGothicBold.ttf') format('truetype')
 }
+
+
+@font-face {
+    font-family: 'CenturyGothicItalic';
+    src: url('../fonts/CenturyGothicItalic.eot') format('embedded-opentype'),
+         url('../fonts/CenturyGothicItalic.woff2') format('woff2'),
+         url('../fonts/CenturyGothicItalic.woff') format('woff'),
+         url('../fonts/CenturyGothicItalic.ttf') format('truetype')
+}
+
 
 
 /* font-family: "SegoeUIRegular"; */
@@ -123,8 +129,9 @@ input::-moz-focus-inner{
 	font-weight: normal;
 }
 
-.cg{font-family: 'CenturyGothic';}
-.cgb{font-family: 'CenturyGothicBold';}
+.cg{font-family: 'CenturyGothic'}
+.cgb{font-family: 'CenturyGothicBold'}
+.cgi{font-family: 'CenturyGothicItalic'}
 
 .bold{
 	font-family: "SegoeUIBold";
@@ -138,6 +145,7 @@ input::-moz-focus-inner{
 .outerwrapper{
 	-webkit-flex: 1;
 	flex: 1;
+	padding-bottom: 4rem;
 }
 
 /*** standart classes *****/
@@ -192,14 +200,15 @@ input::-moz-focus-inner{
 
 
 .form-control {
-   border: 1px solid $color3;
-   border-radius: 0;
-   margin-top: 0.6rem;
+	border: 1px solid $color3;
+	border-radius: 0;
+	margin-top: 0.6rem;
 	font-size: 16px;
+	@include transition;
 	&:focus,
 	&:active{
-		border-color: $color5;
-		box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px rgba(222, 72, 111, 0.3)
+		border-color: $color3 !important;
+		// box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 2px rgba($color3, 1)
 	}
 }
 
@@ -265,7 +274,7 @@ input::-moz-focus-inner{
 		text-decoration: none;
 	}
 	&__ring{
-		@extend .italic;
+		@extend .cgi;
 		border-bottom: 1px dashed $color2;
 		margin-top: 1.2rem;
 		text-decoration: none;
@@ -273,6 +282,10 @@ input::-moz-focus-inner{
 		&:hover{
 			border-bottom-color: rgba($color2, 0);
 		}
+	}
+
+	&-footer{
+		@include gradient-vertical(#317b57, #8bbaa3);
 	}
 }
 
@@ -357,6 +370,9 @@ input::-moz-focus-inner{
 }
 
 
+.text-center{
+	text-align: center;
+}
 
 .text-right{
 	text-align: right;
@@ -364,15 +380,195 @@ input::-moz-focus-inner{
 
 .more{
 	@extend .italic;
+	margin: 2rem 0;
+	text-align: center;
 	a{
 		@extend .tdn;
 		color: $color3;
 	}
 }
 
+
+.block-center{
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+
+
+/* =policy
+---------------------------*/
+.policy{
+	@extend .italic;
+	color: $color8;
+	a{
+		color: $color3;
+		@extend .tdn;
+	}
+}
+/* =/policy
+---------------------------*/
+
+
+.user-access + label {
+  cursor: pointer;
+}
+
+.user-access:not(checked) {
+  position: absolute;
+  opacity: 0;
+}
+.user-access:not(checked) + label {
+  display: block;
+  position: relative; /* будем позиционировать псевдочекбокс относительно label */
+  padding: 0 0 0 40px; /* оставляем слева от label место под псевдочекбокс */
+}
+/* Оформление первой части чекбокса в выключенном состоянии (фон). */
+.user-access:not(checked) + label:before {
+  content: '';
+  position: absolute;
+  top: -3px;
+  left: 0;
+  width: 30px;
+  height: 30px;
+  border: 1px solid $color6;
+}
+
+/* Меняем фон чекбокса, когда он включен. */
+.user-access:checked + label:before {
+	border-color: $color6;
+}
+/* Сдвигаем переключатель чекбокса, когда он включен. */
+.user-access:checked + label:after {
+	content: '*';
+	position: absolute;
+	top: -3px;
+	left: 7px;
+	width: 22px;
+	height: 22px;
+	font-size: 30px;
+}
+
+input.submit:disabled{
+	background: rgba(128, 128, 128, .3) !important;
+	cursor: default;
+	&:hover{
+		opacity: 1 !important;
+	}
+}
+
+.form-control,
+textarea{
+	@include transition-param(background);
+}
+
+textarea{
+	resize: none;
+}
+
+
+
 /* =footer
 ---------------------------*/
 footer{
-	height: 40px;
-	background: #FFCC00;
 }
+
+.footer{
+	.container{
+		padding-left: 1.5rem;
+		padding-right: 1.5rem;
+	}
+	&__top{
+		background: $color7;
+		height: 12rem;
+	}
+
+	&__navcopyright{
+		padding-top: 2.5rem;
+		.nav{
+			justify-content: space-between;
+			padding-right: 6rem;
+			width: 655px;
+			a{
+				color: $color4;
+				&:hover{
+					color: $color3;
+				}
+			}
+		}
+
+		.copyright{
+			line-height: 1.5;
+			padding-top: 2rem;
+			&__right{
+				@include font-size(1.3);
+				@extend .cgi;
+				color: $color3;	
+				padding-left: .8rem;
+				a{
+					color: $color3;					
+				}
+			}
+		}
+	}
+
+
+	&__cities{
+		@extend .italic;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		width: 775px;
+		a{
+			color: $color3;
+			@extend .tdn;
+		}
+	}
+	&__logo{
+		background: $color3;
+		width: 120px;
+		height: 120px;
+		display: flex;
+		@extend .flexcenter;
+	}
+
+	&__social{
+		display: flex;
+		@extend .flexcenter;
+
+		&-icons{
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: space-between;
+			margin-left: 2.2rem;
+			width: 150px;
+			a{
+				filter: grayscale(1);
+				&:hover{
+					filter: grayscale(0);
+
+				}
+			}
+		}
+	}
+
+}
+.kreotif{
+	color: $color1;
+	@extend .cgi;
+	display: flex;
+	flex-flow: column;
+	justify-content: flex-end;
+	margin-left: 3rem;
+	text-align: right;
+	@include font-size(1.3);
+	padding-bottom: 1.5rem;
+	a{
+		@extend .tdn;
+		color: $color3;
+	}
+}
+
+
+
