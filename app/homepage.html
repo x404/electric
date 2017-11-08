@@ -34,36 +34,38 @@
 	<!-- =header -->
     <header class="header header-homepage">
     	<div class="container">
-			<!-- =navbar -->
-			<nav id="navbar" class="header__nav">
-				<ul class="nav nav-tabs" role="tablist">
-					<li><a class="nav-link" href="#" title="">Главная</a></li>
-					<li><a class="nav-link" href="#" title="">О нас</a></li>
-					<li><a class="nav-link" href="#" title="">Услуги</a></li>
-					<li><a class="nav-link" href="#" title="">Цены</a></li>
-					<li><a class="nav-link" href="#" title="">Наши работы</a></li>
-					<li><a class="nav-link" href="#" title="">Интересное</a></li>
-					<li><a class="nav-link" href="#" title="">Контакты</a></li>
-				</ul>
-				<div class="show-sm">
-					<a class="hover-a" href="tel:74957840948">+7 (495) 784 0948</a>
-					<a class="hover-a" href="mailto:sales@shop-recovery.ru">sales@shop-recovery.ru</a>
+    		<div class="flexbox">
+				<!-- =navbar -->
+				<nav id="navbar" class="header__nav">
+					<ul class="nav nav-tabs" role="tablist">
+						<li><a class="nav-link" href="#" title="">Главная</a></li>
+						<li><a class="nav-link" href="#" title="">О нас</a></li>
+						<li><a class="nav-link" href="#" title="">Услуги</a></li>
+						<li><a class="nav-link" href="#" title="">Цены</a></li>
+						<li><a class="nav-link" href="#" title="">Наши работы</a></li>
+						<li><a class="nav-link" href="#" title="">Интересное</a></li>
+						<li><a class="nav-link" href="#" title="">Контакты</a></li>
+					</ul>
+					<div class="show-sm">
+						<a class="hover-a" href="tel:74957840948">+7 (495) 784 0948</a>
+						<a class="hover-a" href="mailto:sales@shop-recovery.ru">sales@shop-recovery.ru</a>
+					</div>
+				</nav>
+				<button type="button" class="navbar-toggle">
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<button type="button" class="close-menu"><img src="/template/images/close-modal.png" alt=""></button>
+				<!-- =/navbar -->
+	    		
+	    		<!-- =contacts -->
+				<div class="contacts">
+					<a href="tel:+74951471711" class="contacts__tel">+7 (495) 147-1711</a>
+					<a href="#" title="" class="contacts__ring">Заказать звонок</a>
 				</div>
-			</nav>
-			<button type="button" class="navbar-toggle">
-				<span class="icon-bar"></span>
-				<span class="icon-bar"></span>
-				<span class="icon-bar"></span>
-			</button>
-			<button type="button" class="close-menu"><img src="/template/images/close-modal.png" alt=""></button>
-			<!-- =/navbar -->
-    		
-    		<!-- =contacts -->
-			<div class="contacts">
-				<a href="tel:+74951471711" class="contacts__tel">+7 (495) 147-1711</a>
-				<a href="#" title="" class="contacts__ring">Заказать звонок</a>
-			</div>
-    		<!-- =/contacts -->
+	    		<!-- =/contacts -->
+    		</div>
     	</div>
     </header>
 	<!-- =/header -->
@@ -74,7 +76,7 @@
 		<div class="container">
 			<div class="logo">
 				<img src="/template/images/logo-home.png" alt="ShelkovoElectric" />
-				<a href="#" title="">НАПИСАТЬ НАМ</a>
+				<a href="#" title="" class="writeus-link">НАПИСАТЬ НАМ</a>
 			</div>
 		</div>
 	</div>
@@ -98,7 +100,7 @@
 			<p>Но победить удалось главное это любить свою работу. Розетки и выключатели АВВ Basic 55 (Германия) с декоративными вставками под цвет отделки стен (подбираются отдельно и индивидуально), в гараже использованы механизмы розеток со шторками и уплотнительные силиконовые кольца Merten для защиты от брызг и влаги. На мой взгляд удобней и практичней чем розетки с крышкой, которые все лепят куда нужно и нет Накладные розетки Eslo (Германия).</p>
 			<p>Щиток АВВ UK548, автоматы АВВ серии S и УЗО серии F, противопожарное 3-х фазное на вводе 100мА, и на каждую из трех фаз отдельное узо 30 мА для защиты человека от поражения током.</p>
 			
-			<p class="more"><a href="#" title="">подробнее</a></p>
+			<p class="more text-right">< <a href="#" title="">подробнее</a> ></p>
 		</section>
 		<!-- =/about -->
 
@@ -113,47 +115,47 @@
 				Электромонтажные работы в небольшой современном гараже частного дома, с кухней, комнатой отдыха и сан.узлом. Черновой монтаж производился не мной, мне лишь досталось "счастье" доделывать чистовой монтаж. Подрозетники яйцом или не в один уровень, провода коротыши торчащие из стен, потолка и подрозетников, облицовка в виде керамогранита, которая местами мешала нормальной установке розеток и выключателей.
 			</div>
 
-			<div class="flexbox">
-				<!-- .approach__item>.approach__pic>img[src="/template/images/icons/.png"]+^.approach__text>h3.approach__item-title+p -->
-				<div class="approach__item">
-					<div class="approach__pic"><img src="/template/images/icons/clock.png" alt="" /></div>
-					<div class="approach__text">
-						<h3 class="approach__item-title">Работаем 24/7</h3>
+			<div class="flexbox sqicons-flexbox">
+				<!-- .sqicons__item>.sqicons__pic>img[src="/template/images/icons/.png"]+^.sqicons__text>h3.sqicons__item-title+p -->
+				<div class="sqicons__item">
+					<div class="sqicons__pic"><img src="/template/images/icons/clock.png" alt="" /></div>
+					<div class="sqicons__text">
+						<h3 class="sqicons__item-title">Работаем 24/7</h3>
 						<p>Мы работаем всегда! Случилась поломка? Смело звоните нам в любое время суток!</p>
 					</div>
 				</div>
-				<div class="approach__item">
-					<div class="approach__pic"><img src="/template/images/icons/map.png" alt=""></div>
-					<div class="approach__text">
-						<h3 class="approach__item-title">Город и район</h3>
+				<div class="sqicons__item">
+					<div class="sqicons__pic"><img src="/template/images/icons/map.png" alt=""></div>
+					<div class="sqicons__text">
+						<h3 class="sqicons__item-title">Город и район</h3>
 						<p>Наши специалисты работают не только в городе но и по району!</p>
 					</div>
 				</div>
-				<div class="approach__item">
-					<div class="approach__pic"><img src="/template/images/icons/car.png" alt=""></div>
-					<div class="approach__text">
-						<h3 class="approach__item-title">Доставка материалов</h3>
+				<div class="sqicons__item">
+					<div class="sqicons__pic"><img src="/template/images/icons/car.png" alt=""></div>
+					<div class="sqicons__text">
+						<h3 class="sqicons__item-title">Доставка материалов</h3>
 						<p>Мы сможем самостоятельно приобрести все необходимые материалы и привезти клиенту!</p>
 					</div>
 				</div>
-				<div class="approach__item">
-					<div class="approach__pic"><img src="/template/images/icons/chat.png" alt=""></div>
-					<div class="approach__text">
-						<h3 class="approach__item-title">Постоянно на связи</h3>
+				<div class="sqicons__item">
+					<div class="sqicons__pic"><img src="/template/images/icons/chat.png" alt=""></div>
+					<div class="sqicons__text">
+						<h3 class="sqicons__item-title">Постоянно на связи</h3>
 						<p>Возникли вопросы или пожелания по нашей работе - мы готовы выслушать вас - всегда!</p>
 					</div>
 				</div>
-				<div class="approach__item">
-					<div class="approach__pic"><img src="/template/images/icons/master.png" alt=""></div>
-					<div class="approach__text">
-						<h3 class="approach__item-title">Мастера высокого уровня</h3>
+				<div class="sqicons__item">
+					<div class="sqicons__pic"><img src="/template/images/icons/master.png" alt=""></div>
+					<div class="sqicons__text">
+						<h3 class="sqicons__item-title">Мастера высокого уровня</h3>
 						<p>Наши мастера компетентны и профессионалы своего дела! Вы можете доверять им!</p>
 					</div>
 				</div>
-				<div class="approach__item">
-					<div class="approach__pic"><img src="/template/images/icons/speed.png" alt=""></div>
-					<div class="approach__text">
-						<h3 class="approach__item-title">Скорость работ</h3>
+				<div class="sqicons__item">
+					<div class="sqicons__pic"><img src="/template/images/icons/speed.png" alt=""></div>
+					<div class="sqicons__text">
+						<h3 class="sqicons__item-title">Скорость работ</h3>
 						<p>Мы работаем максимально быстро! Без потери качества и низкой стоимости работ!</p>
 					</div>
 				</div>
@@ -228,61 +230,63 @@
 				<p>Электромонтажные работы в небольшой современном гараже частного дома, с кухней, комнатой отдыха и сан.узлом. Черновой монтаж производился не мной, мне лишь досталось "счастье" доделывать чистовой монтаж. Подрозетники яйцом или не в один уровень, провода коротыши торчащие из стен, потолка и подрозетников, облицовка в виде керамогранита, которая местами мешала нормальной установке розеток и выключателей.</p>
 			</div>
 
-			<!-- .approach__item>.approach__pic>img[src="/template/images/icons/.png"]+^.approach__text>h3.approach__item-title+p -->
-			<div class="approach__item">
-				<div class="approach__pic"><img src="/template/images/icons/.png" alt=""></div>
-				<div class="approach__text">
-					<h3 class="approach__item-title">Сборка электрощитов</h3>
-					<p>Сборка электрощитов производится с целью контроля расхода электроэнергии, управления потребителями.</p>
+			<!-- .sqicons__item>.sqicons__pic>img[src="/template/images/icons/.png"]+^.sqicons__text>h3.sqicons__item-title+p -->
+			<div class="flexbox sqicons-flexbox">
+				<div class="sqicons__item">
+					<div class="sqicons__pic"><img src="/template/images/icons/attemption.png" alt=""></div>
+					<div class="sqicons__text">
+						<h3 class="sqicons__item-title">Сборка электрощитов</h3>
+						<p>Сборка электрощитов производится с целью контроля расхода электроэнергии, управления потребителями.</p>
+					</div>
 				</div>
-			</div>
-			<div class="approach__item">
-				<div class="approach__pic"><img src="/template/images/icons/attemption.png" alt=""></div>
-				<div class="approach__text">
-					<h3 class="approach__item-title">Установка розеток и выключателей</h3>
-					<p>Установка розеток и выключателей в скрытой проводке. Стены из бетонных плит, кирпича или газобетона.</p>
+				<div class="sqicons__item">
+					<div class="sqicons__pic"><img src="/template/images/icons/socket.png" alt=""></div>
+					<div class="sqicons__text">
+						<h3 class="sqicons__item-title">Установка розеток и выключателей</h3>
+						<p>Установка розеток и выключателей в скрытой проводке. Стены из бетонных плит, кирпича или газобетона.</p>
+					</div>
 				</div>
-			</div>
-			<div class="approach__item">
-				<div class="approach__pic"><img src="/template/images/icons/socket.png" alt=""></div>
-				<div class="approach__text">
-					<h3 class="approach__item-title">Установка электросчётчика</h3>
-					<p>Многолетняя практика доказывает, что установка требует от исполнителей определенной подготовки и знаний.</p>
+				<div class="sqicons__item">
+					<div class="sqicons__pic"><img src="/template/images/icons/lamp.png" alt=""></div>
+					<div class="sqicons__text">
+						<h3 class="sqicons__item-title">Установка электросчётчика</h3>
+						<p>Многолетняя практика доказывает, что установка требует от исполнителей определенной подготовки и знаний.</p>
+					</div>
 				</div>
-			</div>
-			<div class="approach__item">
-				<div class="approach__pic"><img src="/template/images/icons/lamp.png" alt=""></div>
-				<div class="approach__text">
-					<h3 class="approach__item-title">Подключение люстр и светильников</h3>
-					<p>Люстра представляет собой потолочный светильник, который должен обеспечивать бестеневое освещение в помещении.</p>
+				<div class="sqicons__item">
+					<div class="sqicons__pic"><img src="/template/images/icons/chandelier.png" alt=""></div>
+					<div class="sqicons__text">
+						<h3 class="sqicons__item-title">Подключение люстр и светильников</h3>
+						<p>Люстра представляет собой потолочный светильник, который должен обеспечивать бестеневое освещение в помещении.</p>
+					</div>
 				</div>
-			</div>
-			<div class="approach__item">
-				<div class="approach__pic"><img src="/template/images/icons/chandelier.png" alt=""></div>
-				<div class="approach__text">
-					<h3 class="approach__item-title">Монтаж электропроводки</h3>
-					<p>Монтаж электропроводки в квартире и частном доме подразумевает следование определённым правилам.</p>
+				<div class="sqicons__item">
+					<div class="sqicons__pic"><img src="/template/images/icons/wire.png" alt=""></div>
+					<div class="sqicons__text">
+						<h3 class="sqicons__item-title">Монтаж электропроводки</h3>
+						<p>Монтаж электропроводки в квартире и частном доме подразумевает следование определённым правилам.</p>
+					</div>
 				</div>
-			</div>
-			<div class="approach__item">
-				<div class="approach__pic"><img src="/template/images/icons/wire.png" alt=""></div>
-				<div class="approach__text">
-					<h3 class="approach__item-title">Подключение бытовой техники</h3>
-					<p>Нашеа фирма ответственно и надежно осуществляет подключение подключение бытовой техники.</p>
+				<div class="sqicons__item">
+					<div class="sqicons__pic"><img src="/template/images/icons/technics.png" alt=""></div>
+					<div class="sqicons__text">
+						<h3 class="sqicons__item-title">Подключение бытовой техники</h3>
+						<p>Нашеа фирма ответственно и надежно осуществляет подключение подключение бытовой техники.</p>
+					</div>
 				</div>
-			</div>
-			<div class="approach__item">
-				<div class="approach__pic"><img src="/template/images/icons/ground.png" alt=""></div>
-				<div class="approach__text">
-					<h3 class="approach__item-title">Устройство заземления</h3>
-					<p>Цель заземления заключается в отводе электротока, нашедшего в изоляции лазейку для выхода на поверхность.</p>
+				<div class="sqicons__item">
+					<div class="sqicons__pic"><img src="/template/images/icons/ground.png" alt=""></div>
+					<div class="sqicons__text">
+						<h3 class="sqicons__item-title">Устройство заземления</h3>
+						<p>Цель заземления заключается в отводе электротока, нашедшего в изоляции лазейку для выхода на поверхность.</p>
+					</div>
 				</div>
-			</div>
-			<div class="approach__item">
-				<div class="approach__pic"><img src="/template/images/icons/floor.png" alt=""></div>
-				<div class="approach__text">
-					<h3 class="approach__item-title">Укладка тёплого пола</h3>
-					<p>Для укладки электрического теплого пола в доме достаточно грамотно произвести монтаж нагревательного кабеля.</p>
+				<div class="sqicons__item">
+					<div class="sqicons__pic"><img src="/template/images/icons/floor.png" alt=""></div>
+					<div class="sqicons__text">
+						<h3 class="sqicons__item-title">Укладка тёплого пола</h3>
+						<p>Для укладки электрического теплого пола в доме достаточно грамотно произвести монтаж нагревательного кабеля.</p>
+					</div>
 				</div>
 			</div>
 
@@ -296,10 +300,13 @@
 
 		<!-- =rubrics -->
 		<section class="rubrics">
-			<ul class="rubrics__tab">
+			<ul class="rubrics__tab flexbox">
 				<li><a href="#" title="" class="current" data-target="#tab-news">Новости</a></li>
+				<li class="separator">/</li>
 				<li><a href="#" title="" data-target="#tab-articles">Статьи</a></li>
+				<li class="separator">/</li>
 				<li><a href="#" title="" data-target="#tab-faq">Вопрос? Ответ!</a></li>
+				<li class="separator">/</li>
 				<li><a href="#" title="" data-target="#tab-reviews">Отзывы</a></li>
 			</ul>
 			<div class="rubrics__body">

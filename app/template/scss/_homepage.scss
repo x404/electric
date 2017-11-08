@@ -1,0 +1,102 @@
+/* =about
+---------------------------*/
+.about{
+	margin-bottom: 4rem;
+	width: 55rem;
+}
+/* =/about
+---------------------------*/
+
+.flexcenter{
+	justify-content: center;
+	align-items: center;
+}
+
+
+/* =approach
+---------------------------*/
+.approach{
+	.flexbox{
+		margin-bottom: 3rem;
+	}
+}
+
+.sqicons{
+	&-flexbox{
+		flex-wrap: wrap;		
+	}
+	&__item{
+		display: flex;
+		flex-basis: 50%;
+		margin-top: 3.5rem;
+		padding-left: 3rem;
+		padding-right: 10rem;
+		&-title{
+			@extend .bold;
+			@include font-size(1.4);
+			color: $color5;
+			margin-bottom: .5rem;
+			text-transform: uppercase;
+		}
+	}
+
+	&__pic{
+		background:url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFkAAABZCAMAAABi1XidAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAM1BMVEX///8welYwelYwelYwelYwelYwelZSkHLE2c/1+fdVkXT0+PYwelb3+vgwelYwelb///+WdkU7AAAAEHRSTlMAH5PN2SHL3/P93/3P/SLOb5OgqAAAAAFiS0dEAIgFHUgAAAAHdElNRQfhCwgRDBeRKnj1AAAArUlEQVRYw+3ZsQ6DIBhFYYWrorbK+z9tI9qmTmDzM9icM8M3YOJym6ao+F3ZlcJ+lFvnlekk5w571+5w1+eOXpSlvkuyk4YwRqvGMEguyV7TbOZuzZMeSZaCKRxjkA7Z7in2nh/ZGN6+MTIyMjIyMjIyMnJWNlffISMjI1+W7/gXRUZGRkZGRkZG/h+53gZUa7eqt7XV2weXCpvmcsylbjWVV9eVj8AnufxaHfkFVomvDM8dllUAAAAASUVORK5CYII=") no-repeat left top;
+		@extend .flexcenter;
+		height: 87px;
+		width: 87px;
+		display: flex;
+		flex-shrink: 0;	
+	}
+
+	&__text{
+		padding-left: 1.2rem;
+		padding-top: 1rem;
+	}
+
+}
+/* =/approach
+---------------------------*/
+
+
+/* =services
+---------------------------*/
+.services{
+	margin-top: 4rem;
+	.sqicons{
+		&-flexbox{
+			margin-top: -1.5rem;
+			margin-bottom: 4rem;
+		}		
+	}
+}
+/* =/services
+---------------------------*/
+
+
+/* =rubrics
+---------------------------*/
+.rubrics{
+	&__tab{
+		@include font-size(2.4);
+		font-family: "SegoeUIBoldItalic";
+		font-style: italic;
+		color: $color5;
+		li{
+			&.separator{
+				margin: 0 1.5rem;
+			}
+		}
+		a{
+			color: $color5;
+			text-decoration: none;
+			border-bottom: 1px dashed rgba($color3, 0);
+			&.current{
+				color: $color3;
+				border-bottom-color: rgba($color3, 1);
+			}
+		}
+	}
+}
+/* =/rubrics
+---------------------------*/

@@ -6,8 +6,8 @@ $color1:#000;
 $color2:#fff;
 $color3:#307a56;
 $color4:#333;
+$color5:#8c8c8c;
 
-$color5:#666;
 $color6:#ff5722;
 $color7:#80bbde;
 $color8:#292929;
@@ -113,6 +113,15 @@ input::-moz-focus-inner{
 	font-weight: normal;
 }
 
+@font-face {
+	font-family: "SegoeUIBoldItalic";
+	src: url("../fonts/SegoeUIBoldItalic/SegoeUIBoldItalic.eot");
+	src: url("../fonts/SegoeUIBoldItalic/SegoeUIBoldItalic.eot?#iefix")format("embedded-opentype"),
+	url("../fonts/SegoeUIBoldItalic/SegoeUIBoldItalic.woff") format("woff"),
+	url("../fonts/SegoeUIBoldItalic/SegoeUIBoldItalic.ttf") format("truetype");
+	font-style: normal;
+	font-weight: normal;
+}
 
 .cg{font-family: 'CenturyGothic';}
 .cgb{font-family: 'CenturyGothicBold';}
@@ -133,7 +142,7 @@ input::-moz-focus-inner{
 
 /*** standart classes *****/
 p{}
-a{color:#020000}
+a{color:#020000; @include transition;}
 h1{font-size:2.5rem}
 h2{font-size:2.4rem}
 h3{font-size:1.6rem}
@@ -194,13 +203,103 @@ input::-moz-focus-inner{
 	}
 }
 
+.flexbox{
+	@include flexbox;
+}
 
+.title{
+	@extend .bold;
+	@include font-size(2.4);
+	color: $color5;
+	text-transform: uppercase;
+	margin-bottom: .5rem;
+}
 
 /* =header
 ---------------------------*/
-header{
+.header{
+	&__nav{
+		margin-top: 4.5rem;
+		flex-basis: 61rem;
+	}
+	.contacts{
+		margin-left: 5.5rem;
+	}
 }
 
+.nav{
+	display: flex;
+	justify-content: space-around;
+	color: $color3;
+	width: 615px;
+	@extend .cg;
+	a{
+		color: $color3;
+		text-decoration: none;
+		border-bottom: 1px dashed rgba(255,255,255,0);
+		@include transition-param(border-bottom);
+		&:hover{
+			border-bottom-color: rgba($color3, 1);
+		}
+	}
+	li{
+
+	}
+}
+
+.contacts{
+	@include gradient-vertical(#8bbaa3, #317b57);
+	align-items: center;
+	display: flex;
+	flex-direction: column;
+	height: 12rem;
+	justify-content: center;
+	width: 24rem;
+	a{
+		color: $color2;
+	}
+	&__tel{
+		@extend .bold;
+		@include font-size(2.4); 
+		font-weight: bold;
+		text-decoration: none;
+	}
+	&__ring{
+		@extend .italic;
+		border-bottom: 1px dashed $color2;
+		margin-top: 1.2rem;
+		text-decoration: none;
+		text-transform: uppercase;
+		&:hover{
+			border-bottom-color: rgba($color2, 0);
+		}
+	}
+}
+
+.neck{
+	.logo{
+		margin-left: 4.5rem;
+	}
+	.writeus-link{
+		margin-left: 17.5rem;
+		position: relative;
+		top: -2.3rem;
+		text-decoration: none;
+		@extend .italic;
+		$color: $color3;
+		color: $color;
+		border-bottom: 1px dashed $color;
+		&:hover{
+			border-bottom-color: rgba($color, 0);
+		}
+	}
+}
+
+.logo{
+	img{
+		display: block;
+	}
+}
 /* =/header
 ---------------------------*/
 
@@ -245,8 +344,31 @@ header{
 }
 
 
+.text,
+.about{
+	p{
+		margin: 1rem 0;
+	}
+}
 
 
+.text{
+	margin: 1.5rem 0;
+}
+
+
+
+.text-right{
+	text-align: right;
+}
+
+.more{
+	@extend .italic;
+	a{
+		@extend .tdn;
+		color: $color3;
+	}
+}
 
 /* =footer
 ---------------------------*/
