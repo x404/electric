@@ -156,7 +156,7 @@ input::-moz-focus-inner {
 .cgi, .contacts__ring, .footer__navcopyright .copyright__right, .kreotif {
   font-family: 'CenturyGothicItalic'; }
 
-.bold, .title, .contacts__tel, .sqicons__item-title, .feedback__form .submit {
+.bold, .title, .contacts__tel, .slider__text, .sqicons__item-title, .feedback__form .submit {
   font-family: "SegoeUIBold"; }
 
 .italic, .neck .writeus-link, .more, .policy, .footer__cities, .rubrics__news, .feedback__form .row .form-control, .feedback__form .row textarea, .feedback__form .submit {
@@ -284,18 +284,20 @@ input::-moz-focus-inner {
     background-repeat: repeat-x;
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FF317B57', endColorstr='#FF8BBAA3', GradientType=0); }
 
-.neck .logo {
-  margin-left: 4.5rem; }
-
-.neck .writeus-link {
-  margin-left: 17.5rem;
+.neck {
   position: relative;
-  top: -2.3rem;
-  text-decoration: none;
-  color: #307a56;
-  border-bottom: 1px dashed #307a56; }
-  .neck .writeus-link:hover {
-    border-bottom-color: rgba(48, 122, 86, 0); }
+  z-index: 10; }
+  .neck .logo {
+    margin-left: 4.5rem; }
+  .neck .writeus-link {
+    margin-left: 17.5rem;
+    position: relative;
+    top: -2.3rem;
+    text-decoration: none;
+    color: #307a56;
+    border-bottom: 1px dashed #307a56; }
+    .neck .writeus-link:hover {
+      border-bottom-color: rgba(48, 122, 86, 0); }
 
 .logo img {
   display: block; }
@@ -479,11 +481,56 @@ textarea {
   .kreotif a {
     color: #307a56; }
 
+.slider {
+  height: 600px;
+  position: relative;
+  margin-top: -110px;
+  margin-bottom: -340px;
+  z-index: 9; }
+  .slider__item {
+    text-align: center; }
+    .slider__item img {
+      margin-left: auto;
+      margin-right: auto; }
+  .slider__text {
+    font-size: 18px;
+    font-size: 1.8rem;
+    background: rgba(0, 0, 0, 0.65);
+    color: #fff;
+    left: 50%;
+    margin-left: -550px;
+    padding: .5rem 1rem;
+    position: absolute;
+    text-transform: uppercase;
+    top: 170px; }
+  .slider .bx-controls {
+    position: absolute;
+    top: 0;
+    width: 100%; }
+    .slider .bx-controls .bx-pager {
+      left: 59%;
+      top: 300px;
+      width: 150px;
+      text-align: left; }
+  .slider .bx-wrapper .bx-pager.bx-default-pager a {
+    border: 4px solid #307a56;
+    background: #fff;
+    width: 16px;
+    height: 16px; }
+    .slider .bx-wrapper .bx-pager.bx-default-pager a.active {
+      background-color: #307a56;
+      border-color: #fff; }
+
 /* =about
 ---------------------------*/
 .about {
+  height: 360px;
   margin-bottom: 4rem;
-  width: 55rem; }
+  position: relative;
+  width: 55rem;
+  z-index: 10; }
+  .about .more {
+    text-align: right; }
 
 /* =/about
 ---------------------------*/

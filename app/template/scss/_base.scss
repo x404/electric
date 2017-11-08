@@ -290,6 +290,8 @@ input::-moz-focus-inner{
 }
 
 .neck{
+	position: relative;
+	z-index: 10;
 	.logo{
 		margin-left: 4.5rem;
 	}

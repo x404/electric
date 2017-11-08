@@ -1,7 +1,13 @@
 $(document).ready(function(){
 
+	$('#foo1').bxSlider({
+		mode: "fade",
+		controls: false
+	});
+
+
 	// карусель
-	$('#foo1').owlCarousel({
+	$('#foo11111').owlCarousel({
 		loop:false,
 		nav:true,
 		dots: false,
