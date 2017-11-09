@@ -1,0 +1,281 @@
+<!DOCTYPE HTML>
+<html lang="ru">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="" />
+<meta name="description" content="" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+<link rel="icon" href="/favicon.ico" type="image/x-icon"/>
+<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon"/>
+
+<meta name="robots" content="noindex,nofollow" />
+<!-- TemplateBeginEditable name="doctitle" -->
+<title>Главная</title>
+<!-- TemplateEndEditable -->
+<link rel="stylesheet" href="/template/css/jquery.bxslider.css" />
+<link rel="stylesheet" href="/template/css/styles.min.css" />
+<script src="/template/js/libs.min.js"></script>
+<script src="/template/js/jquery.bxslider.min.js"></script>
+
+
+<!--[if !IE]><<!--></!-->
+<script>if(/*@cc_on!@*/false){document.documentElement.className+=' ie10';}</script>
+<!--<![endif]-->
+
+<!--[if IE]>
+	<link href="/template/css/styles-ie.css" rel="stylesheet" type="text/css" />
+<![endif]-->
+
+<!--[if lt IE 9]>
+	<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+
+<!-- TemplateBeginEditable name="head" -->
+<!-- TemplateEndEditable -->
+</head>
+<body>
+
+<!-- =header -->
+<header class="header header-homepage">
+	<div class="container">
+		<div class="flexbox">
+		<!-- =navbar -->
+		<nav id="navbar" class="header__nav">
+			<ul class="nav nav-tabs" role="tablist">
+				<li><a class="nav-link" href="#" title="">Главная</a></li>
+				<li><a class="nav-link" href="#" title="">О нас</a></li>
+				<li class="active">
+					<a class="nav-link" href="#" title="">Услуги</a>
+					<div class="subnav">
+						<ul>
+							<li class="active"><a href="#">Электромонтажные работы</a></li>
+							<li><a href="#">Монтаж электропроводки</a></li>
+							<li><a href="#">Разводка электрики</a></li>
+							<li><a href="#">Замена проводки</a></li>
+							<li><a href="#">Ремонт электрики</a></li>
+						</ul>
+					</div>
+				</li>
+				<li><a class="nav-link" href="#" title="">Цены</a></li>
+				<li><a class="nav-link" href="#" title="">Наши работы</a></li>
+				<li>
+					<a class="nav-link" href="#" title="">Интересное</a>
+					<div class="subnav">
+						<ul>
+							<li><a href="#" title="">Статьи</a></li>
+							<li><a href="#" title="">Новости</a></li>
+							<li><a href="#" title="">Вопрос? Ответ!</a></li>
+							<li><a href="#" title="">Отзывы о нашей работе</a></li>
+						</ul>
+					</div>
+				</li>
+				<li><a class="nav-link" href="#" title="">Контакты</a></li>
+			</ul>
+			<div class="show-sm">
+				<a class="hover-a" href="tel:74957840948">+7 (495) 784 0948</a>
+				<a class="hover-a" href="mailto:sales@shop-recovery.ru">sales@shop-recovery.ru</a>
+			</div>
+		</nav>
+		<button type="button" class="navbar-toggle">
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+		</button>
+		<button type="button" class="close-menu"><img src="/template/images/close-modal.png" alt=""></button>
+		<!-- =/navbar -->
+		
+		<!-- =contacts -->
+		<div class="contacts">
+			<a href="tel:+74951471711" class="contacts__tel">+7 (495) 147-1711</a>
+			<a href="#" title="" class="contacts__ring" data-toggle="modal" data-target="#callback" role="button">Заказать звонок</a>
+		</div>
+		<!-- =/contacts -->
+		</div>
+	</div>
+</header>
+<!-- =/header -->
+
+
+<!-- =main -->
+<div class="main">
+	<div class="container">
+<!-- TemplateBeginEditable name="main" -->
+		<!-- =breadcrumbs -->
+		<div class="breadcrumbs">
+			<ul class="B_crumbBox">
+				<li class="B_crumb"><a href="/" title="" class="B_crumb">Головна</a></li>
+				<li class="B_lastCrumb"><span class="B_currentCrumb"></span></li>
+			</ul>
+		</div>
+		<!-- =/breadcrumbs -->
+		
+		
+<!-- TemplateEndEditable -->			
+	</div>
+</div>
+<!-- =/main-->
+
+<!-- =footer -->
+<footer>
+	<div class="footer__top">
+		<div class="container">
+			<div class="flexbox">
+				<div class="footer__cities">
+					<p>Мы работаем в городах Подмосковья:</p>
+					<p><a href="#" title="Мытищи">Мытищи</a>, <a href="#" title="Королёв">Королёв</a>, <a href="#" title="Юбилейный">Юбилейный</a>, <a href="#" title="Пушкино">Пушкино</a>, <a href="#" title="Ивантеевка">Ивантеевка</a>, <a href="#" title="Фрязино">Фрязино</a>, <a href="#" title="Щелково">Щелково</a>, <a href="#" title="Балашиха">Балашиха</a>, <a href="#" title="Софрино">Софрино</a>, <a href="#" title="Красноармейск">Красноармейск</a>, <a href="#" title="Фряново">Фряново</a>, <a href="#" title="Хотьково">Хотьково</a>,  <a href="#" title="Сергивев Посад">СергиевПосад</a>, <a href="#" title="Пересвет">Пересвет</a>, <a href="#" title="Краснозаводск">Краснозаводск</a>, <a href="#" title="Серпухов">Серпухов</a>. </p>
+				</div>
+				<div class="footer__logo">
+					<a href="/" title=""><img src="/template/images/footerlogo.png" alt="" /></a>
+				</div>
+				<div class="footer__social">
+					<div class="footer__social-icons">
+						<a href="#" title="" target="_blank"><img src="/template/images/social/fb.gif" width="35" height="35" alt="Facebook"></a>
+						<a href="#" title="" target="_blank"><img src="/template/images/social/vk.gif" width="35" height="35" alt="Вконтакте"></a>
+						<a href="#" title="" target="_blank"><img src="/template/images/social/twitter.gif" width="35" height="35" alt="Twitter"></a>
+						<a href="#" title="" target="_blank"><img src="/template/images/social/odn.gif" width="35" height="35" alt="Одноклассники"></a>
+						<a href="#" title="" target="_blank"><img src="/template/images/social/inst.gif" width="35" height="35" alt="Instagram"></a>
+						<a href="#" title="" target="_blank"><img src="/template/images/social/googleplus.gif" width="35" height="35" alt="Google Plus"></a>
+						<a href="#" title="" target="_blank"><img src="/template/images/social/play.gif" width="35" height="35" alt=""></a>
+						<a href="#" title="" target="_blank"><img src="/template/images/social/smile.gif" width="35" height="35" alt=""></a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="footer__bottom">
+		<div class="container">
+			<div class="flexbox">
+				<div class="footer__navcopyright">
+					<ul class="nav" role="tablist">
+						<li class="active"><a href="#" title="">Главная</a></li>
+						<li><a href="#" title="">О нас</a></li>
+						<li><a href="#" title="">Услуги</a></li>
+						<li><a href="#" title="">Цены</a></li>
+						<li><a href="#" title="">Наши работы</a></li>
+						<li><a href="#" title="">Интересное</a></li>
+						<li><a href="#" title="">Контакты</a></li>
+					</ul>
+					<div class="copyright flexbox">
+						<div class="copyright__left">Copyright  © 2017</div>
+						<div class="copyright__right">
+							<a href="/" title="">Электромонтажные работы.</a> <br>
+							Современно. Качественно. Надежно.
+						</div>
+					</div>
+				</div>
+
+				<div class="contacts contacts-footer">
+					<a href="tel:+74951471711" class="contacts__tel">+7 (495) 147-1711</a>
+					<a href="#" title="" class="contacts__ring" data-toggle="modal" data-target="#callback" role="button">Заказать звонок</a>
+				</div>
+
+				<div class="kreotif">
+					Digital Agency Kreotif <br>
+					<a href="https://kreotif.com">создание сайтов <br> информация о сайте</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</footer>
+<!-- =/footer -->
+
+
+<!-- =modal callback -->
+<div class="modal fade callback" id="callback" tabindex="-1" role="dialog" aria-hidden="true">
+	<div class="modal-dialog" role="document">
+		<div class="container">
+			<button type="button" data-dismiss="modal" class="close-modal">< <span>Х</span> ></button>
+			<form action="#" method="post" class="form-policy" id="callback-form">
+				<fieldset>
+					<input type="text" name="name" class="form-control required" value="" placeholder="Ваше имя" tabindex="0" autofocus>
+					<input type="tel" name="tel" class="form-control required" value="" placeholder="Ваш номер телефона" tabindex="1">
+					<input type="submit" name="callback_submit" class="submit" tabindex="2" value="позвонить мне" />
+
+					<div class="policy">
+						<input type="checkbox" id="checkbox1" value="" name="checkbox" checked="checked" class="user-access">
+						<label for="checkbox1">Я Согласен на обработку персональных данных и принимаю условия <a href="#.pdf" title="" target="_blank">Пользовательского соглашения</a></label>
+					</div>
+				</fieldset>
+			</form>
+		</div>
+	</div>
+</div>
+<!-- =/modal callback -->
+
+
+<!-- =modal writeus -->
+<div class="modal fade writeus" id="writeus" tabindex="-1" role="dialog" aria-hidden="true">
+	<div class="modal-dialog" role="document">
+		<div class="container">
+			<button type="button" data-dismiss="modal" class="close-modal">< <span>Х</span> ></button>
+			<form action="#" method="post" class="form-policy" id="writeus-form">
+				<fieldset>
+					<div class="row">
+						<input name="name" type="text" value="" class="form-control required" required placeholder="ваше имя *" aria-required="true" />
+						<input name="tel" type="tel" value="" class="form-control required" required placeholder="номер телефона *" aria-required="true" />
+						<input name="email" type="email" value="" class="form-control required email" required placeholder="ваш e-mail *" aria-required="true" />
+					</div>
+					<textarea name="msg" id="msg" cols="30" rows="10" placeholder="текст вашего сообщения" class="form-control"></textarea>
+					<input type="submit" name="feedback" class="submit" value="отправить" />
+					<div class="qorder__form-row policy">
+						<input type="checkbox" id="checkbox3" value="" name="checkbox" checked="checked" class="user-access">
+						<label for="checkbox3">Я Согласен на обработку персональных данных и принимаю условия <a href="#.pdf" title="" target="_blank">Пользовательского соглашения</a></label>
+					</div>
+				</fieldset>
+			</form>
+		</div>
+	</div>
+</div>
+<!-- =/modal writeus -->
+
+
+
+<div id="outdated"></div>
+<link rel="stylesheet" property="stylesheet" href="../outdatedbrowser/outdatedbrowser.min.css" />
+<script src="/outdatedbrowser/outdatedbrowser.min.js"></script>
+
+<script src="/template/js/owl.carousel.min.js"></script>
+<link rel="stylesheet" property="stylesheet" href="../template/css/owl.carousel.css">
+
+<script src="https://ajax.microsoft.com/ajax/jquery.validate/1.15.0/jquery.validate.min.js"></script>
+<script>window.jQuery || document.write('<script src="template/js/jquery.validate.min.js"><\/script>')</script>
+<script src="/template/js/engine.js"></script>
+
+<script src="https://api-maps.yandex.ru/2.1.26/?lang=ru_UA"></script>
+
+<script>
+var map;
+var myCollection;	
+ymaps.ready(function () {
+	map = new ymaps.Map('ymap', {
+		center: [55.910526, 38.017170],
+		zoom: 13
+	});
+
+	myCollection = new ymaps.GeoObjectCollection(null, {
+		preset: 'islands#redDotIcon'
+	});
+	myCollection.add(new ymaps.Placemark(
+		[55.910526, 38.017170],
+		{
+			hintContent: 'SchelkovoELECTRIC',
+			balloonContent: ''
+		}
+	));
+
+	map.behaviors.disable('scrollZoom'); 
+
+	map.geoObjects.add(myCollection);
+
+	map.events.add('click', function onMapClick(e) {
+		if(map.behaviors.isEnabled('scrollZoom')) {
+			map.events.remove('click', onMapClick);
+		} else {
+			map.behaviors.enable(['scrollZoom']);
+		}
+	});
+})
+</script>
+</body>
+</html>
