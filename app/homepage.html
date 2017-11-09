@@ -65,7 +65,7 @@
 	    		<!-- =contacts -->
 				<div class="contacts">
 					<a href="tel:+74951471711" class="contacts__tel">+7 (495) 147-1711</a>
-					<a href="#" title="" class="contacts__ring">Заказать звонок</a>
+					<a href="#" title="" class="contacts__ring" data-toggle="modal" data-target="#callback" role="button">Заказать звонок</a>
 				</div>
 	    		<!-- =/contacts -->
     		</div>
@@ -588,7 +588,7 @@
 
 				<div class="contacts contacts-footer">
 					<a href="tel:+74951471711" class="contacts__tel">+7 (495) 147-1711</a>
-					<a href="#" title="" class="contacts__ring">Заказать звонок</a>
+					<a href="#" title="" class="contacts__ring" data-toggle="modal" data-target="#callback" role="button">Заказать звонок</a>
 				</div>
 
 				<div class="kreotif">
@@ -600,6 +600,30 @@
 	</div>
 </footer>
 <!-- =/footer -->
+
+
+<!-- =modal callback -->
+<div class="modal fade callback" id="callback" tabindex="-1" role="dialog" aria-hidden="true">
+	<div class="modal-dialog" role="document">
+		<div class="container">
+			<button type="button" data-dismiss="modal" class="close-modal">< <span>Х</span> ></button>
+			<form action="#" method="post" class="form-policy" id="callback-form">
+				<fieldset>
+					<input type="text" name="name" class="form-control required" value="" placeholder="Ваше имя" tabindex="0" autofocus>
+					<input type="tel" name="tel" class="form-control required" value="" placeholder="Ваш номер телефона" tabindex="1">
+					<input type="submit" name="callback_submit" class="submit" tabindex="2" value="позвонить мне" />
+
+					<div class="policy">
+						<input type="checkbox" id="checkbox1" value="" name="checkbox" checked="checked" class="user-access">
+						<label for="checkbox1">Я Согласен на обработку персональных данных и принимаю условия <a href="#.pdf" title="" target="_blank">Пользовательского соглашения</a></label>
+					</div>
+				</fieldset>
+			</form>
+		</div>
+	</div>
+</div>
+<!-- =/modal callback -->
+
 
 
 <div id="outdated"></div>

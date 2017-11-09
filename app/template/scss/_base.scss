@@ -10,7 +10,7 @@ $color5:#8c8c8c;
 $color6:#ccc;
 $color7:#e6e6e6;
 
-$color8:#292929;
+$color8:#f7f7f7;
 
 
 * {
@@ -257,6 +257,10 @@ input::-moz-focus-inner{
 	@include gradient-vertical(#8bbaa3, #317b57);
 }
 
+.gradientflip-green{
+	@include gradient-vertical(#317b57, #8bbaa3);
+}
+
 .contacts{
 	@extend .gradient-green;
 	align-items: center;
@@ -420,7 +424,8 @@ input::-moz-focus-inner{
 
 
 .user-access + label {
-  cursor: pointer;
+	cursor: pointer;
+	color: $color1;
 }
 
 .user-access:not(checked) {
@@ -434,6 +439,7 @@ input::-moz-focus-inner{
 }
 /* Оформление первой части чекбокса в выключенном состоянии (фон). */
 .user-access:not(checked) + label:before {
+	background-color: $color2;
   content: '';
   position: absolute;
   top: -3px;
@@ -449,6 +455,7 @@ input::-moz-focus-inner{
 }
 /* Сдвигаем переключатель чекбокса, когда он включен. */
 .user-access:checked + label:after {
+	color: $color3;
 	content: '*';
 	position: absolute;
 	top: -3px;
@@ -581,6 +588,10 @@ textarea{
 	}
 }
 
+
+.form-control.error{
+	border-color: red !important
+}
 
 label.error{
 	display: none !important;

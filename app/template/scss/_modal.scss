@@ -1,0 +1,225 @@
+// .modal-open      - body class for killing the scroll
+// .modal           - container to scroll within
+// .modal-dialog    - positioning shell for the actual modal
+// .modal-content   - actual modal w/ bg and corners and stuff
+
+
+// Kill the scroll on the body
+.modal-open {
+  overflow: hidden;
+  .outerwrapper{
+  	filter: blur(6px);
+  }
+}
+
+// Container that the modal scrolls within
+.modal {
+  position: fixed;
+  top: 16%;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 9999;
+  display: none;
+  overflow: hidden;
+  // Prevent Chrome on Windows from adding a focus outline. For details, see
+  // https://github.com/twbs/bootstrap/pull/10951.
+  outline: 0;
+  // We deliberately don't use `-webkit-overflow-scrolling: touch;` due to a
+  // gnarly iOS Safari bug: https://bugs.webkit.org/show_bug.cgi?id=158342
+  // See also https://github.com/twbs/bootstrap/issues/17695
+
+  // When fading in the modal, animate it to slide down
+  &.fade .modal-dialog {
+  	transition: transform .3s ease-out,-webkit-transform .3s ease-out;
+    transform: translate(0, -25%);
+  }
+  &.show .modal-dialog { transform: translate(0, 0); }
+}
+.modal-open .modal {
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+// Shell div to position the modal with bottom padding
+.modal-dialog {
+	background-color: $color8;
+	position: relative;
+  width: auto;
+  // margin: 10px;
+  top: 0;
+  padding-top: 40px;
+  padding-bottom: 40px;
+	.container{
+		position: relative;
+	}
+
+	.close-modal{
+		top: -36px;
+		right: -6px;
+	}
+
+	.title{
+		@include font-size(1.8);
+		color: $color8;
+		@include font-size(1.8);
+		@extend .italic;
+		text-transform: uppercase;
+		padding-bottom: 1rem;
+	}
+}
+
+// Actual modal
+.modal-content {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	outline: 0;
+}
+
+// Modal background
+.modal-backdrop {
+	position: fixed;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	z-index: 1071;
+	background-color: #000;
+
+	// Fade for backdrop
+	&.fade { opacity: 0; }
+	&.show { opacity: .5 !important }
+}
+
+
+
+
+// Modal body
+// Where all modal content resides (sibling of .modal-header and .modal-footer)
+.modal-body {
+  position: relative;
+  flex: 1 1 auto;
+}
+
+
+// Measure scrollbar width for padding body during modal show/hide
+.modal-scrollbar-measure {
+  position: absolute;
+  top: -9999px;
+  width: 50px;
+  height: 50px;
+  overflow: scroll;
+}
+
+.close-modal{
+	background: none;
+	border: none;
+	color: $color4;
+	position: absolute;
+	right: 0;
+	top: 0;
+	z-index: 99;
+	cursor: pointer;
+	&:hover{
+		span{
+			text-decoration: underline;
+		}
+	}
+	span{
+		@extend .bold;
+		color: $color3;
+	}
+}
+
+form{
+	.thank{
+		@include font-size(1.6);
+		background-color: $color2;
+		border: 1px solid $color4;
+		color: $color3;
+		margin-bottom: 3rem;
+		padding: 2rem 0;
+	}
+}
+
+#callback{
+	.modal-dialog{
+		margin-left: 0;
+		margin-right: 0;
+		margin-top: 98px;
+		padding: 40px 0 12px;
+		width: 100%;
+	}
+
+
+	form{
+		// background-color: $color2;
+		@extend .italic;
+		$color: $color3;
+		.form-control{
+			@extend .italic;
+			@include font-size(2.2);
+			border-radius: 2px;
+			border:1px solid $color;
+			color: $color3;
+			height: 3.8rem;
+			margin-bottom: 1rem;
+			text-align: center;
+			width: 100%;
+			&:disabled{
+				background-color: #EAEBE3;
+			}
+		}
+		.submit{
+			@extend .italic;
+			@include transition;
+			@extend .gradient-green;
+			@include font-size(1.4);
+			border: none;
+			color: $color2;
+			cursor: pointer;
+			margin-left: auto;
+			margin-right: auto;
+			display: block;
+			margin-top: 1.8rem;
+			padding: 1.2rem 3.7rem;
+			border-radius: 4px;
+			&:hover{
+				// opacity: .9;
+				@extend .gradientflip-green;
+			}
+		}
+
+		.policy{
+			margin-top: 1.5rem;
+			margin-bottom: 1rem;
+			color: $color3;
+			a{
+				color: $color4;
+				@extend .tdn;
+			}
+		}
+	}
+}
+
+#about{
+	.modal__content{
+		.title{
+			padding-bottom: .5rem;
+			text-transform: uppercase;
+		}
+
+		@extend .italic;
+		background-color: $color2;
+		border: 1px solid $color4;
+		color: $color3;
+		line-height: 1.7;
+		padding: 2rem 1.5rem;
+	}
+}
+
+.submit:disabled{
+	cursor: default !important;
+	background-color: #ccc !important;
+}

@@ -99,6 +99,7 @@ $(document).ready(function(){
 
 
 	let thankTxt = '<div class="thank text-center"><p>Спасибо! Ваше сообщение успешно отправлено</p></div>',
+		thankcallback = '<div class="thank text-center"><p>В ближайщее время с вами свяжутся наши менеджеры для уточнения всех деталей.</p></div>',
 		errorTxt = 'Возникла ошибка';
 
 	// validation
@@ -110,6 +111,20 @@ $(document).ready(function(){
 					$('.feedback__form').append(thankTxt);
 					$('.feedback__form fieldset').hide();
 					startClock('feedback-form');
+				}
+			}).fail(function(error){alert(errorTxt)});
+		}
+	}); 
+
+	// validation quick form
+	$('#callback-form').validate({
+		submitHandler: function(form){
+			var strSubmit=$(form).serialize();
+			$.ajax({type: "POST",url: $(form).attr('action'),data: strSubmit,
+				success: function(){
+					console.log("success");
+					$('#callback-form').html(thankcallback);
+					startClock('callback');
 				}
 			}).fail(function(error){alert(errorTxt)});
 		}
@@ -143,7 +158,7 @@ addLoadEvent(function(){
 
 
 var timer,
-	sec = 10;
+	sec = 3;
 
 function showTime(sendform){
 	sec = sec-1;
@@ -157,6 +172,7 @@ function showTime(sendform){
 					$('.qorder__box .form-control, .qorder__box textarea').val('');
 				});
 				break;
+
 			case 'feedback-form':
 				$('.feedback .thank').fadeOut('normal',function(){
 					$('.feedback .thank').remove();
@@ -176,7 +192,7 @@ function showTime(sendform){
 function stopClock(){
 	window.clearInterval(timer);
 	timer = null;
-	sec = 10;
+	sec = 3;
 }
 
 function startClock(sendform){
