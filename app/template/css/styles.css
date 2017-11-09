@@ -156,10 +156,10 @@ input::-moz-focus-inner {
 .cgi, .contacts__ring, .footer__navcopyright .copyright__right, .kreotif {
   font-family: 'CenturyGothicItalic'; }
 
-.bold, .title, .contacts__tel, .slider__text, .services__title, .sqicons__item-title, .feedback__form .submit {
+.bold, .title, .contacts__tel, .slider__text, .services__title, .sqicons__item-title, .rubrics__article-title, .feedback__form .submit {
   font-family: "SegoeUIBold"; }
 
-.italic, .neck .writeus-link, .more, .policy, .footer__cities, .rubrics__news, .feedback__form .row .form-control, .feedback__form .row textarea, .feedback__form .submit {
+.italic, .neck .writeus-link, .more, .policy, .footer__cities, .rubrics__news, .rubrics__faq, .rubrics__reviews, .feedback__form .row .form-control, .feedback__form .row textarea, .feedback__form .submit {
   font-family: "SegoeUIItalic"; }
 
 .outerwrapper {
@@ -189,9 +189,9 @@ input::-moz-focus-inner {
   border: 0;
   padding: 0; }
 
-@font-face {}.tdn, .more a, .policy a, .footer__cities a, .kreotif a, .rubrics__news a, .feedback .vcard .email {
+@font-face {}.tdn, .more a, .policy a, .footer__cities a, .kreotif a, .rubrics__news a, .rubrics__faq a, .rubrics__reviews a, .feedback .vcard .email {
   text-decoration: none; }
-  .tdn:hover, .more a:hover, .policy a:hover, .footer__cities a:hover, .kreotif a:hover, .rubrics__news a:hover, .feedback .vcard .email:hover {
+  .tdn:hover, .more a:hover, .policy a:hover, .footer__cities a:hover, .kreotif a:hover, .rubrics__news a:hover, .rubrics__faq a:hover, .rubrics__reviews a:hover, .feedback .vcard .email:hover {
     text-decoration: underline; }
 
 .tdu {
@@ -251,12 +251,14 @@ input::-moz-focus-inner {
     .nav a:hover {
       border-bottom-color: #307a56; }
 
-.contacts {
+.gradient-green, .contacts, .rubrics__article-title {
   background-image: -webkit-linear-gradient(top, #8bbaa3 0%, #317b57 100%);
   background-image: -o-linear-gradient(top, #8bbaa3 0%, #317b57 100%);
   background-image: linear-gradient(to bottom, #8bbaa3 0%, #317b57 100%);
   background-repeat: repeat-x;
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FF8BBAA3', endColorstr='#FF317B57', GradientType=0);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FF8BBAA3', endColorstr='#FF317B57', GradientType=0); }
+
+.contacts {
   align-items: center;
   display: flex;
   flex-direction: column;
@@ -430,6 +432,9 @@ textarea {
       color: #333; }
       .footer__navcopyright .nav a:hover {
         color: #307a56; }
+    .footer__navcopyright .nav .active a, .footer__navcopyright .nav .active span {
+      color: #307a56;
+      border-bottom-color: #307a56; }
   .footer__navcopyright .copyright {
     line-height: 1.5;
     padding-top: 2rem; }
@@ -481,7 +486,7 @@ textarea {
   .kreotif a {
     color: #307a56; }
 
-.flexcenter, .footer__logo, .footer__social, .sqicons__pic {
+.flexcenter, .footer__logo, .footer__social, .sqicons__pic, .rubrics__article-title {
   justify-content: center;
   align-items: center; }
 
@@ -644,49 +649,92 @@ textarea {
 
 /* =/services
 ---------------------------*/
+@keyframes fadein {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+
 /* =rubrics
 ---------------------------*/
-.rubrics__nav {
-  font-size: 24px;
-  font-size: 2.4rem;
-  font-family: "SegoeUIBoldItalic";
-  font-style: italic;
-  color: #8c8c8c; }
-  .rubrics__nav li.separator {
-    margin: 0 1.5rem; }
-  .rubrics__nav a {
+.rubrics {
+  margin-bottom: 2rem; }
+  .rubrics__nav {
+    font-size: 24px;
+    font-size: 2.4rem;
     color: #8c8c8c;
-    text-decoration: none;
-    border-bottom: 1px dashed rgba(48, 122, 86, 0); }
-    .rubrics__nav a.current, .rubrics__nav a:hover {
-      color: #307a56;
-      border-bottom-color: #307a56; }
-
-.rubrics .tab {
-  display: none; }
-  .rubrics .tab-current {
-    display: block !important; }
-
-.rubrics__body {
-  margin-top: 2rem; }
-
-.rubrics #tab-news .flexbox {
-  justify-content: space-around;
-  margin-left: auto;
-  margin-right: auto;
-  width: 85%; }
-
-.rubrics__news-item {
-  padding: 1rem 1rem 2rem;
-  box-shadow: 0 0 5px #ccc;
-  width: 22rem; }
-
-.rubrics__news h3 {
-  font-size: 14px;
-  font-size: 1.4rem;
-  font-family: "SegoeUIBoldItalic";
-  height: 9.5rem;
-  padding-top: .8rem; }
+    font-family: "SegoeUIBoldItalic";
+    font-style: italic; }
+    .rubrics__nav li.separator {
+      margin: 0 1.5rem; }
+    .rubrics__nav a {
+      border-bottom: 1px dashed rgba(48, 122, 86, 0);
+      color: #8c8c8c;
+      text-decoration: none; }
+      .rubrics__nav a.current, .rubrics__nav a:hover {
+        color: #307a56;
+        border-bottom-color: #307a56; }
+  .rubrics .tab {
+    display: none; }
+    .rubrics .tab-current {
+      display: block !important;
+      animation: fadein .5s; }
+  .rubrics__body {
+    margin-top: 2rem; }
+  .rubrics #tab-news .flexbox,
+  .rubrics #tab-articles .flexbox,
+  .rubrics #tab-faq .flexbox,
+  .rubrics #tab-reviews .flexbox {
+    justify-content: space-around;
+    margin-left: auto;
+    margin-right: auto;
+    width: 85%; }
+  .rubrics__news-item, .rubrics__faq-item, .rubrics__reviews-item {
+    box-shadow: 0 0 5px #ccc;
+    padding: 1rem 1rem 2rem;
+    width: 22rem; }
+  .rubrics__news-title, .rubrics__faq-title, .rubrics__reviews-title {
+    font-size: 14px;
+    font-size: 1.4rem;
+    font-family: "SegoeUIBoldItalic";
+    height: 9.5rem;
+    padding-top: .8rem; }
+  .rubrics__news a:hover, .rubrics__faq a:hover, .rubrics__reviews a:hover {
+    color: #307a56; }
+  .rubrics__article {
+    width: 219px;
+    padding: 6px;
+    border: 1px solid #e9e9e9;
+    box-shadow: 0 0 5px #ccc; }
+    .rubrics__article-link {
+      text-decoration: none; }
+      .rubrics__article-link:hover .rubrics__article-title {
+        filter: grayscale(0); }
+      .rubrics__article-link:hover .rubrics__article-pic {
+        opacity: 1; }
+    .rubrics__article-pic {
+      -webkit-transition: opacity 0.2s ease-out;
+      transition: opacity 0.2s ease-out;
+      opacity: .8; }
+      .rubrics__article-pic img {
+        vertical-align: top; }
+    .rubrics__article-title {
+      font-size: 15px;
+      font-size: 1.5rem;
+      -webkit-transition: filter 0.2s ease-out;
+      transition: filter 0.2s ease-out;
+      color: #fff;
+      display: flex;
+      filter: grayscale(1);
+      height: 104px;
+      text-align: center;
+      text-transform: uppercase;
+      width: 100%; }
+  .rubrics__reviews-title {
+    font-family: 'CenturyGothicItalic' !important;
+    font-weight: normal;
+    height: auto;
+    margin-bottom: 2rem; }
 
 /* =/rubrics
 ---------------------------*/

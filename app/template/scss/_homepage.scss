@@ -216,24 +216,30 @@ $h1 : 360px;
 /* =/services
 ---------------------------*/
 
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
 
 /* =rubrics
 ---------------------------*/
 .rubrics{
+	margin-bottom: 2rem;
 	&__nav{
 		@include font-size(2.4);
+		color: $color5;
 		font-family: "SegoeUIBoldItalic";
 		font-style: italic;
-		color: $color5;
 		li{
 			&.separator{
 				margin: 0 1.5rem;
 			}
 		}
 		a{
+			border-bottom: 1px dashed rgba($color3, 0);
 			color: $color5;
 			text-decoration: none;
-			border-bottom: 1px dashed rgba($color3, 0);
 			&.current,
 			&:hover{
 				color: $color3;
@@ -246,6 +252,7 @@ $h1 : 360px;
 		display: none;
 		&-current{
 			display: block !important;
+			animation: fadein .5s;
 		}
 	}
 
@@ -253,28 +260,31 @@ $h1 : 360px;
 		margin-top: 2rem;
 	}
 	
-	#tab-news{
+	#tab-news,
+	#tab-articles,
+	#tab-faq,
+	#tab-reviews
+	{
 		.flexbox{
 			justify-content: space-around;
 			margin-left: auto;
 			margin-right: auto;
 			width: 85%;
 		}
-
 	}
 
-	&__news{
+	// news
+	&__news,
+	&__faq,
+	&__reviews{
 		@extend .italic;
 		&-item{
-			padding: 1rem 1rem 2rem;
 			box-shadow: 0 0 5px #ccc;
+			padding: 1rem 1rem 2rem;
 			width: 22rem;
 		}
-		.date{
 
-		}
-
-		h3{
+		&-title{
 			@include font-size(1.4);
 			font-family: "SegoeUIBoldItalic";
 			height: 9.5rem;
@@ -283,6 +293,61 @@ $h1 : 360px;
 
 		a{
 			@extend .tdn;
+			&:hover{
+				color: $color3;
+			}
+		}
+	}
+
+	// article
+	&__article{
+		width: 219px;
+		padding: 6px;
+		border: 1px solid #e9e9e9;
+		box-shadow: 0 0 5px #ccc;
+		&-link{
+			text-decoration: none;
+			&:hover{
+				.rubrics__article{
+					&-title{
+						filter: grayscale(0);
+					}
+					&-pic{
+						opacity: 1;
+					}
+				}
+			}
+		}
+		&-pic{
+			@include transition-param;
+			opacity: .8;
+			img{
+				vertical-align: top;
+			}
+		}
+		&-title{
+			@extend .bold;
+			@extend .flexcenter;
+			@extend .gradient-green;
+			@include font-size(1.5);
+			@include transition-param(filter);
+			color: $color2;
+			display: flex;
+			filter: grayscale(1);
+			height: 104px;
+			text-align: center;
+			text-transform: uppercase;
+			width: 100%;
+		}
+	}
+
+	// reviews
+	&__reviews{
+		&-title{
+			font-family: 'CenturyGothicItalic' !important;
+			font-weight: normal;
+			height: auto;
+			margin-bottom: 2rem;
 		}
 	}
 }

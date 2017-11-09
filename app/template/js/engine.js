@@ -1,12 +1,8 @@
 $(document).ready(function(){
-
 	$('#foo1').bxSlider({
 		mode: "fade",
 		controls: false
 	});
-
-	// $('#foo2').bxSlider({
-	// });
 
 	// карусель
 	$('#foo2').owlCarousel({
@@ -88,6 +84,17 @@ $(document).ready(function(){
 			};
 		init();
 	});	
+
+	$('.rubrics__nav a').click(function(e){
+		e.preventDefault();
+		let $this = $(this),
+			target = $this.data('target');
+
+		$('.rubrics__nav a.current').removeClass('current');
+		$this.addClass('current');
+		$('.rubrics__body .tab-current').removeClass('tab-current');
+		$(target).addClass('tab-current');
+	})
 });
 
 // =заглушка для IE

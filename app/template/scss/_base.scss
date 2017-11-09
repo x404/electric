@@ -256,8 +256,12 @@ input::-moz-focus-inner{
 	}
 }
 
-.contacts{
+.gradient-green{
 	@include gradient-vertical(#8bbaa3, #317b57);
+}
+
+.contacts{
+	@extend .gradient-green;
 	align-items: center;
 	display: flex;
 	flex-direction: column;
@@ -478,9 +482,6 @@ textarea{
 
 /* =footer
 ---------------------------*/
-footer{
-}
-
 .footer{
 	.container{
 		padding-left: 1.5rem;
@@ -501,6 +502,12 @@ footer{
 				color: $color4;
 				&:hover{
 					color: $color3;
+				}
+			}
+			.active{
+				a, span{
+					color: $color3;
+					border-bottom-color: $color3;
 				}
 			}
 		}
