@@ -93,7 +93,7 @@ body {
   color: #333;
   flex-flow: column;
   font-display: swap;
-  height: 100vh; }
+  min-height: 100vh; }
 
 html, body {
   height: 100%; }
@@ -158,11 +158,6 @@ input::-moz-focus-inner {
 
 .italic, .neck .writeus-link, .more, .policy, .footer__cities, .rubrics__news, .rubrics__faq, .rubrics__reviews, .feedback__form .row .form-control, .feedback__form .row textarea, .feedback__form .submit, .modal-dialog .title, .modal form, .modal form .form-control, .modal form .submit, #about .modal__content {
   font-family: "SegoeUIItalic"; }
-
-.outerwrapper {
-  -webkit-flex: 1;
-  flex: 1;
-  padding-bottom: 4rem; }
 
 /*** standart classes *****/
 a {
@@ -458,6 +453,9 @@ textarea {
 
 /* =footer
 ---------------------------*/
+footer {
+  margin-top: auto; }
+
 .footer .container {
   padding-left: 1.5rem;
   padding-right: 1.5rem; }

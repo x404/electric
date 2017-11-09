@@ -40,7 +40,8 @@ body{
 	color: $color4;
 	flex-flow: column;
 	font-display: swap;
-	height: 100vh;
+	// height: 100vh;
+	min-height: 100vh;
 }
 
 html, body{
@@ -140,9 +141,9 @@ input::-moz-focus-inner{
 
 
 .outerwrapper{
-	-webkit-flex: 1;
-	flex: 1;
-	padding-bottom: 4rem;
+	// -webkit-flex: 1;
+	// flex: 1;
+	// padding-bottom: 4rem;
 }
 
 /*** standart classes *****/
@@ -248,7 +249,7 @@ input::-moz-focus-inner{
 	span{
 		cursor: default;
 	}
-	
+
 	&>li{
 		// margin: 0 1.5rem;
 		position: relative;
@@ -541,8 +542,13 @@ textarea{
 
 
 
+
 /* =footer
 ---------------------------*/
+footer{
+	margin-top: auto;
+}
+
 .footer{
 	.container{
 		padding-left: 1.5rem;
