@@ -79,7 +79,7 @@
 		<div class="container">
 			<div class="logo">
 				<img src="/template/images/logo-home.png" alt="ShelkovoElectric" />
-				<a href="#" title="" class="writeus-link">НАПИСАТЬ НАМ</a>
+				<a href="#" title="" class="writeus-link" data-toggle="modal" data-target="#writeus" role="button">НАПИСАТЬ НАМ</a>
 			</div>
 		</div>
 	</div>
@@ -623,6 +623,32 @@
 	</div>
 </div>
 <!-- =/modal callback -->
+
+
+<!-- =modal writeus -->
+<div class="modal fade writeus" id="writeus" tabindex="-1" role="dialog" aria-hidden="true">
+	<div class="modal-dialog" role="document">
+		<div class="container">
+			<button type="button" data-dismiss="modal" class="close-modal">< <span>Х</span> ></button>
+			<form action="#" method="post" class="form-policy" id="writeus-form">
+				<fieldset>
+					<div class="row">
+						<input name="name" type="text" value="" class="form-control required" required placeholder="ваше имя *" aria-required="true" />
+						<input name="tel" type="tel" value="" class="form-control required" required placeholder="номер телефона *" aria-required="true" />
+						<input name="email" type="email" value="" class="form-control required email" required placeholder="ваш e-mail *" aria-required="true" />
+					</div>
+					<textarea name="msg" id="msg" cols="30" rows="10" placeholder="текст вашего сообщения" class="form-control"></textarea>
+					<input type="submit" name="feedback" class="submit" value="отправить" />
+					<div class="qorder__form-row policy">
+						<input type="checkbox" id="checkbox3" value="" name="checkbox" checked="checked" class="user-access">
+						<label for="checkbox3">Я Согласен на обработку персональных данных и принимаю условия <a href="#.pdf" title="" target="_blank">Пользовательского соглашения</a></label>
+					</div>
+				</fieldset>
+			</form>
+		</div>
+	</div>
+</div>
+<!-- =/modal writeus -->
 
 
 

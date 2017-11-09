@@ -156,7 +156,7 @@ input::-moz-focus-inner {
 .bold, .title, .contacts__tel, .slider__text, .services__title, .sqicons__item-title, .rubrics__article-title, .feedback__form .submit, .close-modal span {
   font-family: "SegoeUIBold"; }
 
-.italic, .neck .writeus-link, .more, .policy, .footer__cities, .rubrics__news, .rubrics__faq, .rubrics__reviews, .feedback__form .row .form-control, .feedback__form .row textarea, .feedback__form .submit, .modal-dialog .title, #callback form, #callback form .form-control, #callback form .submit, #about .modal__content {
+.italic, .neck .writeus-link, .more, .policy, .footer__cities, .rubrics__news, .rubrics__faq, .rubrics__reviews, .feedback__form .row .form-control, .feedback__form .row textarea, .feedback__form .submit, .modal-dialog .title, .modal form, .modal form .form-control, .modal form .submit, #about .modal__content {
   font-family: "SegoeUIItalic"; }
 
 .outerwrapper {
@@ -186,9 +186,9 @@ input::-moz-focus-inner {
   border: 0;
   padding: 0; }
 
-@font-face {}.tdn, .more a, .policy a, .footer__cities a, .kreotif a, .rubrics__news a, .rubrics__faq a, .rubrics__reviews a, .feedback .vcard .email, #callback form .policy a {
+@font-face {}.tdn, .more a, .policy a, .footer__cities a, .kreotif a, .rubrics__news a, .rubrics__faq a, .rubrics__reviews a, .feedback .vcard .email, .modal form .policy a {
   text-decoration: none; }
-  .tdn:hover, .more a:hover, .policy a:hover, .footer__cities a:hover, .kreotif a:hover, .rubrics__news a:hover, .rubrics__faq a:hover, .rubrics__reviews a:hover, .feedback .vcard .email:hover, #callback form .policy a:hover {
+  .tdn:hover, .more a:hover, .policy a:hover, .footer__cities a:hover, .kreotif a:hover, .rubrics__news a:hover, .rubrics__faq a:hover, .rubrics__reviews a:hover, .feedback .vcard .email:hover, .modal form .policy a:hover {
     text-decoration: underline; }
 
 .tdu {
@@ -248,14 +248,14 @@ input::-moz-focus-inner {
     .nav a:hover {
       border-bottom-color: #307a56; }
 
-.gradient-green, .contacts, .rubrics__article-title, #callback form .submit {
+.gradient-green, .contacts, .rubrics__article-title, .modal form .submit {
   background-image: -webkit-linear-gradient(top, #8bbaa3 0%, #317b57 100%);
   background-image: -o-linear-gradient(top, #8bbaa3 0%, #317b57 100%);
   background-image: linear-gradient(to bottom, #8bbaa3 0%, #317b57 100%);
   background-repeat: repeat-x;
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FF8BBAA3', endColorstr='#FF317B57', GradientType=0); }
 
-.gradientflip-green, #callback form .submit:hover {
+.gradientflip-green, .modal form .submit:hover {
   background-image: -webkit-linear-gradient(top, #317b57 0%, #8bbaa3 100%);
   background-image: -o-linear-gradient(top, #317b57 0%, #8bbaa3 100%);
   background-image: linear-gradient(to bottom, #317b57 0%, #8bbaa3 100%);
@@ -989,14 +989,7 @@ form .thank {
   margin-bottom: 3rem;
   padding: 2rem 0; }
 
-#callback .modal-dialog {
-  margin-left: 0;
-  margin-right: 0;
-  margin-top: 98px;
-  padding: 40px 0 12px;
-  width: 100%; }
-
-#callback form .form-control {
+.modal form .form-control {
   font-size: 22px;
   font-size: 2.2rem;
   border-radius: 2px;
@@ -1006,10 +999,10 @@ form .thank {
   margin-bottom: 1rem;
   text-align: center;
   width: 100%; }
-  #callback form .form-control:disabled {
+  .modal form .form-control:disabled {
     background-color: #EAEBE3; }
 
-#callback form .submit {
+.modal form .submit {
   -webkit-transition: all 0.2s ease-out;
   transition: all 0.2s ease-out;
   font-size: 14px;
@@ -1021,15 +1014,49 @@ form .thank {
   margin-right: auto;
   display: block;
   margin-top: 1.8rem;
-  padding: 1.2rem 3.7rem;
+  padding: 1rem 4.5rem;
   border-radius: 4px; }
 
-#callback form .policy {
+.modal form .policy {
   margin-top: 1.5rem;
   margin-bottom: 1rem;
   color: #307a56; }
-  #callback form .policy a {
+  .modal form .policy a {
     color: #333; }
+
+#callback .modal-dialog {
+  margin-left: 0;
+  margin-right: 0;
+  margin-top: 98px;
+  padding: 40px 0 12px;
+  width: 100%; }
+
+#callback form .form-control {
+  width: 100%; }
+
+#writeus form {
+  padding-left: 1.5rem;
+  padding-right: 1.5rem; }
+
+#writeus .form-control {
+  font-size: 15px;
+  font-size: 1.5rem;
+  margin-bottom: 1rem; }
+
+#writeus .row {
+  display: flex;
+  justify-content: space-between; }
+  #writeus .row .form-control {
+    width: 32.5%; }
+
+#writeus textarea.form-control {
+  height: 8.5rem;
+  margin: 0;
+  padding: .5rem 1rem;
+  text-align: left; }
+
+#writeus .thank {
+  margin-bottom: .4rem; }
 
 #about .modal__content {
   background-color: #fff;

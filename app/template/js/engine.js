@@ -116,7 +116,7 @@ $(document).ready(function(){
 		}
 	}); 
 
-	// validation quick form
+	// validation callback form
 	$('#callback-form').validate({
 		submitHandler: function(form){
 			var strSubmit=$(form).serialize();
@@ -129,6 +129,21 @@ $(document).ready(function(){
 			}).fail(function(error){alert(errorTxt)});
 		}
 	}); 
+
+
+	// validation writeus form
+	$('#writeus-form').validate({
+		submitHandler: function(form){
+			var strSubmit=$(form).serialize();
+			$.ajax({type: "POST",url: $(form).attr('action'),data: strSubmit,
+				success: function(){
+					console.log("success");
+					$('#writeus-form').html(thankcallback);
+					startClock('writeus');
+				}
+			}).fail(function(error){alert(errorTxt)});
+		}
+	}); 	
 
 // =заглушка для IE
 //event listener: DOM ready
