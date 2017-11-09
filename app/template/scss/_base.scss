@@ -222,12 +222,16 @@ input::-moz-focus-inner{
 	margin-bottom: .5rem;
 }
 
+header:not(.header){
+	margin-bottom: 1.2rem;
+}
+
 /* =header
 ---------------------------*/
 .header{
 	&__nav{
-		margin-top: 4.5rem;
-		flex-basis: 61rem;
+		margin-top: 5rem;
+		flex-basis: 72.5rem;
 	}
 	.contacts{
 		margin-left: 5.5rem;
@@ -238,20 +242,19 @@ input::-moz-focus-inner{
 	display: flex;
 	justify-content: space-around;
 	color: $color3;
-	width: 615px;
+	// width: 615px;
 	@extend .cg;
 	a,span{
+		@include transition-param(border-bottom);
+		border-bottom: 1px dashed rgba(255,255,255,0);
 		color: $color3;
 		text-decoration: none;
-		border-bottom: 1px dashed rgba(255,255,255,0);
-		@include transition-param(border-bottom);
 	}
 	span{
 		cursor: default;
 	}
 
-	&>li{
-		// margin: 0 1.5rem;
+	& > li{
 		position: relative;
 		.subnav{
 			@include transition-param;
@@ -339,7 +342,7 @@ input::-moz-focus-inner{
 	&__ring{
 		@extend .cgi;
 		border-bottom: 1px dashed $color2;
-		margin-top: 1.2rem;
+		margin-top: 1.5rem;
 		text-decoration: none;
 		text-transform: uppercase;
 		&:hover{
@@ -353,20 +356,21 @@ input::-moz-focus-inner{
 }
 
 .neck{
+	margin-top: 1.4rem;
 	position: relative;
 	z-index: 10;
 	.logo{
 		margin-left: 4.5rem;
 	}
 	.writeus-link{
+		$color: $color3;
+		@extend .italic;
+		border-bottom: 1px dashed $color;
+		color: $color;
 		margin-left: 17.5rem;
 		position: relative;
-		top: -2.3rem;
 		text-decoration: none;
-		@extend .italic;
-		$color: $color3;
-		color: $color;
-		border-bottom: 1px dashed $color;
+		top: -2.3rem;
 		&:hover{
 			border-bottom-color: rgba($color, 0);
 		}
@@ -409,10 +413,6 @@ input::-moz-focus-inner{
 			}
 		}
 	}
-
-	&-item:not(.big){
-		// transform: scale(.8)
-	}
 }
 
 
@@ -420,32 +420,23 @@ input::-moz-focus-inner{
 
 /* =main
 ---------------------------*/
-
-.main{
-	aside{
-	}
-}
-
-
 .text,
 .about{
 	p{
-		margin: 1rem 0;
+		line-height: 1.3;
+		margin: .6rem 0;
 	}
 }
 
 
 .text{
 	margin: 1.5rem 0;
-}
-
-
-.text-center{
-	text-align: center;
-}
-
-.text-right{
-	text-align: right;
+	&-center{
+		text-align: center;
+	}
+	&-right{
+		text-align: right;
+	}
 }
 
 .more{
@@ -547,6 +538,7 @@ textarea{
 ---------------------------*/
 footer{
 	margin-top: auto;
+	padding-top: 4rem;
 }
 
 .footer{
@@ -561,6 +553,7 @@ footer{
 
 	&__navcopyright{
 		padding-top: 2.5rem;
+		width: 780px;
 		.nav{
 			justify-content: space-between;
 			padding-right: 6rem;
@@ -600,7 +593,7 @@ footer{
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
-		width: 775px;
+		width: 900px;
 		a{
 			color: $color3;
 			@extend .tdn;
