@@ -513,17 +513,18 @@
 				</div>
 				<div><a href="tel:+74951471711" class="tel">+7 (495) 147-1711</a> | <a href="mailto:info@schelkovo-electric.com" class="email" title="">info@schelkovo-electric.com</a></div>
 			</div>
+			<p>Напишите Ваше сообщение, пожелание или что-нибудь доброе о нашей компании ))) Мы обязательно ответим как можно скорее</p>
 		</div>
 		<form action="#" method="post" id="feedback-form" class="feedback__form form-policy">
 			<fieldset>
 				<div class="row">
-					<input name="name" type="text" value="" class="form-control required" placeholder="как вас зовут? *" />
-					<input name="tel" type="tel" value="" class="form-control required" placeholder="ваш номер телефона *" />
-					<input name="email" type="email" value="" class="form-control required email" placeholder="ваш e-mail *" />
+					<input name="name" type="text" value="" class="form-control required" required placeholder="как вас зовут? *" aria-required="true" />
+					<input name="tel" type="tel" value="" class="form-control required" required placeholder="ваш номер телефона *" aria-required="true" />
+					<input name="email" type="email" value="" class="form-control required email" required placeholder="ваш e-mail *" aria-required="true" />
 				</div>
 				<div class="row">
 					<textarea name="msg" id="msg" cols="30" rows="10" placeholder="Текст вашего сообщения" class="form-control"></textarea>
-					<input type="submit" name="feedback_submit" class="submit" value="отправить" />
+					<input type="submit" name="feedback" class="submit" value="отправить" />
 				</div>
 				<div class="qorder__form-row policy">
 					<input type="checkbox" id="checkbox2" value="" name="checkbox" checked="checked" class="user-access">

@@ -482,7 +482,21 @@ $h1 : 360px;
 				@include gradient-vertical(#317b57, #8bbaa3);
 			}
 		}
+
+		.thank{
+			background: none;
+			border: none;
+			height: 142px;
+			margin-bottom: 1rem;
+			padding-top: 70px;
+			position: static;
+		}
 	}
+}
+
+
+.feedback__form{
+
 }
 /* =/feedback
 ---------------------------*/

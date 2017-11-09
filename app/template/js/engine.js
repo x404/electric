@@ -97,6 +97,24 @@ $(document).ready(function(){
 	})
 });
 
+
+	let thankTxt = '<div class="thank text-center"><p>Спасибо! Ваше сообщение успешно отправлено</p></div>',
+		errorTxt = 'Возникла ошибка';
+
+	// validation
+	$('#feedback-form').validate({
+		submitHandler: function(form){
+			var strSubmit=$(form).serialize();
+			$.ajax({type: "POST",url: $(form).attr('action'),data: strSubmit,
+				success: function(){
+					$('.feedback__form').append(thankTxt);
+					$('.feedback__form fieldset').hide();
+					startClock('feedback-form');
+				}
+			}).fail(function(error){alert(errorTxt)});
+		}
+	}); 
+
 // =заглушка для IE
 //event listener: DOM ready
 function addLoadEvent(func) {
@@ -122,3 +140,46 @@ addLoadEvent(function(){
 	})
 });
 // =/заглушка для IE
+
+
+var timer,
+	sec = 10;
+
+function showTime(sendform){
+	sec = sec-1;
+	if (sec <=0) {
+		stopClock();
+
+		switch (sendform){
+			case '----qorder-form':
+				$('.qorder__box .thank').fadeOut('normal',function(){
+					$('.qorder__box .thank').remove();
+					$('.qorder__box .form-control, .qorder__box textarea').val('');
+				});
+				break;
+			case 'feedback-form':
+				$('.feedback .thank').fadeOut('normal',function(){
+					$('.feedback .thank').remove();
+					$('.feedback .form-control, .feedback textarea').val('');
+					$('.feedback__form fieldset').show();
+				});
+				break;
+			default:
+				modal = $("#" + sendform).closest('.modal');
+				modal.fadeOut('normal',function(){
+					modal.modal('hide');
+				});
+				break;
+		}
+	}
+}
+function stopClock(){
+	window.clearInterval(timer);
+	timer = null;
+	sec = 10;
+}
+
+function startClock(sendform){
+	if (!timer)
+		timer = window.setInterval("showTime('" + sendform + "')",1000);
+}
