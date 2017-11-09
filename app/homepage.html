@@ -43,10 +43,31 @@
 					<ul class="nav nav-tabs" role="tablist">
 						<li><a class="nav-link" href="#" title="">Главная</a></li>
 						<li><a class="nav-link" href="#" title="">О нас</a></li>
-						<li><a class="nav-link" href="#" title="">Услуги</a></li>
+						<li class="active">
+							<a class="nav-link" href="#" title="">Услуги</a>
+							<div class="subnav">
+								<ul>
+									<li class="active"><a href="#">Электромонтажные работы</a></li>
+									<li><a href="#">Монтаж электропроводки</a></li>
+									<li><a href="#">Разводка электрики</a></li>
+									<li><a href="#">Замена проводки</a></li>
+									<li><a href="#">Ремонт электрики</a></li>
+								</ul>
+							</div>
+						</li>
 						<li><a class="nav-link" href="#" title="">Цены</a></li>
 						<li><a class="nav-link" href="#" title="">Наши работы</a></li>
-						<li><a class="nav-link" href="#" title="">Интересное</a></li>
+						<li>
+							<a class="nav-link" href="#" title="">Интересное</a>
+							<div class="subnav">
+								<ul>
+									<li><a href="#" title="">Статьи</a></li>
+									<li><a href="#" title="">Новости</a></li>
+									<li><a href="#" title="">Вопрос? Ответ!</a></li>
+									<li><a href="#" title="">Отзывы о нашей работе</a></li>
+								</ul>
+							</div>
+						</li>
 						<li><a class="nav-link" href="#" title="">Контакты</a></li>
 					</ul>
 					<div class="show-sm">
@@ -498,7 +519,7 @@
 		<header class="container">
 			<p class="title">Где нас можно найти</p>
 		</header>
-		<div id="map"></div>
+		<div id="ymap"></div>
 	</section>
 	<!-- =/map -->
 
@@ -662,5 +683,41 @@
 <script src="https://ajax.microsoft.com/ajax/jquery.validate/1.15.0/jquery.validate.min.js"></script>
 <script>window.jQuery || document.write('<script src="template/js/jquery.validate.min.js"><\/script>')</script>
 <script src="/template/js/engine.js"></script>
+
+<script src="https://api-maps.yandex.ru/2.1.26/?lang=ru_UA"></script>
+
+<script>
+var map;
+var myCollection;	
+ymaps.ready(function () {
+	map = new ymaps.Map('ymap', {
+		center: [55.910526, 38.017170],
+		zoom: 13
+	});
+
+	myCollection = new ymaps.GeoObjectCollection(null, {
+		preset: 'islands#redDotIcon'
+	});
+	myCollection.add(new ymaps.Placemark(
+		[55.910526, 38.017170],
+		{
+			hintContent: 'SchelkovoELECTRIC',
+			balloonContent: ''
+		}
+	));
+
+	map.behaviors.disable('scrollZoom'); 
+
+	map.geoObjects.add(myCollection);
+
+	map.events.add('click', function onMapClick(e) {
+		if(map.behaviors.isEnabled('scrollZoom')) {
+			map.events.remove('click', onMapClick);
+		} else {
+			map.behaviors.enable(['scrollZoom']);
+		}
+	});
+})
+</script>
 </body>
 </html>
