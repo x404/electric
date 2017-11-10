@@ -1,0 +1,59 @@
+.team{
+	margin: 2.5rem 0 3.5rem;
+	.flexbox{
+		flex-wrap: wrap;
+	}
+
+	header{
+		margin-bottom: 1rem;
+		text-align: center;
+		text-transform: uppercase;
+		h2{
+			@extend .bold;
+			@include font-size(2.4);
+		}
+	}
+
+	&__link{
+		color: $color4;
+		display: flex;
+		position: relative;
+		text-decoration: none;
+		&:after{
+			@extend .before;
+			@include gradient-horizontal(#fff, #f2f2f2);
+			@include transition-param;
+			height: 100%;
+			opacity: 0;
+			width: 100%;
+			z-index: -1;
+		}
+		&:hover{
+			&:after{
+				opacity: 1;
+			}
+		}
+	}
+
+	&__pic{
+		img{
+			border-radius: 50%;
+		}
+	}
+
+	&__item{
+		flex-basis: 33.3%;
+		margin-top: 3rem;
+		padding-right: 5rem;
+	}
+
+	&__cell{
+		padding-left: 2rem;
+		padding-top: 1.2rem;
+	}
+
+	&__name{
+		@extend .bold;
+		margin-bottom: .5rem;
+	}
+}

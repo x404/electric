@@ -1,0 +1,32 @@
+/* =breadcrumbs
+---------------------------*/
+.breadcrumbs{
+	@extend .italic;
+	@include font-size(1.2);
+	margin: 2rem 0 1.8rem;
+	
+	li.B_crumb{
+		display: flex;
+		margin-right: 4px;
+		position: relative;
+		a{
+			color: $color4;
+		}
+		&:after{
+			color: $color9;
+			display: block;
+			content: "/";
+			margin-left: 4px;
+		}
+	}
+
+	.B_crumbBox{
+		display: flex;
+	}
+	.B_currentCrumb{
+		color: $color3;
+		text-decoration: underline;
+	}
+}
+/* =breadcrumbs
+---------------------------*/
