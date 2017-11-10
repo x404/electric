@@ -161,19 +161,6 @@ input::-moz-focus-inner{
 	padding: 0;
 }
 
-@font-face {
-	// font-family: 'ucb';
-	// src: url('../fonts/univers_condensed_bold.eot');
-	// src: url('../fonts/univers_condensed_bold.eot?#iefix') format('embedded-opentype'),
-	// 	 url('../fonts/univers_condensed_bold.woff') format('woff'),
-	// 	 url('../fonts/univers_condensed_bold.ttf') format('truetype'),
-	// 	 url('../fonts/univers_condensed_bold.svg#univers_condensedbold') format('svg');
-	// font-weight: normal;
-	// font-style: normal;
-}
-
-// .ucb{font-family: 'ucb'}
-
 
 .tdn{
 	text-decoration: none;
@@ -235,6 +222,15 @@ header:not(.header){
 	}
 	.contacts{
 		margin-left: 5.5rem;
+	}
+
+	.logo{
+		flex-grow: 1;
+		display: flex;
+		@extend .flexcenter;
+		a{
+			display: inline-block;
+		}
 	}
 }
 
