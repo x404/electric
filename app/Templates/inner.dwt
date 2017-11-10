@@ -18,11 +18,6 @@
 <script src="/template/js/libs.min.js"></script>
 <script src="/template/js/jquery.bxslider.min.js"></script>
 
-
-<!--[if !IE]><<!--></!-->
-<script>if(/*@cc_on!@*/false){document.documentElement.className+=' ie10';}</script>
-<!--<![endif]-->
-
 <!--[if IE]>
 	<link href="/template/css/styles-ie.css" rel="stylesheet" type="text/css" />
 <![endif]-->
@@ -191,7 +186,7 @@
 <div class="modal fade callback" id="callback" tabindex="-1" role="dialog" aria-hidden="true">
 	<div class="modal-dialog" role="document">
 		<div class="container">
-			<button type="button" data-dismiss="modal" class="close-modal">< <span>Х</span> ></button>
+			<button type="button" data-dismiss="modal" class="close-modal">&lt; <span>Х</span> &gt;</button>
 			<form action="#" method="post" class="form-policy" id="callback-form">
 				<fieldset>
 					<input type="text" name="name" class="form-control required" value="" placeholder="Ваше имя" tabindex="0" autofocus>
@@ -214,7 +209,7 @@
 <div class="modal fade writeus" id="writeus" tabindex="-1" role="dialog" aria-hidden="true">
 	<div class="modal-dialog" role="document">
 		<div class="container">
-			<button type="button" data-dismiss="modal" class="close-modal">< <span>Х</span> ></button>
+			<button type="button" data-dismiss="modal" class="close-modal">&lt; <span>Х</span> &gt;</button>
 			<form action="#" method="post" class="form-policy" id="writeus-form">
 				<fieldset>
 					<div class="row">

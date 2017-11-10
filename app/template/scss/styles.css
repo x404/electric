@@ -924,8 +924,6 @@ label.error {
 
 /* =/feedback
 ---------------------------*/
-/* =breadcrumbs
----------------------------*/
 .breadcrumbs {
   font-size: 12px;
   font-size: 1.2rem;
@@ -947,8 +945,6 @@ label.error {
     color: #307a56;
     text-decoration: underline; }
 
-/* =breadcrumbs
----------------------------*/
 .team {
   margin: 2.5rem 0 3.5rem; }
   .team .flexbox {
