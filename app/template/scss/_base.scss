@@ -13,6 +13,7 @@ $color8:#f7f7f7;
 $color9:#b2b2b2;
 $color10:#f2f2f2;
 $color11: #303030;
+$color12: #808080;
 
 
 * {
@@ -155,6 +156,8 @@ h1{font-size:2.4rem; @extend .bold; text-align: center; text-transform: uppercas
 h2{font-size:2.4rem}
 h3{font-size:1.6rem}
 
+
+header h1,
 h1.title,
 h2.title{
 	color: $color5;
@@ -664,4 +667,14 @@ footer{
 
 label.error{
 	display: none !important;
+}
+
+
+.share{
+	@extend .italic;
+	@include font-size(1.8);
+	color: $color12;
+	p{
+		padding-right: 2.5rem;
+	}
 }
