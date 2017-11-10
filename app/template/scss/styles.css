@@ -144,7 +144,7 @@ input::-moz-focus-inner {
 .bold, h1, .title, .contacts__tel, .slider__text, .services__title, .sqicons__item-title, .rubrics__article-title, .feedback__form .submit, .team header h2, .team__name, .close-modal span {
   font-family: "SegoeUIBold"; }
 
-.italic, .neck .writeus-link, .more, .policy, .footer__cities, .rubrics__news, .rubrics__faq, .rubrics__reviews, .feedback__form .row .form-control, .feedback__form .row textarea, .feedback__form .submit, .breadcrumbs, .modal-dialog .title, .modal form, .modal form .form-control, .modal form .submit, #about .modal__content {
+.italic, .neck .writeus-link, .more, .policy, .footer__cities, .rubrics__news, .rubrics__faq, .rubrics__reviews, .feedback__form .row .form-control, .feedback__form .row textarea, .feedback__form .submit, .breadcrumbs, .modal-dialog .title, .modal form, .modal form .form-control, .modal form .submit, #infomodal .modal__content, #about .modal__content {
   font-family: "SegoeUIItalic"; }
 
 /*** standart classes *****/
@@ -924,10 +924,12 @@ label.error {
 
 /* =/feedback
 ---------------------------*/
+/* =breadcrumbs
+---------------------------*/
 .breadcrumbs {
   font-size: 12px;
   font-size: 1.2rem;
-  margin-top: 2.2rem; }
+  margin: 2rem 0 1.8rem; }
   .breadcrumbs li.B_crumb {
     display: flex;
     margin-right: 4px;
@@ -945,6 +947,8 @@ label.error {
     color: #307a56;
     text-decoration: underline; }
 
+/* =breadcrumbs
+---------------------------*/
 .team {
   margin: 2.5rem 0 3.5rem; }
   .team .flexbox {
@@ -1027,7 +1031,6 @@ label.error {
   .modal-dialog .title {
     font-size: 18px;
     font-size: 1.8rem;
-    color: #f7f7f7;
     font-size: 18px;
     font-size: 1.8rem;
     text-transform: uppercase;
@@ -1147,6 +1150,16 @@ form .thank {
   text-align: left; }
 #writeus .thank {
   margin-bottom: .4rem; }
+
+#infomodal .modal__content .title {
+  font-size: 22px;
+  font-size: 2.2rem;
+  color: #303030;
+  font-weight: normal;
+  text-align: center;
+  text-transform: none; }
+#infomodal .modal__content p {
+  margin: .8rem 0; }
 
 #about .modal__content {
   background-color: #fff;

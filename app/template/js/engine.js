@@ -94,8 +94,25 @@ $(document).ready(function(){
 		$this.addClass('current');
 		$('.rubrics__body .tab-current').removeClass('tab-current');
 		$(target).addClass('tab-current');
-	})
+	});
+
+
+	$('#infomodal').on('show.bs.modal', function (e) {
+		var $this = $(e.relatedTarget),
+			id = $this.data('id'),
+			title = $this.data('title'),
+			url = id,
+			posting = $.post(id);
+
+		$.ajax('/' + url, 'POST').then(function(data) {
+			$('#infomodal .title').text(title);
+			$('#infomodal .modal__text').html(data);
+		});
+	});
+
 });
+
+
 
 
 	let thankTxt = '<div class="thank text-center"><p>Спасибо! Ваше сообщение успешно отправлено</p></div>',

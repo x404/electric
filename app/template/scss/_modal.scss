@@ -61,7 +61,7 @@
 
 	.title{
 		@include font-size(1.8);
-		color: $color8;
+		// color: $color8;
 		@include font-size(1.8);
 		@extend .italic;
 		text-transform: uppercase;
@@ -242,7 +242,21 @@ form{
 
 
 
-
+#infomodal{
+	.modal__content{
+		@extend .italic;
+		.title{
+			@include font-size(2.2);
+			color: $color11;
+			font-weight: normal;
+			text-align: center;
+			text-transform: none;
+		}
+		p{
+			margin: .8rem 0;
+		}
+	}
+}
 
 
 
