@@ -9,6 +9,7 @@
 		position: relative;
 		a{
 			color: $color4;
+			@extend .tdn;
 		}
 		&:after{
 			color: $color9;

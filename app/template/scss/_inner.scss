@@ -1,0 +1,29 @@
+main.text{
+	h2{
+		@include font-size(1.8)
+	}
+
+	h3{
+		@include font-size(1.4)
+		@extend .bold;
+		margin: .5rem 0;
+	}
+
+	em{
+		@extend .italic;
+		font-style: normal;
+	}
+
+	table{
+		border-collapse: collapse;
+		td{
+			border: 1px solid $color6;
+			padding: 8px;
+		}
+		&.table-noborder{
+			td{
+				border: none;
+			}
+		}
+	}
+}

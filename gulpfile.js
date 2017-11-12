@@ -220,6 +220,7 @@ gulp.task('build', ['clean', 'img', 'scss', 'compress'], function(){
 	// переносим css файлы
 	var buildCss = gulp.src([ // Переносим CSS стили в продакшен
 		'app/template/css/styles.min.css',
+		'app/template/css/jquery.bxslider.css',
 		'app/template/css/owl.carousel.css'
 	])
 	.pipe(gulp.dest('dist/template/css'));
@@ -232,7 +233,13 @@ gulp.task('build', ['clean', 'img', 'scss', 'compress'], function(){
 	var buildTmp = gulp.src('app/tmp/*').pipe(gulp.dest('dist/tmp'));
 	var buildFonts = gulp.src(config.sourceDir + '/fonts/**/*').pipe(gulp.dest('dist/template/fonts')); // Переносим шрифты в продакшен
 	var buildOutdate = gulp.src('app/outdatedbrowser/**/*').pipe(gulp.dest('dist/outdatedbrowser'));
+	var buildIMG = gulp.src('app/images/**/*').pipe(gulp.dest('dist/images'));
+	var buildIMG2 = gulp.src(config.sourceDir + '/css/*.gif').pipe(gulp.dest('dist/template/css'));
+	var buildIMG3 = gulp.src(config.sourceDir + '/css/*.png').pipe(gulp.dest('dist/template/css'));
 
+
+	var buildPHP1 = gulp.src('app/1.php').pipe(gulp.dest('dist'));
+	var buildPHP2 = gulp.src('app/2.php').pipe(gulp.dest('dist'));
 });
 
 

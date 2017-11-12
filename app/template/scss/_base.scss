@@ -153,8 +153,8 @@ input::-moz-focus-inner{
 p{}
 a{color:#020000; @include transition;}
 h1{font-size:2.4rem; @extend .bold; text-align: center; text-transform: uppercase;}
-h2{font-size:2.4rem}
-h3{font-size:1.6rem}
+h2{font-size:2.4rem; font-weight: normal;}
+h3{font-size:1.6rem; font-weight: normal;}
 
 
 header h1,
