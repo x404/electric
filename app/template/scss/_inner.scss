@@ -76,3 +76,122 @@ main.text{
 		min-width: 43px;
 	}
 }
+
+
+// reviews
+.reviews{
+	margin: 3rem 0;
+	.title{
+		@include font-size(1.8);
+		color: $color3;
+		font-family: "SegoeUIRegular", Arial;
+		text-align: center;
+	}
+
+	&__carousel{
+		color: $color11;
+		@extend .italic;
+	}
+
+	&__item{
+		background-color: $color10;
+		padding: 1.5rem 2.6rem;
+		margin: 0 4rem;
+	}
+
+
+	&__top{
+		@extend .cgi;
+	}
+
+	&__question{
+		line-height: 1.3;
+		margin-top: 1.5rem;
+	}
+
+	&__answer{
+		@include font-size(1.5);
+		background-color: $color3;
+		color: $color2;
+		margin-top: 1.5rem;
+		padding: .8rem;
+	}
+
+	.owl-nav{
+		top: 90px;
+	}
+}
+
+
+// btn
+.btn{
+	@extend .bold;
+	@include font-size(2.2);
+	@extend .gradient-green;
+	display: block;
+	max-width: 600px;
+	color: $color2;
+	margin: 0 auto;
+	padding: 1.8rem 6rem;
+	text-align: center;
+	text-decoration: none;
+	text-transform: uppercase;
+	position: relative;
+	span{
+		position: relative;
+		z-index: 2;
+	}
+	&:after{
+		@extend .before;
+		@extend .gradientflip-green;
+		left: 0;
+		top: 0;
+		width: 100%;
+		height: 100%;
+		opacity: 0;
+		@include transition;
+	}
+	&:hover{
+		&:after{
+			opacity: 1;
+			z-index: 1;
+		}
+	}
+}
+
+
+
+
+
+// listlinks
+.listlinks{
+	background: $color13;
+	margin-top: 2.5rem;
+	padding: 2rem 0;
+	.flexbox{
+		justify-content: space-between;
+		ul{
+			margin-left: 1.4rem;
+		}
+		li{
+			margin: .5rem 0; 
+			padding-left: 1.7rem;
+			position: relative;
+			&:before{
+				@extend .before;
+				background-color: $color3;
+				border-radius: 50%;
+				height: 5px;
+				width: 5px;
+				top: 8px;
+				left: 0;
+			}
+		}
+		a{
+			@extend .tdn;
+			&:hover{
+				color: $color3;
+			}
+		}
+	}
+}

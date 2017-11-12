@@ -45,6 +45,14 @@ $(document).ready(function(){
 		}
 	});
 
+	// отзывы
+	$('#foo3').owlCarousel({
+		loop:false,
+		nav:true,
+		dots: false,
+		items:1,
+		navText: ["", ""]
+	});
 
 	// policy
 	$('.policy input').click(function(){
