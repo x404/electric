@@ -675,6 +675,8 @@ label.error{
 	@extend .italic;
 	@include font-size(1.8);
 	color: $color12;
+	// overflow: hidden;
+	margin: 4rem auto 2.5rem;
 	p{
 		padding-right: 2.5rem;
 	}
