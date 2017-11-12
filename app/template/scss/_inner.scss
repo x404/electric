@@ -80,7 +80,7 @@ main.text{
 
 // reviews
 .reviews{
-	margin: 3rem 0;
+	margin: 2.8rem 0;
 	.title{
 		@include font-size(1.8);
 		color: $color3;
@@ -132,7 +132,7 @@ main.text{
 	max-width: 600px;
 	color: $color2;
 	margin: 0 auto;
-	padding: 1.8rem 6rem;
+	padding: 1.6rem 6rem;
 	text-align: center;
 	text-decoration: none;
 	text-transform: uppercase;
