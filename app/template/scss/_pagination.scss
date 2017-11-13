@@ -1,0 +1,21 @@
+.pagination{
+	@extend .italic;
+	border-top: 1px solid;
+	border-image: linear-gradient(to left, rgba(255, 255, 255, 1) 1%, rgba(155, 188, 170, 1) 50%, rgba(255, 255, 255, 1) 100%) 100% 0 100% 0/1px 0 1px 0 stretch;
+	margin-top: 2.5rem;
+	padding: 1.5rem 0;
+	text-align: center;
+	a, span{
+		margin: 0 .2rem;
+	}
+	a{
+		@extend .tdn;
+		&:hover{
+			color: $color3;
+		}
+	}
+	.current{
+		color: $color3;
+		text-decoration: underline;
+	}
+}

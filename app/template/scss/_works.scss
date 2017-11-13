@@ -1,0 +1,125 @@
+/* =subcat
+---------------------------*/
+.subcat{
+	ul{
+		display: flex;
+		justify-content: center;
+		@extend .cg;
+		li{
+
+			a{
+				color: $color12;
+				border-bottom: 1px solid rgba(0,0,0,0);
+				text-decoration: none;
+				&:hover{
+					color: $color3;
+					border-bottom: 1px dashed currentColor;
+				}
+			}
+			span{
+				border-bottom: 1px dashed currentColor;
+				color: $color3;
+				cursor: default;
+			}
+			margin: 0 1.5rem; 	
+		}
+	}
+}
+/* =/subcat
+---------------------------*/
+
+
+
+/* =photos
+---------------------------*/
+
+.photo{
+	flex-wrap: wrap;
+	&__item{
+		
+		@extend .block-center;
+		color: $color2;
+		flex-basis: 33.3%;
+		flex-wrap: wrap;
+		min-height: 308px;
+		margin: 2.8rem 0;
+		text-align: center;
+		a{
+			background-color: rgba($color3, .7);
+			color: $color2;
+			display: block;
+			overflow: hidden;
+			position: relative;
+			width: 350px;
+			img{
+				@include transition-param(transform);
+			}
+			&:hover{
+				img{
+					transform: scale(1.05);
+				}
+				&:after{
+					opacity: .8;
+				}
+			}
+
+			&:after{
+				@extend .before;
+				@include transition-param;
+				// background:  rgba(0, 122, 187, .55);
+				@extend .gradient-green;
+				height: 100%;
+				left: 0;
+				opacity: 0;
+				top: 0;
+				width: 100%;
+				z-index: 1;
+			}
+		}
+
+		hr{
+			background: $color2;
+			border:none;
+			display: block;
+			height: 3px;
+			margin: 2rem auto;
+			width: 85px;
+		}
+	}
+
+
+	&__pic{
+		min-height: 308px;
+		img{
+			max-width: 100%;
+			height: auto;
+			display: block;
+		}
+	}
+
+	&__textbox{
+		position: absolute;
+		top: 0;
+		z-index: 2;
+		height: 100%;
+		.flexbox{
+			height: 100%;			
+			flex-flow: column;
+			justify-content: center;
+		}
+	}
+
+	&__title{
+		@include font-size(2.4);
+		@extend .bold;
+		text-transform: uppercase;
+	}
+
+
+	&__title,
+	&__shorttext{
+		padding: 0 20px;
+	}
+}
+/* =/photos
+---------------------------*/
