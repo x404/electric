@@ -53,7 +53,7 @@
 						</div>
 					</li>
 					<li><a class="nav-link" href="../price.html" title="">Цены</a></li>
-					<li><a class="nav-link" href="../our-works.html" title="">Наши работы</a></li>
+					<li><a class="nav-link" href="../our-works-photo.html" title="">Наши работы</a></li>
 					<li>
 						<a class="nav-link" href="#" title="">Интересное</a>
 					  <div class="subnav">
@@ -61,7 +61,7 @@
 								<li><a href="../articles.html" title="">Статьи</a></li>
 								<li><a href="../news.html" title="">Новости</a></li>
 								<li><a href="../faq.html" title="">Вопрос? Ответ!</a></li>
-								<li><a href="#" title="">Отзывы о нашей работе</a></li>
+								<li><a href="../reviews.html" title="">Отзывы о нашей работе</a></li>
 							</ul>
 						</div>
 					</li>
