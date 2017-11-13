@@ -2,6 +2,7 @@
 	@extend .italic;
 	@include font-size(1.2);
 	margin: 2rem 0 1.8rem;
+	text-transform: lowercase;
 	
 	li.B_crumb{
 		display: flex;

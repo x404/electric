@@ -965,7 +965,8 @@ label.error {
 .breadcrumbs {
   font-size: 12px;
   font-size: 1.2rem;
-  margin: 2rem 0 1.8rem; }
+  margin: 2rem 0 1.8rem;
+  text-transform: lowercase; }
   .breadcrumbs li.B_crumb {
     display: flex;
     margin-right: 4px;
@@ -1133,26 +1134,25 @@ label.error {
       justify-content: center;
       text-align: center; }
 
-main.text h2 {
-  font-size: 18px;
-  font-size: 1.8rem; }
-
-main.text h3 {
-  font-size: 14px;
-  font-size: 1.4rem;
-  margin: .5rem 0; }
-
-main.text em {
-  font-style: normal; }
-
-main.text table {
-  margin: 2rem 0 0;
-  border-collapse: collapse; }
-  main.text table td {
-    border: 1px solid #ccc;
-    padding: 8px; }
-  main.text table.table-noborder td {
-    border: none; }
+main.text {
+  color: #000; }
+  main.text h2 {
+    font-size: 18px;
+    font-size: 1.8rem; }
+  main.text h3 {
+    font-size: 14px;
+    font-size: 1.4rem;
+    margin: .5rem 0; }
+  main.text em {
+    font-style: normal; }
+  main.text table {
+    margin: 2rem 0 0;
+    border-collapse: collapse; }
+    main.text table td {
+      border: 1px solid #ccc;
+      padding: 8px; }
+    main.text table.table-noborder td {
+      border: none; }
 
 .gallery {
   margin-top: 2.8rem; }
