@@ -33,7 +33,8 @@
 /* =photos
 ---------------------------*/
 
-.photo{
+.photo,
+.video{
 	flex-wrap: wrap;
 	&__item{
 		
@@ -119,6 +120,18 @@
 	&__title,
 	&__shorttext{
 		padding: 0 20px;
+	}
+}
+
+.video{
+	&__textbox{
+		background: url(../images/play.svg) no-repeat center center;
+		.flexbox{
+			justify-content: flex-end;
+		}
+	}
+	&__shorttext{
+		padding-bottom: 2.5rem;
 	}
 }
 /* =/photos
