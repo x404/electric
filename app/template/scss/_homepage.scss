@@ -274,17 +274,17 @@ $h1 : 360px;
 	}
 
 	// news
-	&__news,
+	// &__news,
 	&__faq,
 	&__reviews{
 		@extend .italic;
-		&-item{
+		&__item{
 			box-shadow: 0 0 5px #ccc;
 			padding: 1rem 1rem 2rem;
 			width: 22rem;
 		}
 
-		&-title{
+		&__title{
 			@include font-size(1.4);
 			font-family: "SegoeUIBoldItalic";
 			height: 9rem;
@@ -308,6 +308,31 @@ $h1 : 360px;
 			font-weight: normal;
 			height: auto;
 			margin-bottom: 2rem;
+		}
+	}
+}
+
+// news
+
+.news{
+	@extend .italic;
+	&__item{
+		box-shadow: 0 0 5px #ccc;
+		padding: 1rem 1rem 2rem;
+		width: 22rem;
+	}
+
+	&__title{
+		@include font-size(1.4);
+		font-family: "SegoeUIBoldItalic";
+		height: 9rem;
+		padding-top: .8rem;
+	}
+
+	a{
+		@extend .tdn;
+		&:hover{
+			color: $color3;
 		}
 	}
 }
@@ -354,6 +379,7 @@ $h1 : 360px;
 		width: 100%;
 	}
 }
+
 /* =/rubrics
 ---------------------------*/
 

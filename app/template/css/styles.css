@@ -134,7 +134,7 @@ input::-moz-focus-inner {
 .video__title, .close-modal span {
   font-family: "SegoeUIBold"; }
 
-.italic, .neck .writeus-link, .more, .policy, .footer__cities, .share, .rubrics__news, .rubrics__faq, .rubrics__reviews, .feedback__form .row .form-control, .feedback__form .row textarea, .feedback__form .submit, .breadcrumbs, main.text em, main.text .accordion, .reviews__carousel, .modal-dialog .title, .modal form, .modal form .form-control, .modal form .submit, #infomodal .modal__content, #about .modal__content, .pagination {
+.italic, .neck .writeus-link, .more, .policy, .footer__cities, .share, .rubrics__faq, .rubrics__reviews, .news, .feedback__form .row .form-control, .feedback__form .row textarea, .feedback__form .submit, .breadcrumbs, main.text em, main.text .accordion, .reviews__carousel, .modal-dialog .title, .modal form, .modal form .form-control, .modal form .submit, #infomodal .modal__content, #about .modal__content, .pagination {
   font-family: "SegoeUIItalic"; }
 
 /*** standart classes *****/
@@ -170,9 +170,9 @@ input::-moz-focus-inner {
   border: 0;
   padding: 0; }
 
-.tdn, .nav > li .subnav li a, .text a, .more a, .policy a, .footer__cities a, .kreotif a, .rubrics__news a, .rubrics__faq a, .rubrics__reviews a, .feedback .vcard .email, .breadcrumbs li.B_crumb a, .listlinks .flexbox a, .modal form .policy a, .pagination a {
+.tdn, .nav > li .subnav li a, .text a, .more a, .policy a, .footer__cities a, .kreotif a, .rubrics__faq a, .rubrics__reviews a, .news a, .feedback .vcard .email, .breadcrumbs li.B_crumb a, .listlinks .flexbox a, .modal form .policy a, .pagination a {
   text-decoration: none; }
-  .tdn:hover, .nav > li .subnav li a:hover, .text a:hover, .more a:hover, .policy a:hover, .footer__cities a:hover, .kreotif a:hover, .rubrics__news a:hover, .rubrics__faq a:hover, .rubrics__reviews a:hover, .feedback .vcard .email:hover, .breadcrumbs li.B_crumb a:hover, .listlinks .flexbox a:hover, .modal form .policy a:hover, .pagination a:hover {
+  .tdn:hover, .nav > li .subnav li a:hover, .text a:hover, .more a:hover, .policy a:hover, .footer__cities a:hover, .kreotif a:hover, .rubrics__faq a:hover, .rubrics__reviews a:hover, .news a:hover, .feedback .vcard .email:hover, .breadcrumbs li.B_crumb a:hover, .listlinks .flexbox a:hover, .modal form .policy a:hover, .pagination a:hover {
     text-decoration: underline; }
 
 .tdu {
@@ -753,23 +753,38 @@ label.error {
     justify-content: space-around;
     margin: 0 auto 2.4rem;
     width: 85%; }
-  .rubrics__news-item, .rubrics__faq-item, .rubrics__reviews-item {
+  .rubrics__faq__item, .rubrics__reviews__item {
     box-shadow: 0 0 5px #ccc;
     padding: 1rem 1rem 2rem;
     width: 22rem; }
-  .rubrics__news-title, .rubrics__faq-title, .rubrics__reviews-title {
+  .rubrics__faq__title, .rubrics__reviews__title {
     font-size: 14px;
     font-size: 1.4rem;
     font-family: "SegoeUIBoldItalic";
     height: 9rem;
     padding-top: .8rem; }
-  .rubrics__news a:hover, .rubrics__faq a:hover, .rubrics__reviews a:hover {
+  .rubrics__faq a:hover, .rubrics__reviews a:hover {
     color: #307a56; }
   .rubrics__reviews-title {
     font-family: 'CenturyGothicItalic' !important;
     font-weight: normal;
     height: auto;
     margin-bottom: 2rem; }
+
+.news__item {
+  box-shadow: 0 0 5px #ccc;
+  padding: 1rem 1rem 2rem;
+  width: 22rem; }
+
+.news__title {
+  font-size: 14px;
+  font-size: 1.4rem;
+  font-family: "SegoeUIBoldItalic";
+  height: 9rem;
+  padding-top: .8rem; }
+
+.news a:hover {
+  color: #307a56; }
 
 .article__link {
   display: block;
@@ -1416,6 +1431,15 @@ main.text {
 .text .collapsing {
   color: #fff;
   background: #307a56; }
+
+.listnews {
+  padding: 0 7rem 1rem;
+  margin-top: -3rem; }
+  .listnews .flexbox {
+    flex-wrap: wrap; }
+  .listnews .news {
+    margin-top: 4rem;
+    width: 25%; }
 
 .modal-open {
   overflow: hidden; }
