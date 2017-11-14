@@ -1,0 +1,17 @@
+.articles{
+	padding: 0 7rem 1rem;
+	margin-top: -3rem;
+
+	.flexbox{
+		flex-wrap: wrap;
+	}
+
+	.article{
+		margin-top: 4rem;
+		width: 25%;
+		&__link{
+			display: block;
+			width: 219px;
+		}
+	}
+}
