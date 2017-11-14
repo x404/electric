@@ -16,16 +16,74 @@ main.text{
 		font-style: normal;
 	}
 
+	strong{
+		font-weight: normal;
+		@extend .bold;
+	}
+
 	table{
 		margin: 2rem 0 0; 
 		border-collapse: collapse;
 		td{
 			border: 1px solid $color6;
 			padding: 8px;
+			vertical-align: top;
 		}
 		&.table-noborder{
 			td{
 				border: none;
+			}
+		}
+	}
+
+	.columns{
+		display: flex;
+		.column{
+			flex-basis: 50%;
+			padding-right: 1rem;
+		}
+	}
+
+	.accordion{
+		margin: 0 2.5rem 2rem; 
+		@extend.italic;
+		.item{
+			margin-top: 2.3rem;
+		}
+		&__title{
+			@include font-size(1.5);
+			font-weight: normal;
+			a{
+				background-color: $color3;
+				display: block;
+				padding:1rem 1.7rem;
+				color: $color2;
+				span{
+					border-bottom: 1px dashed $color10;				
+				}
+				&.collapsed{
+					background-color: $color10;
+					color: $color14;
+				}
+				&:hover{
+					text-decoration: none;
+					background-color: $color3;
+					color: $color2;
+					span{
+						border-bottom-color: $color3;						
+					}
+				}
+			}
+		}
+		&__body{
+			padding-left: 1.7rem;
+			padding-bottom: 1rem;
+			li{
+				margin: .5rem 0;
+			}
+
+			h3{
+				font-family: "SegoeUIBoldItalic";
 			}
 		}
 	}
@@ -51,7 +109,7 @@ main.text{
 			&:after{
 				@extend .before;
 				@include transition;
-				background:url(../images/zoom.png) no-repeat center center rgba(0, 122, 187, .55);
+				background:url(../images/zoom.png) no-repeat center center rgba($color3, .55);
 				height: 100%;
 				left: 0;
 				opacity: 0;
@@ -199,3 +257,9 @@ main.text{
 }
 
 
+
+// line
+.line{
+	border-top: 1px solid;
+	border-image: linear-gradient(to left, rgba(255, 255, 255, 1) 1%, rgba(155, 188, 170, 1) 50%, rgba(255, 255, 255, 1) 100%) 100% 0 100% 0;
+}
