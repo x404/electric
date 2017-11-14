@@ -1,4 +1,5 @@
-.pagination{
+.pagination,
+.navnews{
 	@extend .italic;
 	border-top: 1px solid;
 	border-image: linear-gradient(to left, rgba(255, 255, 255, 1) 1%, rgba(155, 188, 170, 1) 50%, rgba(255, 255, 255, 1) 100%) 100% 0 100% 0/1px 0 1px 0 stretch;
@@ -18,4 +19,38 @@
 		color: $color3;
 		text-decoration: underline;
 	}
+}
+
+.navnews{
+	color: $color9;
+	.prev,
+	.next{
+		display: inline-block;
+		color: $color4;
+		position: relative;
+		&:before{
+			@include transition-param(color);
+			color: $color9;
+			@extend .before;
+		}
+		&:hover{
+			&:before{
+				color: $color3;
+			}
+		}
+	}
+
+	.prev{
+		&:before{
+			content: "<--";
+			left: -30px;
+		}
+	}
+	.next{
+		&:before{
+			content: "-->";
+			right: -30px;
+		}
+	}
+
 }

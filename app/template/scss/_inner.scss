@@ -87,6 +87,10 @@ main.text{
 			}
 		}
 	}
+
+	img{
+		max-width: 100%;
+	}
 }
 
 
@@ -263,3 +267,28 @@ main.text{
 	border-top: 1px solid;
 	border-image: linear-gradient(to left, rgba(255, 255, 255, 1) 1%, rgba(155, 188, 170, 1) 50%, rgba(255, 255, 255, 1) 100%) 100% 0 100% 0;
 }
+
+a.fancybox{
+	display: inline-block;
+	position: relative;
+	img{
+		vertical-align: top;
+	}
+	&:after{
+		@extend .before;
+		@include transition-param;
+		background:url(../images/zoom.png) no-repeat center center rgba($color3, .8);
+		height: 100%;
+		left: 0;
+		opacity: 0;
+		top: 0;
+		width: 100%;
+		z-index: 999;
+	}
+	&:hover{
+		&:after{
+			opacity: .55;
+		}
+	}
+}
+

@@ -68,6 +68,8 @@ $(document).ready(function(){
 	});	
 
 
+	$('a.fancybox').fancybox()
+
 	// mobile-menu
 	$('#navbar').each(function(){
 		var $this = $(this),

@@ -134,7 +134,8 @@ input::-moz-focus-inner {
 .video__title, .close-modal span {
   font-family: "SegoeUIBold"; }
 
-.italic, .neck .writeus-link, .more, .policy, .footer__cities, .share, .rubrics__faq, .rubrics__reviews, .news, .feedback__form .row .form-control, .feedback__form .row textarea, .feedback__form .submit, .breadcrumbs, main.text em, main.text .accordion, .reviews__carousel, .modal-dialog .title, .modal form, .modal form .form-control, .modal form .submit, #infomodal .modal__content, #about .modal__content, .pagination {
+.italic, .neck .writeus-link, .more, .policy, .footer__cities, .share, .rubrics__faq, .rubrics__reviews, .news, .feedback__form .row .form-control, .feedback__form .row textarea, .feedback__form .submit, .breadcrumbs, main.text em, main.text .accordion, .reviews__carousel, .modal-dialog .title, .modal form, .modal form .form-control, .modal form .submit, #infomodal .modal__content, #about .modal__content, .pagination,
+.navnews {
   font-family: "SegoeUIItalic"; }
 
 /*** standart classes *****/
@@ -170,9 +171,11 @@ input::-moz-focus-inner {
   border: 0;
   padding: 0; }
 
-.tdn, .nav > li .subnav li a, .text a, .more a, .policy a, .footer__cities a, .kreotif a, .rubrics__faq a, .rubrics__reviews a, .news a, .feedback .vcard .email, .breadcrumbs li.B_crumb a, .listlinks .flexbox a, .modal form .policy a, .pagination a {
+.tdn, .nav > li .subnav li a, .text a, .more a, .policy a, .footer__cities a, .kreotif a, .rubrics__faq a, .rubrics__reviews a, .news a, .feedback .vcard .email, .breadcrumbs li.B_crumb a, .listlinks .flexbox a, .modal form .policy a, .pagination a,
+.navnews a {
   text-decoration: none; }
-  .tdn:hover, .nav > li .subnav li a:hover, .text a:hover, .more a:hover, .policy a:hover, .footer__cities a:hover, .kreotif a:hover, .rubrics__faq a:hover, .rubrics__reviews a:hover, .news a:hover, .feedback .vcard .email:hover, .breadcrumbs li.B_crumb a:hover, .listlinks .flexbox a:hover, .modal form .policy a:hover, .pagination a:hover {
+  .tdn:hover, .nav > li .subnav li a:hover, .text a:hover, .more a:hover, .policy a:hover, .footer__cities a:hover, .kreotif a:hover, .rubrics__faq a:hover, .rubrics__reviews a:hover, .news a:hover, .feedback .vcard .email:hover, .breadcrumbs li.B_crumb a:hover, .listlinks .flexbox a:hover, .modal form .policy a:hover, .pagination a:hover,
+  .navnews a:hover {
     text-decoration: underline; }
 
 .tdu {
@@ -180,8 +183,9 @@ input::-moz-focus-inner {
   .tdu:hover {
     text-decoration: none; }
 
-.before, .nav > li .subnav:before, .services__item a:after, .team__link:after, .allservices__link:before, .allservices__item:before, .allservices__item .goody__item-link:before, .gallery__item a:after, .btn:after, .listlinks .flexbox li:before, .photo__item a:after,
-.video__item a:after {
+.before, .nav > li .subnav:before, .services__item a:after, .team__link:after, .allservices__link:before, .allservices__item:before, .allservices__item .goody__item-link:before, .gallery__item a:after, .btn:after, .listlinks .flexbox li:before, a.fancybox:after, .photo__item a:after,
+.video__item a:after, .navnews .prev:before,
+.navnews .next:before {
   content: "";
   display: block;
   position: absolute; }
@@ -1192,6 +1196,8 @@ main.text {
         margin: .5rem 0; }
       main.text .accordion__body h3 {
         font-family: "SegoeUIBoldItalic"; }
+  main.text img {
+    max-width: 100%; }
 
 .gallery {
   margin-top: 2.8rem; }
@@ -1305,6 +1311,24 @@ main.text {
 .line {
   border-top: 1px solid;
   border-image: linear-gradient(to left, white 1%, #9bbcaa 50%, white 100%) 100% 0 100% 0; }
+
+a.fancybox {
+  display: inline-block;
+  position: relative; }
+  a.fancybox img {
+    vertical-align: top; }
+  a.fancybox:after {
+    -webkit-transition: opacity 0.2s ease-out;
+    transition: opacity 0.2s ease-out;
+    background: url(../images/zoom.png) no-repeat center center rgba(48, 122, 86, 0.8);
+    height: 100%;
+    left: 0;
+    opacity: 0;
+    top: 0;
+    width: 100%;
+    z-index: 999; }
+  a.fancybox:hover:after {
+    opacity: .55; }
 
 /* =subcat
 ---------------------------*/
@@ -1633,19 +1657,46 @@ form .thank {
   cursor: default !important;
   background-color: #ccc !important; }
 
-.pagination {
+.pagination,
+.navnews {
   border-top: 1px solid;
   border-image: linear-gradient(to left, white 1%, #9bbcaa 50%, white 100%) 100% 0 100% 0/1px 0 1px 0 stretch;
   margin-top: 2.5rem;
   padding: 1.5rem 0;
   text-align: center; }
-  .pagination a, .pagination span {
+  .pagination a, .pagination span,
+  .navnews a,
+  .navnews span {
     margin: 0 .2rem; }
-  .pagination a:hover {
+  .pagination a:hover,
+  .navnews a:hover {
     color: #307a56; }
-  .pagination .current {
+  .pagination .current,
+  .navnews .current {
     color: #307a56;
     text-decoration: underline; }
+
+.navnews {
+  color: #b2b2b2; }
+  .navnews .prev,
+  .navnews .next {
+    display: inline-block;
+    color: #333;
+    position: relative; }
+    .navnews .prev:before,
+    .navnews .next:before {
+      -webkit-transition: color 0.2s ease-out;
+      transition: color 0.2s ease-out;
+      color: #b2b2b2; }
+    .navnews .prev:hover:before,
+    .navnews .next:hover:before {
+      color: #307a56; }
+  .navnews .prev:before {
+    content: "<--";
+    left: -30px; }
+  .navnews .next:before {
+    content: "-->";
+    right: -30px; }
 
 .fade {
   opacity: 0;
