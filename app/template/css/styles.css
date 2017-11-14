@@ -134,7 +134,7 @@ input::-moz-focus-inner {
 .video__title, .close-modal span {
   font-family: "SegoeUIBold"; }
 
-.italic, .neck .writeus-link, .more, .policy, .footer__cities, .share, .rubrics__faq, .rubrics__reviews, .news, .feedback__form .row .form-control, .feedback__form .row textarea, .feedback__form .submit, .breadcrumbs, main.text em, main.text .accordion, .reviews__carousel, .modal-dialog .title, .modal form, .modal form .form-control, .modal form .submit, #infomodal .modal__content, #about .modal__content, .pagination,
+.italic, .neck .writeus-link, .more, .policy, .footer__cities, .share, .rubrics__faq, .rubrics__reviews, .news, .feedback__form .row .form-control, .feedback__form .row textarea, .feedback__form .submit, .breadcrumbs, main.text em, .accordion, .reviews__carousel, .modal-dialog .title, .modal form, .modal form .form-control, .modal form .submit, #infomodal .modal__content, #about .modal__content, .pagination,
 .navnews {
   font-family: "SegoeUIItalic"; }
 
@@ -757,11 +757,11 @@ label.error {
     justify-content: space-around;
     margin: 0 auto 2.4rem;
     width: 85%; }
-  .rubrics__faq__item, .rubrics__reviews__item {
+  .rubrics__faq-item, .rubrics__reviews-item {
     box-shadow: 0 0 5px #ccc;
     padding: 1rem 1rem 2rem;
     width: 22rem; }
-  .rubrics__faq__title, .rubrics__reviews__title {
+  .rubrics__faq-title, .rubrics__reviews-title {
     font-size: 14px;
     font-size: 1.4rem;
     font-family: "SegoeUIBoldItalic";
@@ -1165,40 +1165,46 @@ main.text {
     main.text .columns .column {
       flex-basis: 50%;
       padding-right: 1rem; }
-  main.text .accordion {
-    margin: 0 2.5rem 2rem; }
-    main.text .accordion .item {
-      margin-top: 2.3rem; }
-    main.text .accordion__title {
-      font-size: 15px;
-      font-size: 1.5rem;
-      font-weight: normal; }
-      main.text .accordion__title a {
-        background-color: #307a56;
-        display: block;
-        padding: 1rem 1.7rem;
-        color: #fff; }
-        main.text .accordion__title a span {
-          border-bottom: 1px dashed #f2f2f2; }
-        main.text .accordion__title a.collapsed {
-          background-color: #f2f2f2;
-          color: #666; }
-        main.text .accordion__title a:hover {
-          text-decoration: none;
-          background-color: #307a56;
-          color: #fff; }
-          main.text .accordion__title a:hover span {
-            border-bottom-color: #307a56; }
-    main.text .accordion__body {
-      padding-left: 1.7rem;
-      padding-bottom: 1rem; }
-      main.text .accordion__body li {
-        margin: .5rem 0; }
-      main.text .accordion__body h3 {
-        font-family: "SegoeUIBoldItalic"; }
   main.text img {
     max-width: 100%; }
 
+/* =accordion
+---------------------------*/
+.accordion {
+  margin: 0 2.5rem 2rem; }
+  .accordion .item {
+    margin-top: 2.3rem; }
+  .accordion__title {
+    font-size: 15px;
+    font-size: 1.5rem;
+    font-weight: normal; }
+    .accordion__title a {
+      background-color: #307a56;
+      display: block;
+      padding: 1rem 1.7rem;
+      color: #fff;
+      text-decoration: none; }
+      .accordion__title a span {
+        border-bottom: 1px dashed #f2f2f2; }
+      .accordion__title a.collapsed {
+        background-color: #f2f2f2;
+        color: #666; }
+      .accordion__title a:hover {
+        text-decoration: none;
+        background-color: #307a56;
+        color: #fff; }
+        .accordion__title a:hover span {
+          border-bottom-color: #307a56; }
+  .accordion__body {
+    padding-left: 1.7rem;
+    padding-bottom: 1rem; }
+    .accordion__body li {
+      margin: .5rem 0; }
+    .accordion__body h3 {
+      font-family: "SegoeUIBoldItalic"; }
+
+/* =/accordion
+---------------------------*/
 .gallery {
   margin-top: 2.8rem; }
   .gallery .flexbox {
@@ -1451,8 +1457,8 @@ a.fancybox {
       display: block;
       width: 219px; }
 
-.text .collapse.show,
-.text .collapsing {
+.collapse.show,
+.collapsing {
   color: #fff;
   background: #307a56; }
 

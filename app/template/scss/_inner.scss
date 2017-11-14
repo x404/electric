@@ -44,54 +44,60 @@ main.text{
 		}
 	}
 
-	.accordion{
-		margin: 0 2.5rem 2rem; 
-		@extend.italic;
-		.item{
-			margin-top: 2.3rem;
-		}
-		&__title{
-			@include font-size(1.5);
-			font-weight: normal;
-			a{
-				background-color: $color3;
-				display: block;
-				padding:1rem 1.7rem;
-				color: $color2;
-				span{
-					border-bottom: 1px dashed $color10;				
-				}
-				&.collapsed{
-					background-color: $color10;
-					color: $color14;
-				}
-				&:hover{
-					text-decoration: none;
-					background-color: $color3;
-					color: $color2;
-					span{
-						border-bottom-color: $color3;						
-					}
-				}
-			}
-		}
-		&__body{
-			padding-left: 1.7rem;
-			padding-bottom: 1rem;
-			li{
-				margin: .5rem 0;
-			}
-
-			h3{
-				font-family: "SegoeUIBoldItalic";
-			}
-		}
-	}
-
 	img{
 		max-width: 100%;
 	}
 }
+
+
+/* =accordion
+---------------------------*/
+.accordion{
+	margin: 0 2.5rem 2rem; 
+	@extend.italic;
+	.item{
+		margin-top: 2.3rem;
+	}
+	&__title{
+		@include font-size(1.5);
+		font-weight: normal;
+		a{
+			background-color: $color3;
+			display: block;
+			padding:1rem 1.7rem;
+			color: $color2;
+			text-decoration: none;
+			span{
+				border-bottom: 1px dashed $color10;				
+			}
+			&.collapsed{
+				background-color: $color10;
+				color: $color14;
+			}
+			&:hover{
+				text-decoration: none;
+				background-color: $color3;
+				color: $color2;
+				span{
+					border-bottom-color: $color3;						
+				}
+			}
+		}
+	}
+	&__body{
+		padding-left: 1.7rem;
+		padding-bottom: 1rem;
+		li{
+			margin: .5rem 0;
+		}
+
+		h3{
+			font-family: "SegoeUIBoldItalic";
+		}
+	}
+}
+/* =/accordion
+---------------------------*/
 
 
 .gallery{
