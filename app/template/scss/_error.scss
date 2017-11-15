@@ -1,0 +1,93 @@
+.page-error{
+	margin-bottom: -4rem;
+
+	.breadcrumbs{
+		margin-top: 0;
+		padding-top: 2rem;
+	}
+	.container{
+		position: relative;
+		padding-bottom: 5rem;
+		&:after{
+			@extend .before;
+			height: 100%;
+			width: 240px;
+			border-right: 240px solid $color7;
+			right: 240px;
+			top: 0;
+			bottom: 0;
+			z-index: -1;
+		}		
+	}
+
+	.text{
+		padding-top: 3rem;
+		padding-left: 48.1rem;
+	}
+
+	.numerror{
+		@include font-size(17);
+		@extend .bold;
+		color: $color3;
+		line-height: 1;
+		margin-top: -5.5rem;
+		padding-left: 10rem;
+		span{
+			color: $color2;
+		}
+	}
+
+	.texterror{
+		background: url(../images/perf-1.png) no-repeat right bottom;
+		margin: -140px 490px 0 157px;
+		min-height: 245px;
+		padding-bottom: 246px;
+		padding-right: 230px;
+		.box{
+			&:after{
+				background:url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAPCAAAAADIGBDzAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QA/4ePzL8AAAAHdElNRQfhCw8VKBKKdv25AAAAaUlEQVQI11XIsQ2DMBBA0Q+3QTawGOhYlWlspwlKJJQiFCkokEBQ+GzMK1+zDS+SrgdoRZ3FuAK0lNmfKa4JFmU+i0WeI+bI40vYfP8lbMIVaXwViDrmXxWIOnwdiLp4C0QfU3PUw/4+AQAqHMg9W8mUAAAAAElFTkSuQmCC") no-repeat left top;
+				bottom: -15px;
+				right: 17px;
+			}
+		}
+	}
+
+
+	
+	.variants{
+		background: url(../images/perf-2.png) no-repeat right top;
+		margin-right: 648px;
+		min-height: 320px;
+		margin-top: -10px;
+		padding-right: 157px;
+		padding-top: 217px;
+		.box{
+			&:after{
+				background:url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA8AAAAPCAAAAAAevcqWAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QA/4ePzL8AAAAHdElNRQfhCw8VMSjXeo0TAAAAfklEQVQI1z3KMWrDUBBF0TNjQYwbF04RAgE3xtby9Tf0IQvICvw1KWTrdof3olC24vmbEK9GOyZFKWUsf99p/4+l300QhNG6eTNqbd3l01SBMlpnVrnNo3U8SoYqa+v4OjMRnq3DLCSxreKOqaxLBz8n5E4PyJ2HWyDfdP2Af/YUNP60PVbqAAAAAElFTkSuQmCC") no-repeat right top;
+				top: -15px;
+				right: 17px;
+			}
+		}
+	}
+
+	.box{
+		@extend .cg;
+		background-color: $color5;
+		border-radius: 10px;
+		color: $color2;	
+		display: inline-block;
+		line-height: 1.7;
+		min-width: 235px;
+		padding: 2.1rem 1.8rem;
+		position: relative;
+		a{
+			color: $color2;
+			@extend .tdu;
+		}
+		&:after{
+			@extend .before;
+			height: 15px;
+			width: 16px;
+		}
+	}
+}

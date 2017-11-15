@@ -121,7 +121,7 @@ input::-moz-focus-inner {
   font-style: normal;
   font-weight: normal; }
 
-.cg, .nav, .subcat ul {
+.cg, .nav, .subcat ul, .page-error .box {
   font-family: 'CenturyGothic'; }
 
 .cgb {
@@ -131,7 +131,7 @@ input::-moz-focus-inner {
   font-family: 'CenturyGothicItalic'; }
 
 .bold, h1, .title, .contacts__tel, .slider__text, .services__title, .sqicons__item-title, .article__title, .team header h2, .team__name, .allservices__item-title, .allservices__item .goody__item-title, main.text h3, main.text strong, .btn, .feedback__form .submit, .photo__title,
-.video__title, .close-modal span {
+.video__title, .page-error .numerror, .close-modal span {
   font-family: "SegoeUIBold"; }
 
 .italic, .neck .writeus-link, .more, .policy, .footer__cities, .share, .rubrics__faq, .rubrics__reviews, .news, .breadcrumbs, main.text em, .accordion, .reviews__carousel, .feedback__form .row .form-control, .feedback__form .row textarea, .feedback__form .submit, .modal-dialog .title, .modal form, .modal form .form-control, .modal form .submit, #infomodal .modal__content, #about .modal__content, .pagination,
@@ -175,13 +175,13 @@ input::-moz-focus-inner {
   .navnews a:hover {
     text-decoration: underline; }
 
-.tdu {
+.tdu, .page-error .box a {
   text-decoration: underline; }
-  .tdu:hover {
+  .tdu:hover, .page-error .box a:hover {
     text-decoration: none; }
 
 .before, .nav > li .subnav:before, .services__item a:after, .team__link:after, .allservices__link:before, .allservices__item:before, .allservices__item .goody__item-link:before, .gallery__item a:after, .btn:after, .listlinks .flexbox li:before, a.fancybox:after, .photo__item a:after,
-.video__item a:after, .navnews .prev:before,
+.video__item a:after, .page-error .container:after, .page-error .box:after, .navnews .prev:before,
 .navnews .next:before {
   content: "";
   display: block;
@@ -1204,6 +1204,9 @@ main.text {
 .main .vcard {
   color: #000; }
 
+.main .container {
+  position: relative; }
+
 .vcard {
   font-size: 15px;
   font-size: 1.5rem;
@@ -1476,6 +1479,70 @@ a.fancybox {
   .listnews .news {
     margin-top: 4rem;
     width: 25%; }
+
+.page-error {
+  margin-bottom: -4rem; }
+  .page-error .breadcrumbs {
+    margin-top: 0;
+    padding-top: 2rem; }
+  .page-error .container {
+    position: relative;
+    padding-bottom: 5rem; }
+    .page-error .container:after {
+      height: 100%;
+      width: 240px;
+      border-right: 240px solid #e6e6e6;
+      right: 240px;
+      top: 0;
+      bottom: 0;
+      z-index: -1; }
+  .page-error .text {
+    padding-top: 3rem;
+    padding-left: 48.1rem; }
+  .page-error .numerror {
+    font-size: 170px;
+    font-size: 17rem;
+    color: #307a56;
+    line-height: 1;
+    margin-top: -5.5rem;
+    padding-left: 10rem; }
+    .page-error .numerror span {
+      color: #fff; }
+  .page-error .texterror {
+    background: url(../images/perf-1.png) no-repeat right bottom;
+    margin: -140px 490px 0 157px;
+    min-height: 245px;
+    padding-bottom: 246px;
+    padding-right: 230px; }
+    .page-error .texterror .box:after {
+      background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAPCAAAAADIGBDzAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QA/4ePzL8AAAAHdElNRQfhCw8VKBKKdv25AAAAaUlEQVQI11XIsQ2DMBBA0Q+3QTawGOhYlWlspwlKJJQiFCkokEBQ+GzMK1+zDS+SrgdoRZ3FuAK0lNmfKa4JFmU+i0WeI+bI40vYfP8lbMIVaXwViDrmXxWIOnwdiLp4C0QfU3PUw/4+AQAqHMg9W8mUAAAAAElFTkSuQmCC") no-repeat left top;
+      bottom: -15px;
+      right: 17px; }
+  .page-error .variants {
+    background: url(../images/perf-2.png) no-repeat right top;
+    margin-right: 648px;
+    min-height: 320px;
+    margin-top: -10px;
+    padding-right: 157px;
+    padding-top: 217px; }
+    .page-error .variants .box:after {
+      background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA8AAAAPCAAAAAAevcqWAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QA/4ePzL8AAAAHdElNRQfhCw8VMSjXeo0TAAAAfklEQVQI1z3KMWrDUBBF0TNjQYwbF04RAgE3xtby9Tf0IQvICvw1KWTrdof3olC24vmbEK9GOyZFKWUsf99p/4+l300QhNG6eTNqbd3l01SBMlpnVrnNo3U8SoYqa+v4OjMRnq3DLCSxreKOqaxLBz8n5E4PyJ2HWyDfdP2Af/YUNP60PVbqAAAAAElFTkSuQmCC") no-repeat right top;
+      top: -15px;
+      right: 17px; }
+  .page-error .box {
+    background-color: #8c8c8c;
+    border-radius: 10px;
+    color: #fff;
+    display: inline-block;
+    line-height: 1.7;
+    min-width: 235px;
+    padding: 2.1rem 1.8rem;
+    position: relative; }
+    .page-error .box a {
+      color: #fff; }
+    .page-error .box:after {
+      height: 15px;
+      width: 16px; }
 
 .modal-open {
   overflow: hidden; }

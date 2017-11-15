@@ -278,7 +278,12 @@ main.text{
 	.vcard{
 		color: $color1;
 	}
+	.container{
+		position: relative;
+	}
 }
+
+
 .vcard{
 	@include font-size(1.5);
 	margin: 1rem 0 1.4rem;
