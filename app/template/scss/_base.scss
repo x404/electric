@@ -152,7 +152,6 @@ input::-moz-focus-inner{
 }
 
 /*** standart classes *****/
-p{}
 a{color:#020000; @include transition;text-decoration-skip: ink;}
 h1{font-size:2.4rem; @extend .bold; text-align: center; text-transform: uppercase;}
 h2{font-size:2.4rem; font-weight: normal;}

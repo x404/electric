@@ -130,11 +130,11 @@ input::-moz-focus-inner {
 .cgi, .contacts__ring, .footer__navcopyright .copyright__right, .kreotif, .reviews__top {
   font-family: 'CenturyGothicItalic'; }
 
-.bold, h1, .title, .contacts__tel, .slider__text, .services__title, .sqicons__item-title, .article__title, .feedback__form .submit, .team header h2, .team__name, .allservices__item-title, .allservices__item .goody__item-title, main.text h3, main.text strong, .btn, .photo__title,
+.bold, h1, .title, .contacts__tel, .slider__text, .services__title, .sqicons__item-title, .article__title, .team header h2, .team__name, .allservices__item-title, .allservices__item .goody__item-title, main.text h3, main.text strong, .btn, .feedback__form .submit, .photo__title,
 .video__title, .close-modal span {
   font-family: "SegoeUIBold"; }
 
-.italic, .neck .writeus-link, .more, .policy, .footer__cities, .share, .rubrics__faq, .rubrics__reviews, .news, .feedback__form .row .form-control, .feedback__form .row textarea, .feedback__form .submit, .breadcrumbs, main.text em, .accordion, .reviews__carousel, .modal-dialog .title, .modal form, .modal form .form-control, .modal form .submit, #infomodal .modal__content, #about .modal__content, .pagination,
+.italic, .neck .writeus-link, .more, .policy, .footer__cities, .share, .rubrics__faq, .rubrics__reviews, .news, .breadcrumbs, main.text em, .accordion, .reviews__carousel, .feedback__form .row .form-control, .feedback__form .row textarea, .feedback__form .submit, .modal-dialog .title, .modal form, .modal form .form-control, .modal form .submit, #infomodal .modal__content, #about .modal__content, .pagination,
 .navnews {
   font-family: "SegoeUIItalic"; }
 
@@ -168,10 +168,10 @@ input::-moz-focus-inner {
   border: 0;
   padding: 0; }
 
-.tdn, .nav > li .subnav li a, .text a, .more a, .policy a, .footer__cities a, .kreotif a, .rubrics__faq a, .rubrics__reviews a, .news a, .feedback .vcard .email, .breadcrumbs li.B_crumb a, .listlinks .flexbox a, .modal form .policy a, .pagination a,
+.tdn, .nav > li .subnav li a, .text a, .more a, .policy a, .footer__cities a, .kreotif a, .rubrics__faq a, .rubrics__reviews a, .news a, .breadcrumbs li.B_crumb a, .listlinks .flexbox a, .vcard .email, .modal form .policy a, .pagination a,
 .navnews a {
   text-decoration: none; }
-  .tdn:hover, .nav > li .subnav li a:hover, .text a:hover, .more a:hover, .policy a:hover, .footer__cities a:hover, .kreotif a:hover, .rubrics__faq a:hover, .rubrics__reviews a:hover, .news a:hover, .feedback .vcard .email:hover, .breadcrumbs li.B_crumb a:hover, .listlinks .flexbox a:hover, .modal form .policy a:hover, .pagination a:hover,
+  .tdn:hover, .nav > li .subnav li a:hover, .text a:hover, .more a:hover, .policy a:hover, .footer__cities a:hover, .kreotif a:hover, .rubrics__faq a:hover, .rubrics__reviews a:hover, .news a:hover, .breadcrumbs li.B_crumb a:hover, .listlinks .flexbox a:hover, .vcard .email:hover, .modal form .policy a:hover, .pagination a:hover,
   .navnews a:hover {
     text-decoration: underline; }
 
@@ -846,123 +846,6 @@ label.error {
 
 /* =/map
 ---------------------------*/
-/* =feedback
----------------------------*/
-.feedback {
-  margin: 3.8rem auto 0;
-  z-index: 999; }
-  .feedback .title {
-    color: #307a56; }
-  .feedback .vcard {
-    font-size: 15px;
-    font-size: 1.5rem;
-    margin: 1rem 0 1.4rem; }
-    .feedback .vcard .name {
-      display: none; }
-    .feedback .vcard .adr {
-      margin-bottom: 1.2rem; }
-    .feedback .vcard .tel {
-      text-decoration: none;
-      margin-right: .5rem; }
-    .feedback .vcard .email {
-      margin-left: .5rem;
-      color: #307a56; }
-  .feedback__content {
-    padding: 0 0 1rem; }
-  .feedback__form {
-    border: 1px solid #e9e9e9;
-    box-shadow: 0 0 3px #e9e9e9;
-    margin: .8rem auto 0;
-    padding: .8rem .8rem 1.8rem;
-    position: relative;
-    width: 765px; }
-    .feedback__form .row {
-      display: -webkit-box;
-      display: -webkit-flex;
-      display: -moz-flex;
-      display: -ms-flexbox;
-      display: flex;
-      -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-      -webkit-justify-content: space-between;
-      -moz-justify-content: space-between;
-      justify-content: space-between;
-      margin-bottom: 1rem; }
-      .feedback__form .row input.form-control,
-      .feedback__form .row textarea {
-        border: 1px solid #ccc;
-        padding-left: 1.5rem;
-        padding-right: 1.5rem; }
-      .feedback__form .row input.form-control {
-        height: 3rem;
-        width: 245px; }
-        .feedback__form .row input.form-control::-webkit-input-placeholder {
-          color: #000; }
-        .feedback__form .row input.form-control::-moz-placeholder {
-          color: #000; }
-        .feedback__form .row input.form-control:-ms-input-placeholder {
-          color: #000; }
-        .feedback__form .row input.form-control:focus::-webkit-input-placeholder {
-          transition: line-height 0.5s ease; }
-        .feedback__form .row input.form-control:focus::-moz-placeholder {
-          transition: line-height 0.5s ease; }
-        .feedback__form .row input.form-control:focus:-ms-input-placeholder {
-          transition: line-height 0.5s ease; }
-      .feedback__form .row .form-control {
-        font-size: 14px;
-        font-size: 1.4rem; }
-      .feedback__form .row textarea {
-        flex: 1;
-        overflow: hidden;
-        height: 6.2rem; }
-        .feedback__form .row textarea::-webkit-input-placeholder {
-          color: #000; }
-        .feedback__form .row textarea::-moz-placeholder {
-          color: #000; }
-        .feedback__form .row textarea:-ms-input-placeholder {
-          color: #000; }
-        .feedback__form .row textarea:focus::-webkit-input-placeholder {
-          transition: line-height 0.5s ease; }
-        .feedback__form .row textarea:focus::-moz-placeholder {
-          transition: line-height 0.5s ease; }
-        .feedback__form .row textarea:focus:-ms-input-placeholder {
-          transition: line-height 0.5s ease; }
-      .feedback__form .row .error {
-        border: 1px solid red !important; }
-    .feedback__form .policy {
-      margin-top: 1.7rem; }
-    .feedback__form .submit {
-      background-image: -webkit-linear-gradient(top, #8bbaa3 0%, #317b57 100%);
-      background-image: -o-linear-gradient(top, #8bbaa3 0%, #317b57 100%);
-      background-image: linear-gradient(to bottom, #8bbaa3 0%, #317b57 100%);
-      background-repeat: repeat-x;
-      filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FF8BBAA3', endColorstr='#FF317B57', GradientType=0);
-      background-color: #e6e6e6;
-      border: none;
-      color: #fff;
-      cursor: pointer;
-      height: 6.2rem;
-      margin-left: 1rem;
-      margin-top: .6rem;
-      padding: 0.8rem 2rem;
-      text-decoration: none; }
-      .feedback__form .submit:hover {
-        opacity: .9;
-        background-image: -webkit-linear-gradient(top, #317b57 0%, #8bbaa3 100%);
-        background-image: -o-linear-gradient(top, #317b57 0%, #8bbaa3 100%);
-        background-image: linear-gradient(to bottom, #317b57 0%, #8bbaa3 100%);
-        background-repeat: repeat-x;
-        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FF317B57', endColorstr='#FF8BBAA3', GradientType=0); }
-    .feedback__form .thank {
-      background: none;
-      border: none;
-      height: 142px;
-      margin-bottom: 1rem;
-      padding-top: 70px;
-      position: static; }
-
-/* =/feedback
----------------------------*/
 .breadcrumbs {
   font-size: 12px;
   font-size: 1.2rem;
@@ -1316,6 +1199,127 @@ main.text {
     .listlinks .flexbox a:hover {
       color: #307a56; }
 
+/* =feedback
+---------------------------*/
+.main .vcard {
+  color: #000; }
+
+.vcard {
+  font-size: 15px;
+  font-size: 1.5rem;
+  margin: 1rem 0 1.4rem; }
+  .vcard .name {
+    display: none; }
+  .vcard .adr {
+    margin-bottom: 1.2rem; }
+  .vcard .tel {
+    text-decoration: none;
+    margin-right: .5rem; }
+  .vcard .email {
+    margin-left: .5rem;
+    color: #307a56; }
+
+.feedback {
+  margin: 3.8rem auto 0;
+  z-index: 999; }
+  .feedback .title {
+    color: #307a56; }
+  .feedback__content {
+    padding: 0 0 1rem; }
+  .feedback__form {
+    border: 1px solid #e9e9e9;
+    box-shadow: 0 0 3px #e9e9e9;
+    margin: .8rem auto 0;
+    padding: .8rem .8rem 1.8rem;
+    position: relative;
+    width: 765px; }
+    .feedback__form .row {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -moz-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+      -webkit-justify-content: space-between;
+      -moz-justify-content: space-between;
+      justify-content: space-between;
+      margin-bottom: 1rem; }
+      .feedback__form .row input.form-control,
+      .feedback__form .row textarea {
+        border: 1px solid #ccc;
+        padding-left: 1.5rem;
+        padding-right: 1.5rem; }
+      .feedback__form .row input.form-control {
+        height: 3rem;
+        width: 245px; }
+        .feedback__form .row input.form-control::-webkit-input-placeholder {
+          color: #000; }
+        .feedback__form .row input.form-control::-moz-placeholder {
+          color: #000; }
+        .feedback__form .row input.form-control:-ms-input-placeholder {
+          color: #000; }
+        .feedback__form .row input.form-control:focus::-webkit-input-placeholder {
+          transition: line-height 0.5s ease; }
+        .feedback__form .row input.form-control:focus::-moz-placeholder {
+          transition: line-height 0.5s ease; }
+        .feedback__form .row input.form-control:focus:-ms-input-placeholder {
+          transition: line-height 0.5s ease; }
+      .feedback__form .row .form-control {
+        font-size: 14px;
+        font-size: 1.4rem; }
+      .feedback__form .row textarea {
+        flex: 1;
+        overflow: hidden;
+        height: 6.2rem; }
+        .feedback__form .row textarea::-webkit-input-placeholder {
+          color: #000; }
+        .feedback__form .row textarea::-moz-placeholder {
+          color: #000; }
+        .feedback__form .row textarea:-ms-input-placeholder {
+          color: #000; }
+        .feedback__form .row textarea:focus::-webkit-input-placeholder {
+          transition: line-height 0.5s ease; }
+        .feedback__form .row textarea:focus::-moz-placeholder {
+          transition: line-height 0.5s ease; }
+        .feedback__form .row textarea:focus:-ms-input-placeholder {
+          transition: line-height 0.5s ease; }
+      .feedback__form .row .error {
+        border: 1px solid red !important; }
+    .feedback__form .policy {
+      margin-top: 1.7rem; }
+    .feedback__form .submit {
+      background-image: -webkit-linear-gradient(top, #8bbaa3 0%, #317b57 100%);
+      background-image: -o-linear-gradient(top, #8bbaa3 0%, #317b57 100%);
+      background-image: linear-gradient(to bottom, #8bbaa3 0%, #317b57 100%);
+      background-repeat: repeat-x;
+      filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FF8BBAA3', endColorstr='#FF317B57', GradientType=0);
+      background-color: #e6e6e6;
+      border: none;
+      color: #fff;
+      cursor: pointer;
+      height: 6.2rem;
+      margin-left: 1rem;
+      margin-top: .6rem;
+      padding: 0.8rem 2rem;
+      text-decoration: none; }
+      .feedback__form .submit:hover {
+        opacity: .9;
+        background-image: -webkit-linear-gradient(top, #317b57 0%, #8bbaa3 100%);
+        background-image: -o-linear-gradient(top, #317b57 0%, #8bbaa3 100%);
+        background-image: linear-gradient(to bottom, #317b57 0%, #8bbaa3 100%);
+        background-repeat: repeat-x;
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FF317B57', endColorstr='#FF8BBAA3', GradientType=0); }
+    .feedback__form .thank {
+      background: none;
+      border: none;
+      height: 142px;
+      margin-bottom: 1rem;
+      padding-top: 70px;
+      position: static; }
+
+/* =/feedback
+---------------------------*/
 .line {
   border-top: 1px solid;
   border-image: linear-gradient(to left, white 1%, #9bbcaa 50%, white 100%) 100% 0 100% 0; }
