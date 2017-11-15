@@ -164,9 +164,6 @@ h2.title {
   color: #8c8c8c;
   margin-bottom: 2rem; }
 
-*:focus {
-  outline: none; }
-
 input::-moz-focus-inner {
   border: 0;
   padding: 0; }
@@ -1248,11 +1245,16 @@ main.text {
     text-align: center; }
   .reviews__carousel {
     color: #303030; }
+    .reviews__carousel .reviews__item {
+      margin: 0 4rem; }
   .reviews__item {
     background-color: #f2f2f2;
     padding: 1.5rem 2.6rem;
-    margin: 0 4rem; }
-  .reviews__question {
+    margin-top: 3.5rem; }
+  .reviews__top {
+    font-size: 14px;
+    font-size: 1.4rem; }
+  .reviews__text {
     line-height: 1.3;
     margin-top: 1.5rem; }
   .reviews__answer {

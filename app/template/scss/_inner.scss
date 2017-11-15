@@ -161,20 +161,24 @@ main.text{
 	&__carousel{
 		color: $color11;
 		@extend .italic;
+		.reviews__item{
+			margin: 0 4rem;			
+		}
 	}
 
 	&__item{
 		background-color: $color10;
 		padding: 1.5rem 2.6rem;
-		margin: 0 4rem;
+		margin-top: 3.5rem;
 	}
 
 
 	&__top{
 		@extend .cgi;
+		@include font-size(1.4);
 	}
 
-	&__question{
+	&__text{
 		line-height: 1.3;
 		margin-top: 1.5rem;
 	}
