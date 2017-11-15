@@ -121,9 +121,15 @@
 			</div>
 			<div><a href="tel:+74951471711" class="tel">+7 (495) 147-1711</a> | <a href="mailto:info@schelkovo-electric.com" class="email" title="">info@schelkovo-electric.com</a></div>
 		</div>
+	</div>
+</div>
 
-		<div id="ymap"></div>
+<div>
+	<div id="ymap"></div>	
+</div>
 
+<div class="main">
+	<div class="container">
 		<!-- =feedback -->
 		<div class="feedback">
 			<div class="feedback__content text-center">
@@ -304,6 +310,40 @@
 <script src="//yastatic.net/share2/share.js"></script>
 
 <!-- InstanceBeginEditable name="EditRegion6" -->
+<script src="https://api-maps.yandex.ru/2.1.26/?lang=ru_RU"></script>
+<script>
+var map;
+var myCollection;	
+ymaps.ready(function () {
+	map = new ymaps.Map('ymap', {
+		center: [55.910526, 38.017170],
+		zoom: 13
+	});
+
+	myCollection = new ymaps.GeoObjectCollection(null, {
+		preset: 'islands#redDotIcon'
+	});
+	myCollection.add(new ymaps.Placemark(
+		[55.910526, 38.017170],
+		{
+			hintContent: 'SchelkovoELECTRIC',
+			balloonContent: ''
+		}
+	));
+
+	map.behaviors.disable('scrollZoom'); 
+
+	map.geoObjects.add(myCollection);
+
+	map.events.add('click', function onMapClick(e) {
+		if(map.behaviors.isEnabled('scrollZoom')) {
+			map.events.remove('click', onMapClick);
+		} else {
+			map.behaviors.enable(['scrollZoom']);
+		}
+	});
+})
+</script>
 <!-- InstanceEndEditable -->
 </body>
 <!-- InstanceEnd --></html>
