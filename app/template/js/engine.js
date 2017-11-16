@@ -92,6 +92,14 @@ $(document).ready(function(){
 		init();
 	});	
 
+	$(window).resize(function(){
+		if ($('body').width() > 640) {
+			$('body').removeClass('o-menu');
+			$('#navbar').css('height', 'auto');
+		}
+	});
+
+
 	$('.rubrics__nav a').click(function(e){
 		e.preventDefault();
 		let $this = $(this),
@@ -238,3 +246,11 @@ function startClock(sendform){
 	if (!timer)
 		timer = window.setInterval("showTime('" + sendform + "')",1000);
 }
+
+
+// показываем второй  уровень меню
+$(document).on('click', '.o-menu .folder > a, .o-menu .folder > span', function(e){
+	e.preventDefault();
+	var $this = $(this);
+	$this.next('.subnav').slideToggle().prev().toggleClass('open');
+})

@@ -1861,6 +1861,15 @@ tbody.collapse.show {
     display: block;
     transform: translate(-15px, 0);
     z-index: 9999; }
+  .o-menu .mobinfo {
+    padding-left: 1rem; }
+    .o-menu .mobinfo a {
+      color: #fff;
+      display: block;
+      margin: 1.8rem;
+      text-decoration: none; }
+      .o-menu .mobinfo a:hover {
+        text-decoration: underline; }
   .close-menu {
     -webkit-transition: all 0.2s ease-out;
     transition: all 0.2s ease-out;
@@ -1884,32 +1893,55 @@ tbody.collapse.show {
     color: green;
     display: block;
     left: 0;
+    margin-top: 0;
     padding-top: 15px;
     position: absolute;
     top: 0;
     transform: translate(-305px, 0);
     width: 230px; }
+    #navbar a {
+      border-bottom: none !important; }
     #navbar .container {
       padding: 0; }
     #navbar ul.mainnav {
       background: none;
       display: block;
       font-size: 15px;
-      margin-top: 0;
       padding-left: 15px; }
-      #navbar ul.mainnav ul {
-        position: static;
+      #navbar ul.mainnav .subnav {
+        display: none;
+        margin-top: -15px;
         opacity: 1;
+        padding-top: 0;
+        padding-left: 0;
+        position: static;
+        min-width: 0; }
+        #navbar ul.mainnav .subnav:before {
+          display: none; }
+        #navbar ul.mainnav .subnav-text {
+          display: none !important; }
+      #navbar ul.mainnav ul {
         background: none;
-        font-size: 14px !important; }
+        display: block !important;
+        font-size: 14px !important;
+        opacity: 1;
+        padding: 0;
+        position: static; }
         #navbar ul.mainnav ul li:after {
           top: 12px; }
       #navbar ul.mainnav > li.folder > a:after,
       #navbar ul.mainnav > li.folder > span:after {
-        top: 24px !important; }
+        background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAANCAYAAACUwi84AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAIlJREFUeNpi+P//vw0QBwMxAzbMxMDA4ALEa4A4iQEbAKoSB+Lt/yEgBd0EGIMXiHdAFSVjUwDCfEC8C90kdEcJQa37A8T5QCyBzeUCQHwXalIfuiQTEHdBJecBsRGyJCMQ98N0YnMDTLIfahJcAQcQ9yJJYoRDEVSyF2oNhgIfIM7FJgnCAAEGAKmlN490MQwsAAAAAElFTkSuQmCC") no-repeat right top;
+        top: 22px !important; }
+      #navbar ul.mainnav > li.folder > a.open:after,
+      #navbar ul.mainnav > li.folder > span.open:after {
+        -webkit-transform: rotate(90deg);
+        -ms-transform: rotate(90deg);
+        transform: rotate(90deg); }
       #navbar ul.mainnav > li.active > a {
         text-decoration: underline; }
       #navbar ul.mainnav li {
+        padding: 0;
         border-bottom: 1px solid #fff; }
         #navbar ul.mainnav li a, #navbar ul.mainnav li span {
           color: #fff;
@@ -1932,13 +1964,12 @@ tbody.collapse.show {
           position: relative; }
           #navbar ul.mainnav li.folder > a:after,
           #navbar ul.mainnav li.folder > span:after {
-            background: url(../images/arrow.png) no-repeat left bottom;
+            background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAANCAYAAACUwi84AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAIlJREFUeNpi+P//vw0QBwMxAzbMxMDA4ALEa4A4iQEbAKoSB+Lt/yEgBd0EGIMXiHdAFSVjUwDCfEC8C90kdEcJQa37A8T5QCyBzeUCQHwXalIfuiQTEHdBJecBsRGyJCMQ98N0YnMDTLIfahJcAQcQ9yJJYoRDEVSyF2oNhgIfIM7FJgnCAAEGAKmlN490MQwsAAAAAElFTkSuQmCC") no-repeat right top;
             content: "";
             display: block;
             height: 12px;
             position: absolute;
-            right: 10px;
-            top: 9px;
+            right: 20px;
             width: 8px; }
         #navbar ul.mainnav li.folder ul.show {
           display: block; }
@@ -1947,22 +1978,6 @@ tbody.collapse.show {
           background-position: left top;
           width: 12px;
           height: 8px; }
-        #navbar ul.mainnav li.folder .folder {
-          padding-left: .5rem;
-          padding-right: 0; }
-          #navbar ul.mainnav li.folder .folder > a:after,
-          #navbar ul.mainnav li.folder .folder > span:after {
-            display: none; }
-          #navbar ul.mainnav li.folder .folder li ul li {
-            position: relative; }
-            #navbar ul.mainnav li.folder .folder li ul li a:before {
-              content: "-";
-              z-index: 10;
-              position: absolute;
-              left: 4px;
-              top: 8px; }
-          #navbar ul.mainnav li.folder .folder li ul.folder > ul {
-            display: none !important; }
         #navbar ul.mainnav li.active a:hover {
           color: #fff; }
         #navbar ul.mainnav li.active > ul {
@@ -2259,7 +2274,9 @@ tbody.collapse.show {
 
 @media (max-width: 420px) {
   .neck .logo {
-    margin-left: 22%; } }
+    margin-left: 22%; }
+  #ymap {
+    height: 300px; } }
 
 @media (max-width: 400px) {
   .services__item {
@@ -2267,8 +2284,10 @@ tbody.collapse.show {
 
 @media (max-width: 370px) {
   .neck .logo {
-    width: 220px; } }
-
-@media (max-width: 370px) {
+    width: 220px; }
   .services__item {
     width: 250px; } }
+
+@media (max-width: 370px) {
+  #ymap {
+    height: 240px; } }

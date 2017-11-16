@@ -47,8 +47,6 @@ $color5: green;
 
 
 	.o-menu{
-		.header{
-		}
 		.close-menu{
 			display: block;
 			transform: translate(0, 0);
@@ -57,6 +55,18 @@ $color5: green;
 			display: block;
 			transform: translate(-15px, 0);
 			z-index: 9999;
+		}
+		.mobinfo{
+			padding-left: 1rem;
+			a{
+				color: $color2;
+				display: block;
+				margin: 1.8rem;
+				text-decoration: none;
+				&:hover{
+					text-decoration: underline;
+				}
+			}
 		}
 	}
 
@@ -85,11 +95,15 @@ $color5: green;
 		color: $color5;
 		display: block;
 		left: 0;
+		margin-top: 0;
 		padding-top: 15px;
 		position: absolute;
 		top: 0;
 		transform: translate(-305px, 0);
 		width: 230px;
+		a{
+			border-bottom: none !important;
+		}
 		.container{
 			padding: 0;
 		}
@@ -97,13 +111,30 @@ $color5: green;
 			background: none;
 			display: block;
 			font-size: 15px;
-			margin-top: 0;
 			padding-left: 15px;
-			ul{
-				position: static; 
+			.subnav{
+				display: none;
+				margin-top: -15px;
 				opacity: 1;
+				padding-top: 0;
+				padding-left: 0;
+				position: static;
+				min-width: 0;
+				&:before{
+					display: none;
+				}
+				&-text{
+					display: none !important;
+				}
+			}
+
+			ul{
 				background: none;
+				display: block !important;
 				font-size: 14px !important;
+				opacity: 1;
+				padding: 0;
+				position: static; 
 				li:after{
 					top: 12px;
 				}
@@ -112,13 +143,21 @@ $color5: green;
 			& > li.folder > span
 			{
 				&:after{
-					top: 24px !important;
+					background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAANCAYAAACUwi84AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAIlJREFUeNpi+P//vw0QBwMxAzbMxMDA4ALEa4A4iQEbAKoSB+Lt/yEgBd0EGIMXiHdAFSVjUwDCfEC8C90kdEcJQa37A8T5QCyBzeUCQHwXalIfuiQTEHdBJecBsRGyJCMQ98N0YnMDTLIfahJcAQcQ9yJJYoRDEVSyF2oNhgIfIM7FJgnCAAEGAKmlN490MQwsAAAAAElFTkSuQmCC") no-repeat right top;
+					top: 22px !important;
+				}
+
+				&.open{
+					&:after{
+						@include rotation(90deg);
+					}
 				}
 			}
 			& > li.active > a{
 				text-decoration: underline;				
 			}
 			li{ // 1 level
+				padding: 0;
 				border-bottom: 1px solid #fff;
 				a, span{
 					color: $color2;
@@ -147,13 +186,12 @@ $color5: green;
 					& > span{
 						position: relative;
 						&:after{
-							background: url(../images/arrow.png) no-repeat left bottom;
+							background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAANCAYAAACUwi84AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAIlJREFUeNpi+P//vw0QBwMxAzbMxMDA4ALEa4A4iQEbAKoSB+Lt/yEgBd0EGIMXiHdAFSVjUwDCfEC8C90kdEcJQa37A8T5QCyBzeUCQHwXalIfuiQTEHdBJecBsRGyJCMQ98N0YnMDTLIfahJcAQcQ9yJJYoRDEVSyF2oNhgIfIM7FJgnCAAEGAKmlN490MQwsAAAAAElFTkSuQmCC") no-repeat right top;
 							content: "";
 							display: block;
 							height: 12px;
 							position: absolute;
-							right: 10px;
-							top: 9px;
+							right: 20px;
 							width: 8px;
 						}
 					}
@@ -169,35 +207,6 @@ $color5: green;
 						}						
 					}
 
-					.folder{ // 2 level
-						padding-left: .5rem;
-						padding-right: 0;
-						& > a,
-						& > span{
-							&:after{
-								display: none;
-							}
-						}
-						li{
-							ul{
-								li{
-									position: relative;
-									a:before{
-										content: "-";
-										z-index: 10;
-										position: absolute;
-										left: 4px;
-										top: 8px;
-									}
-								}
-								&.folder{
-									& > ul{
-										display: none !important;										
-									}
-								}
-							}
-						}
-					}
 				}
 
 				&.active{

@@ -287,6 +287,10 @@
 	.neck .logo{
 		margin-left: 22%;
 	}
+
+	#ymap{
+		height: 300px;
+	}
 }
 
 
@@ -303,11 +307,14 @@
 			width: 220px;
 		}
 	}
+	.services__item{
+		width: 250px;
+	}
 }
 
 
 @media (max-width: 370px){
-	.services__item{
-		width: 250px;
+	#ymap{
+		height: 240px;
 	}
 }
