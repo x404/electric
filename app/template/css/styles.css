@@ -2110,6 +2110,11 @@ tbody.collapse.show {
   .title {
     text-align: center; } }
 
+@media (max-width: 360px) {
+  .title {
+    font-size: 22px;
+    font-size: 2.2rem; } }
+
 @media (max-width: 1650px) {
   .neck .logo {
     position: relative;
@@ -2250,7 +2255,16 @@ tbody.collapse.show {
   .rubrics__body .rubrics__faq,
   .rubrics__body .rubrics__reviews {
     margin-right: 0;
-    margin-bottom: 2.5rem; } }
+    margin-bottom: 2.5rem; }
+  .rubrics__faq-title, .rubrics__reviews-title {
+    height: auto;
+    padding-bottom: 1.5rem;
+    margin-bottom: 0; }
+  .rubrics__reviews-item {
+    min-height: 0 !important; }
+  .news__title {
+    height: auto;
+    padding-bottom: 1rem; } }
 
 @media (max-width: 500px) {
   .neck {
@@ -2280,7 +2294,13 @@ tbody.collapse.show {
 
 @media (max-width: 400px) {
   .services__item {
-    width: 260px; } }
+    width: 260px; }
+  .sqicons__item {
+    flex-flow: column;
+    align-items: center;
+    text-align: center; }
+  .sqicons__text {
+    padding-left: 0; } }
 
 @media (max-width: 370px) {
   .neck .logo {
