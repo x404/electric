@@ -18,9 +18,9 @@
 <script src="/template/js/jquery.bxslider.min.js"></script>
 
 
-<!--[if !IE]><<!--></!-->
+<!--[if !IE]>
 <script>if(/*@cc_on!@*/false){document.documentElement.className+=' ie10';}</script>
-<!--<![endif]-->
+<![endif]-->
 
 <!--[if IE]>
 	<link href="/template/css/styles-ie.css" rel="stylesheet" type="text/css" />
@@ -144,7 +144,7 @@
 		<p>Но победить удалось главное это любить свою работу. Розетки и выключатели АВВ Basic 55 (Германия) с декоративными вставками под цвет отделки стен (подбираются отдельно и индивидуально), в гараже использованы механизмы розеток со шторками и уплотнительные силиконовые кольца Merten для защиты от брызг и влаги. На мой взгляд удобней и практичней чем розетки с крышкой, которые все лепят куда нужно и нет Накладные розетки Eslo (Германия).</p>
 		<p>Щиток АВВ UK548, автоматы АВВ серии S и УЗО серии F, противопожарное 3-х фазное на вводе 100мА, и на каждую из трех фаз отдельное узо 30 мА для защиты человека от поражения током.</p>
 		
-		<p class="more text-right">< <a href="#" title="">подробнее</a> ></p>
+		<p class="more text-right">&lt; <a href="#" title="">подробнее</a> &gt;</p>
 	</section>
 	<!-- =/about -->
 
@@ -160,7 +160,6 @@
 		</div>
 
 		<div class="flexbox sqicons-flexbox">
-			<!-- .sqicons__item>.sqicons__pic>img[src="/template/images/icons/.png"]+^.sqicons__text>h3.sqicons__item-title+p -->
 			<div class="sqicons__item">
 				<div class="sqicons__pic"><img src="/template/images/icons/clock.png" alt="" /></div>
 				<div class="sqicons__text">
@@ -398,7 +397,7 @@
 						</div>
 					</div>
 				</div>
-				<div class="more text-center rubrics__bottom">< <a href="#" title="" class="rubrics__link">перейти в раздел</a> ></div>
+				<div class="more text-center rubrics__bottom">&lt; <a href="#" title="" class="rubrics__link">перейти в раздел</a> &gt;</div>
 			</div>
 			<div class="tab" id="tab-articles">
 				<div class="flexbox">
@@ -427,7 +426,7 @@
 						</a>
 					</div>
 				</div>
-				<div class="more text-center rubrics__bottom">< <a href="#" title="" class="rubrics__link">перейти в раздел</a> ></div>
+				<div class="more text-center rubrics__bottom">&lt; <a href="#" title="" class="rubrics__link">перейти в раздел</a> &gt;</div>
 			</div>
 			<div class="tab" id="tab-faq">
 				<div class="flexbox">
@@ -456,7 +455,7 @@
 						</div>
 					</div>
 				</div>
-				<div class="more text-center rubrics__bottom">< <a href="#" title="" class="rubrics__link">перейти в раздел</a> ></div>
+				<div class="more text-center rubrics__bottom">&lt; <a href="#" title="" class="rubrics__link">перейти в раздел</a> &gt;</div>
 			</div>
 			<div class="tab" id="tab-reviews">
 				<div class="flexbox">
@@ -485,7 +484,7 @@
 						</div>
 					</div>
 				</div>
-				<div class="more text-center rubrics__bottom">< <a href="#" title="" class="rubrics__link">перейти в раздел</a> ></div>
+				<div class="more text-center rubrics__bottom">&lt; <a href="#" title="" class="rubrics__link">перейти в раздел</a> &gt;</div>
 			</div>
 		</div>
 	</section>
@@ -539,12 +538,18 @@
 	<form action="#" method="post" id="feedback-form" class="feedback__form form-policy">
 		<fieldset>
 			<div class="row">
-				<input name="name" type="text" value="" class="form-control required" required placeholder="как вас зовут? *" aria-required="true" />
-				<input name="tel" type="tel" value="" class="form-control required" required placeholder="ваш номер телефона *" aria-required="true" />
-				<input name="email" type="email" value="" class="form-control required email" required placeholder="ваш e-mail *" aria-required="true" />
+				<label for="feedback-name" class="visual-hidden">Ваше имя</label>
+				<input name="name" id="feedback-name" type="text" value="" class="form-control required" required placeholder="как вас зовут? *" aria-required="true" />
+
+				<label for="feedback-tel" class="visual-hidden">Телефон</label>
+				<input name="tel" id="feedback-tel" type="tel" value="" class="form-control required" required placeholder="ваш номер телефона *" aria-required="true" />
+
+				<label for="feedback-email" class="visual-hidden">E-mail</label>
+				<input name="email" id="feedback-email" type="email" value="" class="form-control required email" required placeholder="ваш e-mail *" aria-required="true" />
 			</div>
 			<div class="row">
-				<textarea name="msg" id="msg" cols="30" rows="10" placeholder="Текст вашего сообщения" class="form-control"></textarea>
+				<label for="feedback-msg" class="visual-hidden">Текст вашего сообщения</label>
+				<textarea name="msg" id="feedback-msg" cols="30" rows="10" placeholder="Текст вашего сообщения" class="form-control"></textarea>
 				<input type="submit" name="feedback" class="submit" value="отправить" />
 			</div>
 			<div class="qorder__form-row policy">
@@ -626,11 +631,15 @@
 <div class="modal fade callback" id="callback" tabindex="-1" role="dialog" aria-hidden="true">
 	<div class="modal-dialog" role="document">
 		<div class="container">
-			<button type="button" data-dismiss="modal" class="close-modal">< <span>Х</span> ></button>
+			<button type="button" data-dismiss="modal" class="close-modal">&lt; <span aria-label="Закрыть">Х</span> &gt;</button>
 			<form action="#" method="post" class="form-policy" id="callback-form">
 				<fieldset>
-					<input type="text" name="name" class="form-control required" value="" placeholder="Ваше имя" tabindex="0" autofocus>
-					<input type="tel" name="tel" class="form-control required" value="" placeholder="Ваш номер телефона" tabindex="1">
+					<label for="callback-name" class="visual-hidden">Ваше имя</label>
+					<input type="text" id="callback-name" name="name" class="form-control required" value="" placeholder="Ваше имя" tabindex="0" autofocus>
+
+					<label for="callback-tel" class="visual-hidden">Телефон</label>
+					<input type="tel" id="callback-tel" name="tel" class="form-control required" value="" placeholder="Ваш номер телефона" tabindex="1">
+
 					<input type="submit" name="callback_submit" class="submit" tabindex="2" value="позвонить мне" />
 
 					<div class="policy">
@@ -649,15 +658,19 @@
 <div class="modal fade writeus" id="writeus" tabindex="-1" role="dialog" aria-hidden="true">
 	<div class="modal-dialog" role="document">
 		<div class="container">
-			<button type="button" data-dismiss="modal" class="close-modal">< <span>Х</span> ></button>
+			<button type="button" data-dismiss="modal" class="close-modal">&lt; <span aria-label="Закрыть">Х</span> &gt;</button>
 			<form action="#" method="post" class="form-policy" id="writeus-form">
 				<fieldset>
 					<div class="row">
-						<input name="name" type="text" value="" class="form-control required" required placeholder="ваше имя *" aria-required="true" />
+						<label for="writeus-name" class="visual-hidden">Ваше имя</label>
+						<input name="name" id="writeus-name" type="text" value="" class="form-control required" required placeholder="ваше имя *" aria-required="true" />
+						<label for="writeus-tel" class="visual-hidden">Телефон</label>
 						<input name="tel" type="tel" value="" class="form-control required" required placeholder="номер телефона *" aria-required="true" />
-						<input name="email" type="email" value="" class="form-control required email" required placeholder="ваш e-mail *" aria-required="true" />
+						<label for="writeus-email" class="visual-hidden">E-mail</label>
+						<input name="email" type="email" id="writeus-email" value="" class="form-control required email" required placeholder="ваш e-mail *" aria-required="true" />
 					</div>
-					<textarea name="msg" id="msg" cols="30" rows="10" placeholder="текст вашего сообщения" class="form-control"></textarea>
+					<label for="writeus-msg" class="visual-hidden">Текст вашего сообщения</label>
+					<textarea name="msg" id="writeus-msg" cols="30" rows="10" placeholder="текст вашего сообщения" class="form-control"></textarea>
 					<input type="submit" name="feedback" class="submit" value="отправить" />
 					<div class="qorder__form-row policy">
 						<input type="checkbox" id="checkbox3" value="" name="checkbox" checked="checked" class="user-access">
