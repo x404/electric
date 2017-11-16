@@ -637,6 +637,7 @@ footer{
 		@extend .italic;
 		display: flex;
 		flex-direction: column;
+		flex-shrink: 0;
 		justify-content: center;
 		width: 900px;
 		a{

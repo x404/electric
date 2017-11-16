@@ -15,6 +15,9 @@ $color5: green;
 
 
 @media (max-width: 767px){
+	.show-sm{
+		display: block;
+	}
 	.navbar-toggle{
 		background-color: $color5;
 		border: none;

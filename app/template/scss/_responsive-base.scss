@@ -1,14 +1,172 @@
+@media (max-width: 1400px){
+	.footer{
+		&__cities{
+			width: 817px;
+		}
+		&__social-icons{
+			margin-left: 1.2rem;
+		}
+	}
+}
+
+
 @media (max-width: 1199px){
+	.contacts{
+		flex-shrink: 0
+	}
+
+	.footer{
+		&__cities{
+			width: 640px;
+		}
+		&__social-icons{
+			margin-left: 1.2rem;
+		}
+		&__navcopyright{
+			width: 520px;
+			.nav{
+				padding-right: 1rem;
+				width: 100%;
+			}
+		}
+	}
 }
 
 @media (max-width: 1024px){
 }
 
 @media (max-width: 991px){
+	.header .contacts{
+		margin-left: .5rem;
+	}
+
+	.text,
+	.partners{
+		text-align: justify;
+	}
+
+	.footer{
+		&__top{
+			text-align: center;
+			height: auto;
+			.flexbox{
+				flex-flow: column;
+			}
+		}
+		&__bottom{
+			text-align: center;
+			.flexbox{
+				display: block;
+			}
+		}
+
+		&__logo{
+			display: none;
+		}
+		&__cities{
+			padding: 2rem 0;
+			width: auto;
+		}
+		&__social{
+			&-icons{
+				padding-bottom: 1rem;
+				width: auto;
+				a{
+					margin: 0 .5rem; 
+				}
+			}
+		}
+
+		&__navcopyright{
+			width: auto;
+		}
+	}
+
+	.contacts-footer{
+		background: none;
+		color: $color1;
+		height: auto;
+		padding-top: 1rem;
+		padding-bottom: 2rem;
+		width: auto;
+		a{
+			color: $color4;
+		}
+	}
+
+	.kreotif{
+		line-height: 1.6;
+		margin-left: 0;
+		text-align: center;
+	}
 }
 
 @media (max-width: 767px){
+	body{
+		display: block;
+	}
+
+	.header{
+		.contacts{
+			display: none;
+		}
+	}
+
+	.neck{
+		.logo{
+			text-align: center;
+			width: auto;
+		}
+		.writeus-link{
+			margin-left: 0;
+			position: static;
+		}
+	}
 }
 
-@media (max-width: 545px){
+
+@media (max-width: 650px){
+	.feedback__form{
+		.row{
+			display: block;
+			margin-bottom: 0;
+			.form-control{
+				width: 100% !important;
+			}
+		}
+		.submit{
+			margin-left: 0;
+			width: 100%;
+			@include font-size(1.5)
+		}
+	}
+}
+
+@media (max-width: 550px){
+	.footer__navcopyright .nav{
+		display: block;
+		li{
+			margin-bottom: .8rem;
+		}
+	}
+
+	.footer__navcopyright .copyright{
+		padding-top: 1rem;
+	}
+
+	.footer__social-icons{
+		justify-content: center
+	}
+}
+
+
+@media (max-width: 500px){
+	.title{
+		text-align: center;
+	}
+}
+
+
+@media (max-width: 450px){
+
 }

@@ -14,11 +14,11 @@ $(document).ready(function(){
 		responsive:{
 			0:{
 				items:1,
-				stagePadding: 15
+				stagePadding: 8
 			},
 			335:{
 				items:1,
-				stagePadding: 30
+				stagePadding: 15
 			},
 			380:{
 				items:1,
@@ -33,13 +33,10 @@ $(document).ready(function(){
 				stagePadding: 80
 			},
 			767:{
-				items:1,
+				items:2,
 				stagePadding: 0
 			},
-			991:{
-				items:2
-			},
-			1450:{
+			1199:{
 				items:3
 			}
 		}
