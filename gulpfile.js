@@ -140,7 +140,7 @@ gulp.task('generate-favicon', function(done) {
 	realFavicon.generateFavicon({
 		masterPicture: 'app/favicon.png',
 		dest: 'app/the_favicon',
-		iconsPath: '/',
+		iconsPath: '/the_favicon/',
 		design: {
 			ios: {
 				pictureAspect: 'noChange',
