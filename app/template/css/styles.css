@@ -2206,7 +2206,21 @@ tbody.collapse.show {
   .team__item {
     padding-right: 2rem; }
   .gallery__item {
-    padding-right: 1%; } }
+    padding-right: 1%; }
+  .photo__item,
+  .video__item {
+    min-height: 0;
+    margin: 1.4rem 0; }
+    .photo__item a,
+    .video__item a {
+      width: 95%; }
+  .photo__pic,
+  .video__pic {
+    min-height: 0; }
+  .photo__title,
+  .video__title {
+    font-size: 21px;
+    font-size: 2.1rem; } }
 
 @media (max-width: 1150px) {
   .slider__text {
@@ -2264,7 +2278,10 @@ tbody.collapse.show {
       flex-basis: 33.3%; }
   .youtube {
     max-width: 100%;
-    max-height: 380px; } }
+    max-height: 380px; }
+  .photo__item,
+  .video__item {
+    flex-basis: 50%; } }
 
 @media (max-width: 800px) {
   .feedback__form {
@@ -2333,7 +2350,13 @@ tbody.collapse.show {
     flex-basis: 100%;
     padding-right: 0; }
   .youtube {
-    max-height: 300px; } }
+    max-height: 300px; }
+  .photo__item,
+  .video__item {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 350px;
+    flex-basis: 100%; } }
 
 @media (max-width: 550px) {
   .allservices__link {
@@ -2406,7 +2429,11 @@ tbody.collapse.show {
   .neck .logo {
     margin-left: 22%; }
   #ymap {
-    height: 300px; } }
+    height: 300px; }
+  .photo__title,
+  .video__title {
+    font-size: 18px;
+    font-size: 1.8rem; } }
 
 @media (max-width: 400px) {
   .services__item {
@@ -2416,7 +2443,9 @@ tbody.collapse.show {
     align-items: center;
     text-align: center; }
   .sqicons__text {
-    padding-left: 0; } }
+    padding-left: 0; }
+  .subcat ul li span {
+    font-weight: bold; } }
 
 @media (max-width: 370px) {
   .neck .logo {
