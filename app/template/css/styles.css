@@ -2052,6 +2052,11 @@ tbody.collapse.show {
       flex-wrap: wrap; }
     .header-inner .logo {
       padding-bottom: 1rem; }
+  .table-responsive {
+    display: block;
+    width: 100%;
+    overflow-x: auto;
+    -ms-overflow-style: -ms-autohiding-scrollbar; }
   .text,
   .partners {
     text-align: justify; }
@@ -2198,7 +2203,9 @@ tbody.collapse.show {
     padding-bottom: 9rem;
     width: 46rem; }
   .team__item {
-    padding-right: 2rem; } }
+    padding-right: 2rem; }
+  .gallery__item {
+    padding-right: 1%; } }
 
 @media (max-width: 1150px) {
   .slider__text {
@@ -2249,7 +2256,14 @@ tbody.collapse.show {
   .rubrics__body .rubrics__reviews-item {
     min-height: 24rem; }
   .team__item {
-    flex-basis: 50%; } }
+    flex-basis: 50%; }
+  .gallery {
+    flex-wrap: wrap; }
+    .gallery__item {
+      flex-basis: 33.3%; }
+  .youtube {
+    max-width: 100%;
+    max-height: 380px; } }
 
 @media (max-width: 800px) {
   .feedback__form {
@@ -2304,12 +2318,21 @@ tbody.collapse.show {
     .team .infomodal .close {
       right: 20px; }
     .team .infomodal .modal__text {
-      text-align: justify; } }
+      text-align: justify; }
+  .btn {
+    font-size: 18px;
+    font-size: 1.8rem;
+    padding-left: 0;
+    padding-right: 0; }
+  .reviews__carousel {
+    text-align: justify; } }
 
 @media (max-width: 600px) {
   .sqicons__item {
     flex-basis: 100%;
-    padding-right: 0; } }
+    padding-right: 0; }
+  .youtube {
+    max-height: 300px; } }
 
 @media (max-width: 550px) {
   .allservices__link {
@@ -2318,7 +2341,15 @@ tbody.collapse.show {
     .allservices__link:before {
       opacity: .3; }
   .allservices__item {
-    text-align: justify; } }
+    text-align: justify; }
+  .reviews__carousel .reviews__item {
+    margin: 0 .5rem; }
+  .reviews .owl-nav {
+    display: none; }
+  .listlinks {
+    padding: .7rem 0; }
+    .listlinks .flexbox {
+      display: block; } }
 
 @media (max-width: 516px) {
   .rubrics__body .title {
@@ -2353,13 +2384,22 @@ tbody.collapse.show {
   .rubrics__body .flexbox {
     margin-bottom: -1rem !important; }
   .rubrics__body .more {
-    margin-top: 0; } }
+    margin-top: 0; }
+  .gallery__item {
+    flex-basis: 50%; } }
 
 @media (max-width: 450px) {
   .services__item {
     width: 280px; }
   .owl-nav {
-    display: none; } }
+    display: none; }
+  .youtube {
+    max-height: 240px; }
+  .gallery {
+    display: block;
+    text-align: center; }
+    .gallery__item {
+      flex-basis: 100%; } }
 
 @media (max-width: 420px) {
   .neck .logo {
@@ -2389,8 +2429,14 @@ tbody.collapse.show {
     padding-bottom: 1.5rem; }
   .allservices__item-title {
     font-size: 20px;
-    font-size: 2rem; } }
+    font-size: 2rem; }
+  .reviews__top {
+    text-align: left; } }
 
 @media (max-width: 370px) {
   #ymap {
     height: 240px; } }
+
+@media (max-width: 320px) {
+  .youtube {
+    max-height: 200px; } }

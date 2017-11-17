@@ -48,7 +48,21 @@ $(document).ready(function(){
 		nav:true,
 		dots: false,
 		items:1,
-		navText: ["", ""]
+		navText: ["", ""],
+		responsive:{
+			0:{
+				stagePadding: 8
+			},
+			335:{
+				stagePadding: 15
+			},
+			380:{
+				stagePadding: 30
+			},			
+			550:{
+				stagePadding: 0
+			}
+		}
 	});
 
 	// policy

@@ -91,6 +91,10 @@
 	.team__item{
 		padding-right: 2rem;
 	}
+
+	.gallery__item{
+		padding-right: 1%;
+	}
 }
 
 @media (max-width: 1150px){
@@ -171,6 +175,19 @@
 
 	.team__item{
 		flex-basis: 50%;
+	}
+
+	.gallery{
+		flex-wrap: wrap;
+		&__item{
+			flex-basis: 33.3%
+		}
+	}
+
+
+	.youtube{
+		max-width: 100%;
+		max-height: 380px;
 	}
 }
 
@@ -259,6 +276,17 @@
 			}
 		}
 	}
+
+
+	.btn{
+		@include font-size(1.8);
+		padding-left: 0;
+		padding-right: 0;
+	}
+
+	.reviews__carousel{
+		text-align: justify;
+	}
 }
 
 
@@ -266,6 +294,10 @@
 	.sqicons__item{
 		flex-basis: 100%;
 		padding-right: 0;
+	}
+
+	.youtube{
+		max-height: 300px;
 	}
 }
 
@@ -281,6 +313,21 @@
 		}
 		&__item{
 			text-align: justify;
+		}
+	}
+
+	.reviews__carousel .reviews__item{
+		margin: 0 .5rem;
+	}
+
+	.reviews .owl-nav{
+		display: none;
+	}
+
+	.listlinks{
+		padding: .7rem 0;
+		.flexbox{
+			display: block;
 		}
 	}
 }
@@ -349,6 +396,11 @@
 			margin-top: 0;
 		}
 	}
+
+
+	.gallery__item{
+		flex-basis: 50%;
+	}
 }
 
 
@@ -358,6 +410,18 @@
 	}
 	.owl-nav{
 		display: none;
+	}
+
+	.youtube{
+		max-height: 240px;
+	}
+
+	.gallery{
+		display: block;
+		text-align: center;
+		&__item{
+			flex-basis: 100%
+		}
 	}
 }
 
@@ -413,11 +477,21 @@
 			@include font-size(2);
 		}
 	}
+
+	.reviews__top{
+		text-align: left;
+	}
 }
 
 
 @media (max-width: 370px){
 	#ymap{
 		height: 240px;
+	}
+}
+
+@media (max-width: 320px){
+	.youtube{
+		max-height: 200px;
 	}
 }
