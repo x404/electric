@@ -2053,6 +2053,7 @@ tbody.collapse.show {
     .header-inner .logo {
       padding-bottom: 1rem; }
   .table-responsive {
+    max-width: 100%;
     display: block;
     width: 100%;
     overflow-x: auto;
