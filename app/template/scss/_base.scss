@@ -259,6 +259,7 @@ header:not(.header){
 	&__nav{
 		margin-top: 5rem;
 		flex-basis: 72.5rem;
+		flex-shrink: 0;
 	}
 	.contacts{
 		margin-left: 5.5rem;

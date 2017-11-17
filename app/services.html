@@ -32,17 +32,17 @@
 <body>
 
 <!-- =header -->
-<header class="header">
+<header class="header header-inner">
 	<div class="container">
 		<div class="flexbox">
 		  <!-- =navbar -->
-		  <nav id="navbar" class="header__nav">
-				<ul class="nav nav-tabs" role="tablist">
+			<nav id="navbar" class="header__nav">
+				<ul class="nav nav-tabs mainnav" role="tablist">
 					<li><a class="nav-link" href="homepage.html" title="">Главная</a></li>
 					<li><a class="nav-link" href="about.html" title="">О нас</a></li>
-					<li>
+					<li class="folder">
 						<a class="nav-link" href="services.html" title="">Услуги</a>
-					  <div class="subnav">
+						<div class="subnav">
 							<ul>
 								<li class="active"><a href="#">Электромонтажные работы</a></li>
 								<li><a href="#">Монтаж электропроводки</a></li>
@@ -54,9 +54,9 @@
 					</li>
 					<li><a class="nav-link" href="price.html" title="">Цены</a></li>
 					<li><a class="nav-link" href="our-works-photo.html" title="">Наши работы</a></li>
-					<li>
+					<li class="folder">
 						<a class="nav-link" href="#" title="">Интересное</a>
-					  <div class="subnav">
+						<div class="subnav">
 							<ul>
 								<li><a href="articles.html" title="">Статьи</a></li>
 								<li><a href="news.html" title="">Новости</a></li>
@@ -67,25 +67,25 @@
 					</li>
 					<li><a class="nav-link" href="contacts.html" title="">Контакты</a></li>
 				</ul>
-				<div class="show-sm">
+				<div class="mobinfo show-sm">
 					<a class="hover-a" href="tel:74957840948">+7 (495) 784 0948</a>
-					<a class="hover-a" href="mailto:sales@shop-recovery.ru">sales@shop-recovery.ru</a>
+					<a class="hover-a" href="mailto:info@schelkovo-electric.com">info@schelkovo-electric.com</a>
 				</div>
-		  </nav>
+			</nav>
 			<button type="button" class="navbar-toggle">
 				<span class="icon-bar"></span>
 				<span class="icon-bar"></span>
 				<span class="icon-bar"></span>
 			</button>
-			<button type="button" class="close-menu"><img src="/template/images/close-modal.png" alt=""></button>
+			<button type="button" class="close-menu"><img src="/template/images/close.png" alt="Закрыть меню"></button>
 		  <!-- =/navbar -->
 
-		  <!-- =contacts -->
+			<!-- =contacts -->
 			<div class="contacts">
 				<a href="tel:+74951471711" class="contacts__tel">+7 (495) 147-1711</a>
 				<a href="#" title="" class="contacts__ring" data-toggle="modal" data-target="#callback" role="button">Заказать звонок</a>
 			</div>
-		  <!-- =/contacts -->
+			<!-- =/contacts -->
 			
 			<!-- =logo-->
 		  <div class="logo">
@@ -239,11 +239,15 @@
 <div class="modal fade callback" id="callback" tabindex="-1" role="dialog" aria-hidden="true">
 	<div class="modal-dialog" role="document">
 		<div class="container">
-			<button type="button" data-dismiss="modal" class="close-modal">&lt; <span>Х</span> &gt;</button>
+			<button type="button" data-dismiss="modal" class="close-modal">&lt; <span aria-label="Закрыть">Х</span> &gt;</button>
 			<form action="#" method="post" class="form-policy" id="callback-form">
 				<fieldset>
-					<input type="text" name="name" class="form-control required" value="" placeholder="Ваше имя" tabindex="0" autofocus>
-					<input type="tel" name="tel" class="form-control required" value="" placeholder="Ваш номер телефона" tabindex="1">
+					<label for="callback-name" class="visual-hidden">Ваше имя</label>
+					<input type="text" id="callback-name" name="name" class="form-control required" value="" placeholder="Ваше имя" tabindex="0" autofocus>
+
+					<label for="callback-tel" class="visual-hidden">Телефон</label>
+					<input type="tel" id="callback-tel" name="tel" class="form-control required" value="" placeholder="Ваш номер телефона" tabindex="1">
+
 					<input type="submit" name="callback_submit" class="submit" tabindex="2" value="позвонить мне" />
 
 					<div class="policy">
@@ -262,15 +266,19 @@
 <div class="modal fade writeus" id="writeus" tabindex="-1" role="dialog" aria-hidden="true">
 	<div class="modal-dialog" role="document">
 		<div class="container">
-			<button type="button" data-dismiss="modal" class="close-modal">&lt; <span>Х</span> &gt;</button>
+			<button type="button" data-dismiss="modal" class="close-modal">&lt; <span aria-label="Закрыть">Х</span> &gt;</button>
 			<form action="#" method="post" class="form-policy" id="writeus-form">
 				<fieldset>
 					<div class="row">
-						<input name="name" type="text" value="" class="form-control required" required placeholder="ваше имя *" aria-required="true" />
-						<input name="tel" type="tel" value="" class="form-control required" required placeholder="номер телефона *" aria-required="true" />
-						<input name="email" type="email" value="" class="form-control required email" required placeholder="ваш e-mail *" aria-required="true" />
+						<label for="writeus-name" class="visual-hidden">Ваше имя</label>
+						<input name="name" id="writeus-name" type="text" value="" class="form-control required" required placeholder="ваше имя *" aria-required="true" />
+						<label for="writeus-tel" class="visual-hidden">Телефон</label>
+						<input name="tel" id="writeus-tel" type="tel" value="" class="form-control required" required placeholder="номер телефона *" aria-required="true" />
+						<label for="writeus-email" class="visual-hidden">E-mail</label>
+						<input name="writeus" type="email" id="writeus-email" value="" class="form-control required email" required placeholder="ваш e-mail *" aria-required="true" />
 					</div>
-					<textarea name="msg" id="msg" cols="30" rows="10" placeholder="текст вашего сообщения" class="form-control"></textarea>
+					<label for="writeus-msg" class="visual-hidden">Текст вашего сообщения</label>
+					<textarea name="msg" id="writeus-msg" cols="30" rows="10" placeholder="текст вашего сообщения" class="form-control"></textarea>
 					<input type="submit" name="feedback" class="submit" value="отправить" />
 					<div class="qorder__form-row policy">
 						<input type="checkbox" id="checkbox3" value="" name="checkbox" checked="checked" class="user-access">

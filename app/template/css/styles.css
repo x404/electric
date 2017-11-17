@@ -240,7 +240,8 @@ header:not(.header) {
   background-color: #f2f2f2; }
   .header__nav {
     margin-top: 5rem;
-    flex-basis: 72.5rem; }
+    flex-basis: 72.5rem;
+    flex-shrink: 0; }
   .header .contacts {
     margin-left: 5.5rem; }
   .header .logo {
@@ -1873,20 +1874,26 @@ tbody.collapse.show {
   .close-menu {
     -webkit-transition: all 0.2s ease-out;
     transition: all 0.2s ease-out;
-    display: block;
-    transform: translate(-320px, 0);
-    background: none;
-    cursor: pointer;
-    padding: 0;
-    left: 215px;
-    background-color: green;
+    background: green;
     border: none;
+    cursor: pointer;
+    display: block;
     height: 70px;
+    left: 215px;
+    padding: 0;
     position: absolute;
     text-align: center;
     top: 0;
+    transform: translate(-320px, 0);
     width: 70px;
     z-index: 99; }
+    .close-menu img {
+      -webkit-transition: transform 0.2s ease-out;
+      transition: transform 0.2s ease-out; }
+    .close-menu:hover img {
+      -webkit-transform: rotate(180deg);
+      -ms-transform: rotate(180deg);
+      transform: rotate(180deg); }
   #navbar {
     transition: all .2s ease-out;
     background-color: green;
@@ -2019,6 +2026,11 @@ tbody.collapse.show {
     margin-left: 1.2rem; } }
 
 @media (max-width: 1199px) {
+  .header .contacts {
+    margin-left: 0; }
+  .header__nav {
+    flex-basis: auto;
+    flex-grow: 1; }
   .contacts {
     flex-shrink: 0; }
   .footer__cities {
@@ -2034,6 +2046,12 @@ tbody.collapse.show {
 @media (max-width: 991px) {
   .header .contacts {
     margin-left: .5rem; }
+  .header-inner {
+    background: none; }
+    .header-inner .flexbox {
+      flex-wrap: wrap; }
+    .header-inner .logo {
+      padding-bottom: 1rem; }
   .text,
   .partners {
     text-align: justify; }
@@ -2077,6 +2095,8 @@ tbody.collapse.show {
     display: block; }
   .header .contacts {
     display: none; }
+  .header-inner .logo {
+    margin-top: 1rem; }
   .neck .logo {
     text-align: center;
     width: auto; }
@@ -2164,7 +2184,9 @@ tbody.collapse.show {
     top: 110px; }
   .about {
     padding-bottom: 9rem;
-    width: 46rem; } }
+    width: 46rem; }
+  .team__item {
+    padding-right: 2rem; } }
 
 @media (max-width: 1150px) {
   .slider__text {
@@ -2213,7 +2235,9 @@ tbody.collapse.show {
   .rubrics__body .rubrics__reviews:nth-child(4n) {
     display: none; }
   .rubrics__body .rubrics__reviews-item {
-    min-height: 24rem; } }
+    min-height: 24rem; }
+  .team__item {
+    flex-basis: 50%; } }
 
 @media (max-width: 800px) {
   .feedback__form {
@@ -2238,7 +2262,37 @@ tbody.collapse.show {
   .rubrics__body .rubrics__faq,
   .rubrics__body .rubrics__reviews {
     margin-right: 1.5rem;
-    margin-bottom: 1.5rem; } }
+    margin-bottom: 1.5rem; }
+  .team__name a {
+    color: #000; } }
+
+@media (max-width: 650px) {
+  .team__item {
+    flex-basis: 100%;
+    margin-top: 4rem;
+    padding-right: 0; }
+    .team__item :after {
+      display: none !important; }
+  .team__link {
+    display: block;
+    flex-basis: 100%;
+    text-align: center; }
+  .team__cell {
+    padding-top: .5rem;
+    padding-left: 0;
+    width: 100%; }
+  .team .infomodal {
+    bottom: 0;
+    position: fixed;
+    z-index: 9999; }
+    .team .infomodal .modal-dialog {
+      overflow: auto;
+      margin: 0;
+      position: static; }
+    .team .infomodal .close {
+      right: 20px; }
+    .team .infomodal .modal__text {
+      text-align: justify; } }
 
 @media (max-width: 600px) {
   .sqicons__item {

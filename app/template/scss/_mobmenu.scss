@@ -72,20 +72,27 @@ $color5: green;
 
 	.close-menu{
 		@include transition;
-		display: block;
-		transform: translate(-320px, 0);	
-		background: none;
-		cursor: pointer;
-		padding: 0;
-		left: 215px;
-		background-color: $color5;
+		background: $color5;
 		border: none;
+		cursor: pointer;
+		display: block;
 		height: 70px;
+		left: 215px;
+		padding: 0;
 		position: absolute;
 		text-align: center;
 		top: 0;
+		transform: translate(-320px, 0);
 		width: 70px;
 		z-index: 99;
+		img{
+			@include transition-param(transform);
+		}
+		&:hover{
+			img{
+				@include rotation(180deg);
+			}
+		}
 	}
 
 
@@ -204,7 +211,7 @@ $color5: green;
 							background-position: left top;
 							width: 12px;
 							height: 8px;
-						}						
+						}
 					}
 
 				}
@@ -216,7 +223,7 @@ $color5: green;
 					a{
 						&:hover{
 							color : #fff;
-						}						
+						}
 					}
 
 					& > ul{

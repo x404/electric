@@ -11,6 +11,19 @@
 
 
 @media (max-width: 1199px){
+	.header{
+		.contacts{
+			margin-left: 0;
+		}
+		&__nav{
+			flex-basis: auto;
+			flex-grow: 1;
+		}
+	}
+
+	.header-homepage{
+	}
+
 	.contacts{
 		flex-shrink: 0
 	}
@@ -36,8 +49,20 @@
 }
 
 @media (max-width: 991px){
-	.header .contacts{
-		margin-left: .5rem;
+	.header{
+		.contacts{
+			margin-left: .5rem;
+		}
+
+		&-inner{
+			background: none;
+			.flexbox{
+				flex-wrap: wrap;
+			}
+			.logo{
+				padding-bottom: 1rem;
+			}
+		}
 	}
 
 	.text,
@@ -109,6 +134,12 @@
 	.header{
 		.contacts{
 			display: none;
+		}
+
+		&-inner{
+			.logo{
+				margin-top: 1rem;
+			}
 		}
 	}
 
