@@ -2088,7 +2088,12 @@ tbody.collapse.show {
   .kreotif {
     line-height: 1.6;
     margin-left: 0;
-    text-align: center; } }
+    text-align: center; }
+  .share {
+    display: block; }
+    .share p {
+      padding-right: 0;
+      margin-bottom: 1.5rem; } }
 
 @media (max-width: 767px) {
   body {
@@ -2129,6 +2134,13 @@ tbody.collapse.show {
 @media (max-width: 500px) {
   .title {
     text-align: center; } }
+
+@media (max-width: 450px) {
+  .share {
+    margin-top: 1.5rem;
+    margin-bottom: -2rem; }
+  .ya-share2 li {
+    margin-bottom: .5rem !important; } }
 
 @media (max-width: 360px) {
   .title {
@@ -2299,6 +2311,15 @@ tbody.collapse.show {
     flex-basis: 100%;
     padding-right: 0; } }
 
+@media (max-width: 550px) {
+  .allservices__link {
+    padding-left: 1rem;
+    padding-right: 1rem; }
+    .allservices__link:before {
+      opacity: .3; }
+  .allservices__item {
+    text-align: justify; } }
+
 @media (max-width: 516px) {
   .rubrics__body .title {
     text-align: center; }
@@ -2360,7 +2381,15 @@ tbody.collapse.show {
   .neck .logo {
     width: 220px; }
   .services__item {
-    width: 250px; } }
+    width: 250px; }
+  .allservices__item {
+    margin-bottom: 3rem; }
+  .allservices__link {
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem; }
+  .allservices__item-title {
+    font-size: 20px;
+    font-size: 2rem; } }
 
 @media (max-width: 370px) {
   #ymap {

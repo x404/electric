@@ -124,6 +124,14 @@
 		margin-left: 0;
 		text-align: center;
 	}
+
+	.share{
+		display: block;
+		p{
+			padding-right: 0;
+			margin-bottom: 1.5rem;
+		}
+	}
 }
 
 @media (max-width: 767px){
@@ -197,6 +205,16 @@
 	}
 }
 
+
+@media (max-width: 450px){
+	.share{
+		margin-top: 1.5rem;
+		margin-bottom: -2rem;
+	}
+	.ya-share2 li{
+		margin-bottom: .5rem !important;
+	}
+}
 
 @media (max-width: 360px){
 	.title{

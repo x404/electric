@@ -270,11 +270,19 @@
 }
 
 
-@media (max-width: 1024px){
-}
-
-
-@media (max-width: 500px){
+@media (max-width: 550px){
+	.allservices{
+		&__link{
+			padding-left: 1rem;
+			padding-right: 1rem;
+			&:before{
+				opacity: .3;
+			}
+		}
+		&__item{
+			text-align: justify;
+		}
+	}
 }
 
 
@@ -391,6 +399,19 @@
 	}
 	.services__item{
 		width: 250px;
+	}
+
+	.allservices{
+		&__item{
+			margin-bottom: 3rem;
+		}
+		&__link{
+			padding-top: 1.5rem;
+			padding-bottom: 1.5rem;
+		}
+		&__item-title{
+			@include font-size(2);
+		}
 	}
 }
 
