@@ -2146,7 +2146,13 @@ tbody.collapse.show {
     margin-top: 1.5rem;
     margin-bottom: -2rem; }
   .ya-share2 li {
-    margin-bottom: .5rem !important; } }
+    margin-bottom: .5rem !important; }
+  .breadcrumbs .B_crumbBox {
+    display: block; }
+    .breadcrumbs .B_crumbBox li {
+      display: inline-block; }
+      .breadcrumbs .B_crumbBox li.B_crumb:after {
+        display: inline-block; } }
 
 @media (max-width: 360px) {
   .title {

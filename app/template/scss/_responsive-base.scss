@@ -224,6 +224,18 @@
 	.ya-share2 li{
 		margin-bottom: .5rem !important;
 	}
+
+	.breadcrumbs{
+		.B_crumbBox{
+			display: block;
+			li{
+				display: inline-block;
+				&.B_crumb:after{
+					display: inline-block;					
+				}
+			}
+		}
+	}
 }
 
 @media (max-width: 360px){
