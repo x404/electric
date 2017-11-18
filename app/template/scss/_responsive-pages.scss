@@ -533,14 +533,16 @@
 	.reviews__top{
 		text-align: left;
 	}
-}
 
+	.video__textbox{
+		background-position: center top 35%;	
+	}
 
-@media (max-width: 370px){
 	#ymap{
 		height: 240px;
 	}
 }
+
 
 @media (max-width: 320px){
 	.youtube{

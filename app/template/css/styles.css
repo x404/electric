@@ -2467,9 +2467,9 @@ tbody.collapse.show {
     font-size: 20px;
     font-size: 2rem; }
   .reviews__top {
-    text-align: left; } }
-
-@media (max-width: 370px) {
+    text-align: left; }
+  .video__textbox {
+    background-position: center top 35%; }
   #ymap {
     height: 240px; } }
 
