@@ -114,6 +114,13 @@
 			@include font-size(2.1)
 		}
 	}
+
+
+	// articles
+	.articles{
+		padding-left: 0;
+		padding-right: 0;
+	}
 }
 
 @media (max-width: 1150px){
@@ -217,6 +224,15 @@
 			flex-basis: 50%
 		}
 	}
+
+
+	// articles
+	.articles{
+		.article{
+			margin-right: 2rem;
+			width: 219px;
+		}
+	}
 }
 
 
@@ -261,6 +277,31 @@
 	.team__name{
 		a{
 			color: $color1;
+		}
+	}
+
+	// articles
+	.articles{
+		.article{
+			margin-right: 1.2rem;
+			width: 219px;
+		}
+	}
+}
+
+
+@media (max-width: 740px){
+	// articles
+	.articles{
+		.flexbox{
+		}
+		.article{
+			margin-right: 0;
+			flex-basis: 50%;
+			&__link{
+				margin-left: auto;
+				margin-right: auto;
+			}
 		}
 	}
 }
@@ -410,6 +451,15 @@
 		height: auto;
 		padding-bottom: 1rem;
 	}
+
+	
+	// articles
+	.articles{
+		.article{
+			flex-basis: 100%;
+		}
+	}
+
 }
 
 
