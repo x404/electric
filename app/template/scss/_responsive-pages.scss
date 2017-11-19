@@ -53,6 +53,16 @@
 			width: 100%;
 		}
 	}
+
+	.page-error{
+		.container:after{
+			right: 210px;
+		}
+		.text{
+			padding-left: 35rem;
+			padding-bottom: 5rem;
+		}
+	}
 }
 
 
@@ -126,6 +136,23 @@
 	.accordion{
 		margin-left: 0;
 		margin-right: 0;
+	}
+
+	.page-error .container:after{
+		right: 183px;
+	}
+
+	.page-error{
+		.text{
+			padding-left: 21.9rem;
+		}
+		.texterror{
+			margin-left: 0;
+		}
+
+		.variants{
+			margin-right: 450px;
+		}
 	}
 }
 
@@ -263,6 +290,42 @@
 			text-align: justify;
 		}
 	}
+
+	// page error
+	.page-error{
+		.container:after{
+			display: none;
+		}
+		.text{
+			padding-left: 0;
+			text-align: center;
+			margin-bottom: 0;
+			padding-bottom: 3rem;
+		}
+
+		.numerror{
+			margin-top: 0;
+			padding-left: 0;
+			span{
+				color: $color3;
+			}
+		}
+
+		.texterror{
+			padding-right: 0;
+			margin: 0;
+			.box{
+				display: block;
+				width: 235px;
+				margin-left: auto;
+				margin-right: auto;
+			}
+		}
+
+		.variants{
+			margin-right: 14rem;
+		}
+	}
 }
 
 
@@ -398,6 +461,32 @@
 
 	.reviews__carousel{
 		text-align: justify;
+	}
+
+
+	.page-error{
+		.numerror{
+			@include font-size(10.3)
+		}
+		.text{
+			padding-bottom: 0;
+			padding-top: 1rem;
+		}
+
+		.texterror,
+		.variants{
+			min-height: 0;
+			background: none;
+			padding: 0;
+			margin: 3rem 0;
+			.box{
+				display: block !important;
+				width: 100%;
+				&:after{
+					display: none;
+				}
+			}
+		}
 	}
 }
 
@@ -578,6 +667,10 @@
 		&__title{
 			@include font-size(1.8)
 		}
+	}
+
+	.page-error .container{
+		padding-bottom: 1rem;
 	}
 }
 

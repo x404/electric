@@ -13,7 +13,7 @@
 
 @media (min-width: 768px) {
   .container {
-    width: 730px; } }
+    width: 715px; } }
 
 @media (min-width: 992px) {
   .container {
@@ -243,7 +243,8 @@ header:not(.header) {
     flex-basis: 72.5rem;
     flex-shrink: 0; }
   .header .contacts {
-    margin-left: 5.5rem; }
+    flex-shrink: 0;
+    margin-left: 2.5rem; }
   .header .logo {
     flex-grow: 1;
     display: flex; }
@@ -2021,24 +2022,30 @@ tbody.collapse.show {
 
 @media (max-width: 1400px) {
   .footer__cities {
-    width: 817px; }
+    width: 770px; }
   .footer__social-icons {
-    margin-left: 1.2rem; } }
+    margin-left: 1.2rem; }
+  .footer__navcopyright {
+    width: 650px; }
+  .header__nav {
+    flex-basis: 65rem; }
+  .header .contacts {
+    margin-left: 0; } }
 
 @media (max-width: 1199px) {
   .header .contacts {
     margin-left: 0; }
   .header__nav {
-    flex-basis: auto;
+    flex-basis: 50rem;
     flex-grow: 1; }
   .contacts {
     flex-shrink: 0; }
   .footer__cities {
-    width: 640px; }
+    width: 637px; }
   .footer__social-icons {
     margin-left: 1.2rem; }
   .footer__navcopyright {
-    width: 520px; }
+    width: 517px; }
     .footer__navcopyright .nav {
       padding-right: 1rem;
       width: 100%; } }
@@ -2052,6 +2059,10 @@ tbody.collapse.show {
       flex-wrap: wrap; }
     .header-inner .logo {
       padding-bottom: 1rem; }
+    .header-inner .header__nav {
+      padding-bottom: 2rem; }
+    .header-inner .contacts {
+      margin-left: 12rem; }
   .table-responsive {
     max-width: 100%;
     display: block;
@@ -2192,7 +2203,12 @@ tbody.collapse.show {
   .rubrics #tab-faq .flexbox,
   .rubrics #tab-news .flexbox,
   .rubrics #tab-reviews .flexbox {
-    width: 100%; } }
+    width: 100%; }
+  .page-error .container:after {
+    right: 210px; }
+  .page-error .text {
+    padding-left: 35rem;
+    padding-bottom: 5rem; } }
 
 @media (max-width: 1300px) {
   .neck .logo {
@@ -2235,7 +2251,15 @@ tbody.collapse.show {
     padding-right: 0; }
   .accordion {
     margin-left: 0;
-    margin-right: 0; } }
+    margin-right: 0; }
+  .page-error .container:after {
+    right: 183px; }
+  .page-error .text {
+    padding-left: 21.9rem; }
+  .page-error .texterror {
+    margin-left: 0; }
+  .page-error .variants {
+    margin-right: 450px; } }
 
 @media (max-width: 1150px) {
   .slider__text {
@@ -2308,7 +2332,29 @@ tbody.collapse.show {
   .accordion__body {
     text-align: justify; }
   .reviews__text, .reviews__answer {
-    text-align: justify; } }
+    text-align: justify; }
+  .page-error .container:after {
+    display: none; }
+  .page-error .text {
+    padding-left: 0;
+    text-align: center;
+    margin-bottom: 0;
+    padding-bottom: 3rem; }
+  .page-error .numerror {
+    margin-top: 0;
+    padding-left: 0; }
+    .page-error .numerror span {
+      color: #307a56; }
+  .page-error .texterror {
+    padding-right: 0;
+    margin: 0; }
+    .page-error .texterror .box {
+      display: block;
+      width: 235px;
+      margin-left: auto;
+      margin-right: auto; }
+  .page-error .variants {
+    margin-right: 14rem; } }
 
 @media (max-width: 800px) {
   .feedback__form {
@@ -2391,7 +2437,26 @@ tbody.collapse.show {
     padding-left: 0;
     padding-right: 0; }
   .reviews__carousel {
-    text-align: justify; } }
+    text-align: justify; }
+  .page-error .numerror {
+    font-size: 103px;
+    font-size: 10.3rem; }
+  .page-error .text {
+    padding-bottom: 0;
+    padding-top: 1rem; }
+  .page-error .texterror,
+  .page-error .variants {
+    min-height: 0;
+    background: none;
+    padding: 0;
+    margin: 3rem 0; }
+    .page-error .texterror .box,
+    .page-error .variants .box {
+      display: block !important;
+      width: 100%; }
+      .page-error .texterror .box:after,
+      .page-error .variants .box:after {
+        display: none; } }
 
 @media (max-width: 600px) {
   .sqicons__item {
@@ -2487,7 +2552,9 @@ tbody.collapse.show {
   .photo__title,
   .video__title {
     font-size: 18px;
-    font-size: 1.8rem; } }
+    font-size: 1.8rem; }
+  .page-error .container {
+    padding-bottom: 1rem; } }
 
 @media (max-width: 400px) {
   .services__item {

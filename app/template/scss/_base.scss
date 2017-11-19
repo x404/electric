@@ -262,7 +262,8 @@ header:not(.header){
 		flex-shrink: 0;
 	}
 	.contacts{
-		margin-left: 5.5rem;
+		flex-shrink: 0;
+		margin-left: 2.5rem;
 	}
 
 	.logo{

@@ -1,10 +1,22 @@
 @media (max-width: 1400px){
 	.footer{
 		&__cities{
-			width: 817px;
+			width: 770px;
 		}
 		&__social-icons{
 			margin-left: 1.2rem;
+		}
+		&__navcopyright{
+			width: 650px;
+		}
+	}
+
+	.header{
+		&__nav{
+			flex-basis: 65rem;
+		}
+		.contacts{
+			margin-left: 0;
 		}
 	}
 }
@@ -16,12 +28,9 @@
 			margin-left: 0;
 		}
 		&__nav{
-			flex-basis: auto;
+			flex-basis: 50rem;
 			flex-grow: 1;
 		}
-	}
-
-	.header-homepage{
 	}
 
 	.contacts{
@@ -30,13 +39,13 @@
 
 	.footer{
 		&__cities{
-			width: 640px;
+			width: 637px;
 		}
 		&__social-icons{
 			margin-left: 1.2rem;
 		}
 		&__navcopyright{
-			width: 520px;
+			width: 517px;
 			.nav{
 				padding-right: 1rem;
 				width: 100%;
@@ -61,6 +70,14 @@
 			}
 			.logo{
 				padding-bottom: 1rem;
+			}
+
+			.header__nav{
+				padding-bottom: 2rem;
+			}
+
+			.contacts{
+				margin-left: 12rem;
 			}
 		}
 	}
