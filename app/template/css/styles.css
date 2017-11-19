@@ -2229,7 +2229,10 @@ tbody.collapse.show {
     font-size: 2.1rem; }
   .articles {
     padding-left: 0;
-    padding-right: 0; } }
+    padding-right: 0; }
+  .accordion {
+    margin-left: 0;
+    margin-right: 0; } }
 
 @media (max-width: 1150px) {
   .slider__text {
@@ -2293,7 +2296,9 @@ tbody.collapse.show {
     flex-basis: 50%; }
   .articles .article {
     margin-right: 2rem;
-    width: 219px; } }
+    width: 219px; }
+  main.text .columns .column {
+    padding-right: 4rem; } }
 
 @media (max-width: 800px) {
   .feedback__form {
@@ -2323,7 +2328,12 @@ tbody.collapse.show {
     color: #000; }
   .articles .article {
     margin-right: 1.2rem;
-    width: 219px; } }
+    width: 219px; }
+  main.text .columns {
+    flex-direction: column;
+    padding-right: 2rem; }
+    main.text .columns .column {
+      padding-right: 0; } }
 
 @media (max-width: 740px) {
   .articles .article {
