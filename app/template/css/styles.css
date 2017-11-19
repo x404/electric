@@ -2139,6 +2139,8 @@ tbody.collapse.show {
 
 @media (max-width: 500px) {
   .title {
+    text-align: center; }
+  .feedback__form .form-control {
     text-align: center; } }
 
 @media (max-width: 450px) {
@@ -2304,6 +2306,8 @@ tbody.collapse.show {
   main.text .columns .column {
     padding-right: 4rem; }
   .accordion__body {
+    text-align: justify; }
+  .reviews__text, .reviews__answer {
     text-align: justify; } }
 
 @media (max-width: 800px) {
@@ -2457,7 +2461,10 @@ tbody.collapse.show {
   .rubrics__body .more {
     margin-top: 0; }
   .gallery__item {
-    flex-basis: 50%; } }
+    flex-basis: 50%; }
+  .reviews__answer {
+    font-size: 14px;
+    font-size: 1.4rem; } }
 
 @media (max-width: 450px) {
   .services__item {

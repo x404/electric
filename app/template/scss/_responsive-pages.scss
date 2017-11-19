@@ -257,6 +257,12 @@
 			text-align: justify;
 		}
 	}
+	.reviews{
+		&__text,
+		&__answer{
+			text-align: justify;
+		}
+	}
 }
 
 
@@ -525,6 +531,12 @@
 
 	.gallery__item{
 		flex-basis: 50%;
+	}
+
+	.reviews{
+		&__answer{
+			@include font-size(1.4)
+		}
 	}
 }
 
