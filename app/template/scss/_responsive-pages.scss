@@ -251,6 +251,12 @@
 	main.text .columns .column{
 		padding-right: 4rem;
 	}
+
+	.accordion{
+		&__body{
+			text-align: justify;
+		}
+	}
 }
 
 

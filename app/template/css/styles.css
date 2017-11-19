@@ -1098,8 +1098,8 @@ main.text {
         .accordion__title a:hover span {
           border-bottom-color: #307a56; }
   .accordion__body {
-    padding-left: 1.7rem;
-    padding-bottom: 1rem; }
+    padding-bottom: 1rem;
+    padding: 0 1.5rem 1rem 1.7rem; }
     .accordion__body li {
       margin: .5rem 0; }
     .accordion__body h3 {
@@ -2302,7 +2302,9 @@ tbody.collapse.show {
     margin-right: 2rem;
     width: 22rem; }
   main.text .columns .column {
-    padding-right: 4rem; } }
+    padding-right: 4rem; }
+  .accordion__body {
+    text-align: justify; } }
 
 @media (max-width: 800px) {
   .feedback__form {
