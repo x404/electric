@@ -2227,7 +2227,8 @@ tbody.collapse.show {
   .video__title {
     font-size: 21px;
     font-size: 2.1rem; }
-  .articles {
+  .articles,
+  .listnews {
     padding-left: 0;
     padding-right: 0; }
   .accordion {
@@ -2297,6 +2298,9 @@ tbody.collapse.show {
   .articles .article {
     margin-right: 2rem;
     width: 219px; }
+  .listnews .news {
+    margin-right: 2rem;
+    width: 22rem; }
   main.text .columns .column {
     padding-right: 4rem; } }
 
@@ -2329,17 +2333,22 @@ tbody.collapse.show {
   .articles .article {
     margin-right: 1.2rem;
     width: 219px; }
+  .listnews .news {
+    margin-right: 1.2rem; }
   main.text .columns {
     flex-direction: column;
     padding-right: 2rem; }
     main.text .columns .column {
       padding-right: 0; } }
 
-@media (max-width: 740px) {
-  .articles .article {
+@media (max-width: 750px) {
+  .articles .article,
+  .listnews .news {
     margin-right: 0;
     flex-basis: 50%; }
-    .articles .article__link {
+    .articles .article__link, .articles .article__item,
+    .listnews .news__link,
+    .listnews .news__item {
       margin-left: auto;
       margin-right: auto; } }
 
@@ -2428,7 +2437,8 @@ tbody.collapse.show {
   .news__title {
     height: auto;
     padding-bottom: 1rem; }
-  .articles .article {
+  .articles .article,
+  .listnews .news {
     flex-basis: 100%; } }
 
 @media (max-width: 500px) {
