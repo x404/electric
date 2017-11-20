@@ -45,17 +45,11 @@ body{
 	color: $color4;
 	flex-flow: column;
 	font-display: swap;
-	// height: 100vh;
 	min-height: 100vh;
 }
 
 html, body{
 	height: 100%
-}
-
-
-@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
-	//ie11
 }
 
 
@@ -88,7 +82,6 @@ input::-moz-focus-inner{
          url('../fonts/CenturyGothicItalic.woff') format('woff'),
          url('../fonts/CenturyGothicItalic.ttf') format('truetype')
 }
-
 
 
 /* font-family: "SegoeUIRegular"; */
@@ -144,13 +137,6 @@ input::-moz-focus-inner{
 }
 
 
-
-.outerwrapper{
-	// -webkit-flex: 1;
-	// flex: 1;
-	// padding-bottom: 4rem;
-}
-
 /*** standart classes *****/
 a{color:#020000; @include transition;text-decoration-skip: ink;}
 h1{font-size:2.4rem; @extend .bold; text-align: center; text-transform: uppercase;}
@@ -202,7 +188,6 @@ input::-moz-focus-inner{
 	&:focus,
 	&:active{
 		border-color: $color3 !important;
-		// box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 2px rgba($color3, 1)
 	}
 }
 
@@ -285,7 +270,6 @@ header:not(.header){
 	display: flex;
 	justify-content: space-around;
 	color: $color3;
-	// width: 615px;
 	@extend .cg;
 	a,span{
 		@include transition-param(border-bottom);

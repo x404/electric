@@ -1447,10 +1447,10 @@ a.fancybox {
       display: block; }
   .photo__textbox,
   .video__textbox {
+    height: 100%;
     position: absolute;
     top: 0;
-    z-index: 2;
-    height: 100%; }
+    z-index: 2; }
     .photo__textbox .flexbox,
     .video__textbox .flexbox {
       height: 100%;
@@ -1511,12 +1511,12 @@ a.fancybox {
     position: relative;
     padding-bottom: 5rem; }
     .page-error .container:after {
-      height: 100%;
-      width: 240px;
       border-right: 240px solid #e6e6e6;
+      bottom: 0;
+      height: 100%;
       right: 240px;
       top: 0;
-      bottom: 0;
+      width: 240px;
       z-index: -1; }
   .page-error .text {
     padding-top: 3rem;

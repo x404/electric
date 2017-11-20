@@ -6,7 +6,7 @@
 		justify-content: center;
 		@extend .cg;
 		li{
-
+			margin: 0 1.5rem; 	
 			a{
 				color: $color12;
 				border-bottom: 1px solid rgba(0,0,0,0);
@@ -21,7 +21,6 @@
 				color: $color3;
 				cursor: default;
 			}
-			margin: 0 1.5rem; 	
 		}
 	}
 }
@@ -37,7 +36,6 @@
 .video{
 	flex-wrap: wrap;
 	&__item{
-		
 		@extend .block-center;
 		color: $color2;
 		flex-basis: 33.3%;
@@ -67,7 +65,6 @@
 			&:after{
 				@extend .before;
 				@include transition-param;
-				// background:  rgba(0, 122, 187, .55);
 				@extend .gradient-green;
 				height: 100%;
 				left: 0;
@@ -99,10 +96,10 @@
 	}
 
 	&__textbox{
+		height: 100%;
 		position: absolute;
 		top: 0;
 		z-index: 2;
-		height: 100%;
 		.flexbox{
 			height: 100%;			
 			flex-flow: column;

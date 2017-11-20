@@ -145,7 +145,6 @@ form{
 
 .modal{
 	form{
-		// background-color: $color2;
 		@extend .italic;
 		$color: $color3;
 		.form-control{
@@ -177,7 +176,6 @@ form{
 			padding: 1rem 4.5rem;
 			border-radius: 4px;
 			&:hover{
-				// opacity: .9;
 				@extend .gradientflip-green;
 			}
 		}
@@ -257,14 +255,6 @@ form{
 		}
 	}
 }
-
-
-
-
-
-
-
-
 
 
 #about{

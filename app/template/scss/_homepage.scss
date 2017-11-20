@@ -61,7 +61,6 @@ $h1 : 360px;
 ---------------------------*/
 .about{
 	height: $h1;
-	// margin-bottom: 4rem;
 	position: relative;
 	width: 55rem;
 	z-index: 10;
@@ -231,7 +230,6 @@ $h1 : 360px;
 		@include font-size(2.4);
 		color: $color5;
 		font-family: "SegoeUIBoldItalic";
-		// font-style: italic;
 		li{
 			&.separator{
 				margin: 0 1.5rem;

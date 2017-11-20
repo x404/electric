@@ -1,10 +1,11 @@
 ::-ms-clear {
-        display: none;
+	display: none;
 }
 
 
 // safari
-_::-webkit-:host:not(:root:root), .header{
+_::-webkit-:host:not(:root:root), .slider{
+	// margin-bottom: -600px;
 }
 
 
@@ -192,5 +193,4 @@ html.ie10{
 			}
 		}
 	}
-
 }
