@@ -116,7 +116,7 @@ $(document).ready(function(){
 
 	$('.rubrics__nav a').click(function(e){
 		e.preventDefault();
-		let $this = $(this),
+		var $this = $(this),
 			target = $this.data('target');
 
 		$('.rubrics__nav a.current').removeClass('current');
@@ -143,53 +143,52 @@ $(document).ready(function(){
 
 
 
+var thankTxt = '<div class="thank text-center"><p>Спасибо! Ваше сообщение успешно отправлено</p></div>',
+	thankcallback = '<div class="thank text-center"><p>В ближайщее время с вами свяжутся наши менеджеры для уточнения всех деталей.</p></div>',
+	errorTxt = 'Возникла ошибка';
 
-	let thankTxt = '<div class="thank text-center"><p>Спасибо! Ваше сообщение успешно отправлено</p></div>',
-		thankcallback = '<div class="thank text-center"><p>В ближайщее время с вами свяжутся наши менеджеры для уточнения всех деталей.</p></div>',
-		errorTxt = 'Возникла ошибка';
+// validation
+$('#feedback-form').validate({
+	submitHandler: function(form){
+		var strSubmit=$(form).serialize();
+		$.ajax({type: "POST",url: $(form).attr('action'),data: strSubmit,
+			success: function(){
+				$('.feedback__form').append(thankTxt);
+				$('.feedback__form fieldset').hide();
+				startClock('feedback-form');
+			}
+		}).fail(function(error){alert(errorTxt)});
+	}
+}); 
 
-	// validation
-	$('#feedback-form').validate({
-		submitHandler: function(form){
-			var strSubmit=$(form).serialize();
-			$.ajax({type: "POST",url: $(form).attr('action'),data: strSubmit,
-				success: function(){
-					$('.feedback__form').append(thankTxt);
-					$('.feedback__form fieldset').hide();
-					startClock('feedback-form');
-				}
-			}).fail(function(error){alert(errorTxt)});
-		}
-	}); 
-
-	// validation callback form
-	$('#callback-form').validate({
-		submitHandler: function(form){
-			var strSubmit=$(form).serialize();
-			$.ajax({type: "POST",url: $(form).attr('action'),data: strSubmit,
-				success: function(){
-					console.log("success");
-					$('#callback-form').html(thankcallback);
-					startClock('callback');
-				}
-			}).fail(function(error){alert(errorTxt)});
-		}
-	}); 
+// validation callback form
+$('#callback-form').validate({
+	submitHandler: function(form){
+		var strSubmit=$(form).serialize();
+		$.ajax({type: "POST",url: $(form).attr('action'),data: strSubmit,
+			success: function(){
+				console.log("success");
+				$('#callback-form').html(thankcallback);
+				startClock('callback');
+			}
+		}).fail(function(error){alert(errorTxt)});
+	}
+}); 
 
 
-	// validation writeus form
-	$('#writeus-form').validate({
-		submitHandler: function(form){
-			var strSubmit=$(form).serialize();
-			$.ajax({type: "POST",url: $(form).attr('action'),data: strSubmit,
-				success: function(){
-					console.log("success");
-					$('#writeus-form').html(thankcallback);
-					startClock('writeus');
-				}
-			}).fail(function(error){alert(errorTxt)});
-		}
-	}); 	
+// validation writeus form
+$('#writeus-form').validate({
+	submitHandler: function(form){
+		var strSubmit=$(form).serialize();
+		$.ajax({type: "POST",url: $(form).attr('action'),data: strSubmit,
+			success: function(){
+				console.log("success");
+				$('#writeus-form').html(thankcallback);
+				startClock('writeus');
+			}
+		}).fail(function(error){alert(errorTxt)});
+	}
+}); 	
 
 // =заглушка для IE
 //event listener: DOM ready

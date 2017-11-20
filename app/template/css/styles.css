@@ -752,8 +752,7 @@ label.error {
     font-size: 24px;
     font-size: 2.4rem;
     color: #8c8c8c;
-    font-family: "SegoeUIBoldItalic";
-    font-style: italic; }
+    font-family: "SegoeUIBoldItalic"; }
     .rubrics__nav li.separator {
       margin: 0 1.5rem; }
     .rubrics__nav a {
@@ -2019,6 +2018,54 @@ tbody.collapse.show {
 
 ::-ms-clear {
   display: none; }
+
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+  html, body {
+    height: auto; }
+  textarea {
+    overflow: hidden; }
+  .slider .bx-controls {
+    z-index: 100; }
+  .sqicons__item {
+    flex-basis: calc(50% - 13rem); }
+  .services__textbox {
+    left: 0;
+    right: 0; }
+  .footer__navcopyright {
+    width: 782px; } }
+
+html.ie10 {
+  height: auto; }
+
+.ie10 body {
+  height: auto; }
+
+.ie10 textarea {
+  overflow: hidden; }
+
+.ie10 .contacts {
+  display: block;
+  text-align: center;
+  padding-top: 2rem; }
+  .ie10 .contacts a {
+    display: block;
+    margin: 1rem 0; }
+
+.ie10 .slider .bx-controls {
+  z-index: 100; }
+
+.ie10 .sqicons__item {
+  flex-basis: calc(50% - 13rem); }
+
+.ie10 .sqicons__text {
+  width: 100%; }
+
+.ie10 .services__textbox {
+  left: 0;
+  right: 0; }
+
+.ie10 .footer__navcopyright {
+  width: 782px; }
 
 @media (max-width: 1400px) {
   .footer__cities {

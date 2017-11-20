@@ -1,6 +1,5 @@
 <!DOCTYPE HTML>
-<html lang="ru">
-<head>
+<html lang="ru"><head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="keywords" content="" />
 <meta name="description" content="" />
@@ -26,12 +25,12 @@
 <script src="/template/js/libs.min.js"></script>
 <script src="/template/js/jquery.bxslider.min.js"></script>
 
+<!--[if !IE]><!-->
+<script>if(/*@cc_on!@*/false){document.documentElement.className+=' ie10';}</script>
+<!--<![endif]-->
+
 <!--[if IE]>
 	<link href="/template/css/styles-ie.css" rel="stylesheet" type="text/css" />
-<![endif]--> 
-
-<!--[if lt IE 9]>
-	<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 <![endif]--> 
 
 <!-- TemplateBeginEditable name="head" -->

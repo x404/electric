@@ -15,4 +15,75 @@ _::-webkit-:host:not(:root:root), .header{
 
 //ie11
 @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+	html, body{
+		height: auto;
+	}
+
+	textarea{
+		overflow: hidden;
+	}
+
+	.slider .bx-controls{
+		z-index: 100;
+	}
+
+	.sqicons__item{
+		flex-basis: calc(50% - 13rem);
+	}
+
+	.services__textbox{
+		left: 0;
+		right: 0;
+	}
+
+	.footer__navcopyright{
+		width: 782px;
+	}
+}
+
+
+html.ie10{
+	height: auto;
+}
+
+.ie10{
+	body{
+		height: auto;
+	}
+
+	textarea{
+		overflow: hidden;
+	}
+
+	.contacts{
+		display: block;
+		text-align: center;
+		padding-top: 2rem;
+		a{
+			display: block;
+			margin: 1rem 0;
+		}
+	}
+
+	.slider .bx-controls{
+		z-index: 100;
+	}
+
+	.sqicons{
+		&__item{
+			flex-basis: calc(50% - 13rem);
+		}
+		&__text{
+			width: 100%;
+		}
+	}
+
+	.services__textbox{
+		left: 0;
+		right: 0;
+	}
+
+	.footer__navcopyright{
+		width: 782px;
+	}
 }
