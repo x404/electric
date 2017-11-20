@@ -19,6 +19,11 @@ _::-webkit-:host:not(:root:root), .header{
 		height: auto;
 	}
 
+	.header .contacts{
+		margin-left: 6.2rem;
+	}
+
+
 	textarea{
 		overflow: hidden;
 	}
@@ -39,6 +44,69 @@ _::-webkit-:host:not(:root:root), .header{
 	.footer__navcopyright{
 		width: 782px;
 	}
+
+	.team__item{
+		flex-basis: calc(33.3% - 5rem)
+	}
+
+	// services
+	.allservices__link{
+		width: 100%;
+	}
+
+
+	// works photo video
+	.photo__textbox, 
+	.video__textbox{
+		width: 100%;
+	}
+
+
+	// pageerror
+	.page-error{
+		.text{
+			.title,
+			.numerror{
+				margin-left: 48.1rem;
+			}
+		}
+	}
+
+	@media (max-width: 1400px){
+		.page-error{
+			.text{
+				.title,
+				.numerror{
+					margin-left: 35.6rem;
+				}
+			}
+		}
+	}
+
+
+	@media (max-width: 1199px){
+		.page-error{
+			.text{
+				.title,
+				.numerror{
+					margin-left: 22.3rem;
+				}
+			}
+		}
+	}
+
+
+	@media (max-width: 991px){
+		.page-error{
+			.text{
+				.title,
+				.numerror{
+					margin-left: 0;
+				}
+			}
+		}
+	}
+
 }
 
 
@@ -86,4 +154,43 @@ html.ie10{
 	.footer__navcopyright{
 		width: 782px;
 	}
+
+	// about
+	.team{
+		&__item{
+			flex-basis: calc(31% - 5rem)
+		}
+		&__cell{
+			width: calc(100% - 5rem);
+			padding-right: 4rem;
+		}
+	}
+
+	// services
+	.allservices__link{
+		width: 100%;
+	}
+
+	// works photo video
+	.photo__textbox, 
+	.video__textbox{
+		width: 100%;
+	}
+
+	// articles
+	.article__title{
+		display: block;
+		padding-top: 3rem;
+	}
+
+	// pageerror
+	.page-error{
+		.text{
+			.title,
+			.numerror{
+				margin-left: 48.1rem;
+			}
+		}
+	}
+
 }
