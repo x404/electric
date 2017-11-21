@@ -13,7 +13,7 @@
 
 @media (min-width: 768px) {
   .container {
-    width: 715px; } }
+    width: 714px; } }
 
 @media (min-width: 992px) {
   .container {
@@ -147,6 +147,7 @@ a {
 
 h1 {
   font-size: 2.4rem;
+  font-weight: normal;
   text-align: center;
   text-transform: uppercase; }
 
@@ -2208,6 +2209,10 @@ html.ie10 {
       padding-right: 0;
       margin-bottom: 1.5rem; } }
 
+@media (max-width: 768px) {
+  .header__nav {
+    flex-basis: 48rem; } }
+
 @media (max-width: 767px) {
   body {
     display: block; }
@@ -2222,17 +2227,32 @@ html.ie10 {
     margin-left: 0;
     position: static; } }
 
+@media (max-width: 736px) {
+  #ymap {
+    height: 300px; } }
+
 @media (max-width: 650px) {
-  .feedback__form .row {
+  .feedback__form .row,
+  #writeus-form .row {
     display: block;
     margin-bottom: 0; }
-    .feedback__form .row .form-control {
+    .feedback__form .row .form-control,
+    #writeus-form .row .form-control {
+      padding-left: 1rem;
+      text-align: left;
       width: 100% !important; }
-  .feedback__form .submit {
+  .feedback__form .submit,
+  #writeus-form .submit {
     margin-left: 0;
     width: 100%;
     font-size: 15px;
     font-size: 1.5rem; } }
+
+@media (max-width: 600px) {
+  .title {
+    text-align: center; }
+  #ymap {
+    height: 280px; } }
 
 @media (max-width: 550px) {
   .footer__navcopyright .nav {
@@ -2261,9 +2281,16 @@ html.ie10 {
     .breadcrumbs .B_crumbBox li {
       display: inline-block; }
       .breadcrumbs .B_crumbBox li.B_crumb:after {
-        display: inline-block; } }
+        display: inline-block; }
+  .text table {
+    text-align: initial; }
+  .feedback__form .form-control,
+  #writeus .form-control {
+    text-align: center !important; } }
 
 @media (max-width: 360px) {
+  h2 {
+    text-align: center; }
   .title {
     font-size: 22px;
     font-size: 2.2rem; } }
@@ -2418,10 +2445,10 @@ html.ie10 {
   .video__item {
     flex-basis: 50%; }
   .articles .article {
-    margin-right: 2rem;
+    margin-right: 1.8rem;
     width: 219px; }
   .listnews .news {
-    margin-right: 2rem;
+    margin-right: 1.8rem;
     width: 22rem; }
   main.text .columns .column {
     padding-right: 4rem; }
@@ -2456,7 +2483,9 @@ html.ie10 {
   .feedback__form {
     width: 95%; }
     .feedback__form .row input.form-control {
-      width: 32%; } }
+      width: 32%; }
+  .reviews .owl-nav {
+    top: 135px; } }
 
 @media (max-width: 767px) {
   .rubrics__nav {
@@ -2650,7 +2679,9 @@ html.ie10 {
     font-size: 18px;
     font-size: 1.8rem; }
   .page-error .container {
-    padding-bottom: 1rem; } }
+    padding-bottom: 1rem; }
+  .services__textbox {
+    width: 100%; } }
 
 @media (max-width: 400px) {
   .services__item {
@@ -2662,7 +2693,10 @@ html.ie10 {
   .sqicons__text {
     padding-left: 0; }
   .subcat ul li span {
-    font-weight: bold; } }
+    font-weight: bold; }
+  .title {
+    font-size: 23px;
+    font-size: 2.3rem; } }
 
 @media (max-width: 370px) {
   .neck .logo {
@@ -2682,8 +2716,13 @@ html.ie10 {
   .video__textbox {
     background-position: center top 35%; }
   #ymap {
-    height: 240px; } }
+    height: 240px; }
+  .services__shorttext, .services__title {
+    padding: 0 5px; } }
 
 @media (max-width: 320px) {
   .youtube {
-    max-height: 200px; } }
+    max-height: 200px; }
+  .feedback .title {
+    font-size: 18px;
+    font-size: 1.8rem; } }

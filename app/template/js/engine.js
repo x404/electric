@@ -18,7 +18,7 @@ $(document).ready(function(){
 			},
 			335:{
 				items:1,
-				stagePadding: 15
+				stagePadding: 25
 			},
 			380:{
 				items:1,

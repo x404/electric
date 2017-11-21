@@ -262,7 +262,7 @@
 	// articles
 	.articles{
 		.article{
-			margin-right: 2rem;
+			margin-right: 1.8rem;
 			width: 219px;
 		}
 	}
@@ -270,7 +270,7 @@
 	// listnews
 	.listnews{
 		.news{
-			margin-right: 2rem;
+			margin-right: 1.8rem;
 			width: 22rem;
 		}
 	}
@@ -335,6 +335,10 @@
 		.row input.form-control{
 			width: 32%;
 		}
+	}
+
+	.reviews .owl-nav{
+		top: 135px;
 	}
 }
 
@@ -672,6 +676,10 @@
 	.page-error .container{
 		padding-bottom: 1rem;
 	}
+
+	.services__textbox{
+		width: 100%;
+	}
 }
 
 
@@ -693,6 +701,10 @@
 
 	.subcat ul li span{
 		font-weight: bold;
+	}
+
+	.title{
+		@include font-size(2.3)
 	}
 }
 
@@ -731,11 +743,24 @@
 	#ymap{
 		height: 240px;
 	}
+
+	.services{
+		&__shorttext, 
+		&__title{
+			padding: 0 5px;
+		}
+	}
 }
 
 
 @media (max-width: 320px){
 	.youtube{
 		max-height: 200px;
+	}
+
+	.feedback{
+		.title{
+			@include font-size(1.8)
+		}
 	}
 }

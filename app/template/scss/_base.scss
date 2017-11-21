@@ -139,7 +139,7 @@ input::-moz-focus-inner{
 
 /*** standart classes *****/
 a{color:#020000; @include transition;text-decoration-skip: ink;}
-h1{font-size:2.4rem; @extend .bold; text-align: center; text-transform: uppercase;}
+h1{font-size:2.4rem; font-weight: normal; @extend .bold; text-align: center; text-transform: uppercase;}
 h2{font-size:2.4rem; font-weight: normal;}
 h3{font-size:1.6rem; font-weight: normal;}
 
@@ -691,7 +691,6 @@ label.error{
 	@extend .italic;
 	@include font-size(1.8);
 	color: $color12;
-	// overflow: hidden;
 	margin: 4rem auto 2.5rem;
 	p{
 		padding-right: 2.5rem;
